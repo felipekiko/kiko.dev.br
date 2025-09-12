@@ -220,14 +220,14 @@ header {
 
 .highlight {
   color: var(--primary-color);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .subtitle {
   font-size: 1.1rem;
   color: var(--text-secondary);
   max-width: 800px;
-  margin: 0 auto 2rem;
+  margin: 0 auto;
   line-height: 1.7;
 }
 
@@ -238,7 +238,7 @@ header {
 
 /* ===== Skills Section ===== */
 .section {
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
 .section-title {
