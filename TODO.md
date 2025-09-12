@@ -1,0 +1,14 @@
+- cards
+    - ordenar por data
+    - curadoria
+    - ajustar layout
+    - ver se tem alguma coisa no linkedin que nao esta aqui
+    - ver o que tenho no slide.com e linkar com os cards
+    - colocar artigos do dev.to ou medium
+- experiencia profissional
+- experiencia academia
+- todos meus links
+- otimizar codigo
+- remover css externos
+- comprar as informacoes com o atual
+- theme #2
