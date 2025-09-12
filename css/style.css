@@ -1,17 +1,21 @@
 /* ===== Global Styles ===== */
 :root {
-  --primary-color: #64b5f6;
-  --primary-hover: #90caf9;
-  --text-primary: #e0e0e0;
-  --text-secondary: #9e9e9e;
-  --bg-light: #1e1e1e;
-  --bg-darker: #121212;
-  --border-color: #333333;
-  --card-bg: #1e1e1e;
-  --card-border: 1px solid #333333;
-  --surface-color: #1e1e1e;
-  --on-surface: #e0e0e0;
-  --on-surface-muted: #9e9e9e;
+  --primary-color: #FFD700;        /* Amarelo dourado */
+  --primary-hover: #FFE44D;       /* Amarelo mais claro para hover */
+  --primary-dark: #B38F00;        /* Amarelo escuro */
+  --text-primary: #e0e0e0;        /* Cinza claro para texto principal */
+  --text-secondary: #9e9e9e;      /* Cinza para texto secundário */
+  --bg-light: #1e1e1e;            /* Fundo cinza escuro */
+  --bg-darker: #121212;           /* Fundo preto */
+  --border-color: #333333;        /* Borda cinza escura */
+  --card-bg: #1e1e1e;             /* Fundo do card */
+  --card-border: 1px solid #333333; /* Borda do card */
+  --surface-color: #1e1e1e;       /* Cor de superfície */
+  --on-surface: #e0e0e0;          /* Texto sobre superfície */
+  --on-surface-muted: #9e9e9e;    /* Texto secundário sobre superfície */
+  --yellow-accent: #FFD700;       /* Amarelo para destaques */
+  --yellow-light: #FFE44D;        /* Amarelo claro */
+  --yellow-dark: #B38F00;         /* Amarelo escuro */
 }
 
 * {
@@ -36,14 +40,30 @@ body {
 }
 
 a {
-  color: var(--primary-color);
+  color: var(--yellow-accent);
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
 a:hover {
-  color: var(--primary-hover);
-  text-decoration: underline;
+  color: var(--yellow-light);
+  text-decoration: none;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--yellow-accent);
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
 }
 
 /* ===== Header ===== */
@@ -106,9 +126,9 @@ header {
 /* Hover effect for all social icons */
 .social-link:hover {
   transform: translateY(-3px);
-  background-color: #b38f00; /* Dark yellow */
+  background-color: var(--yellow-accent);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  color: #fff;
+  color: #121212; /* Texto preto para melhor contraste */
   border-color: transparent;
   text-decoration: none;
 }
@@ -190,12 +210,12 @@ header {
   gap: 0.5rem;
   padding: 0.5rem 1rem;
   background-color: #2a2a2a;
-  color: var(--on-surface);
+  color: var(--yellow-accent);
   border-radius: 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   font-size: 0.9rem;
   transition: all 0.3s ease;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--yellow-dark);
 }
 
 .skill-badge:hover {
@@ -217,14 +237,18 @@ header {
 
 .project-card {
   background: var(--card-bg);
-  border: var(--card-border);
+  border: 1px solid var(--yellow-dark);
   border-radius: 0.5rem;
   padding: 1.5rem;
   color: white;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   position: relative;
   overflow: hidden;
   backdrop-filter: blur(10px);
+}
+
+.project-card:hover {
+  border-color: var(--yellow-accent);
 }
 
 .project-card:hover {
@@ -248,18 +272,21 @@ header {
 }
 
 .project-tag {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 215, 0, 0.1);
+  color: var(--yellow-accent);
   padding: 0.25rem 0.75rem;
   border-radius: 1rem;
   font-size: 0.75rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  border: 1px solid var(--yellow-dark);
 }
 
 .project-tag.live {
-  background-color: rgba(40, 167, 69, 0.2);
-  color: #28a745;
+  background-color: rgba(255, 215, 0, 0.2);
+  color: var(--yellow-accent);
+  border-color: var(--yellow-dark);
 }
 
 .project-title {
@@ -279,15 +306,31 @@ header {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: #4dabf7;
+  color: var(--yellow-accent);
   font-weight: 500;
   margin-top: 1rem;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
 .project-link:hover {
-  color: #74c0fc;
+  color: var(--yellow-light);
   text-decoration: none;
+}
+
+.project-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--yellow-accent);
+  transition: width 0.3s ease;
+}
+
+.project-link:hover::after {
+  width: 100%;
 }
 
 .project-location {
