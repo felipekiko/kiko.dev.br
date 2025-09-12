@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Felipe Kiko</title>
+  <title>Felipe Kiko - Cloud Architect & DevOps Engineer</title>
 
   <!-- Meta Tags -->
   <meta name="description" content="Felipe Kiko - Cloud Architect especializado em AWS. Mentor ativo na comunidade tech, palestrante e revisor técnico.">
@@ -13,1473 +13,1127 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://kiko.dev.br">
-  <meta property="og:title" content="Felipe Kiko">
-  <meta property="og:description" content="Cloud Architect especializado em AWS. Mentor ativo na comunidade tech, palestrante e revisor técnico.">
+  <meta property="og:title" content="Felipe Kiko - Cloud Architect & DevOps Engineer">
+  <meta property="og:description" content="Especialista em arquitetura de nuvem, automação e melhores práticas de DevOps. Transformando ideias em soluções escaláveis.">
   <meta property="og:image" content="https://kiko.dev.br/img/og-image.jpg">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:creator" content="@felipekiko">
-  <meta name="twitter:title" content="Felipe Kiko">
-  <meta name="twitter:description" content="Cloud Architect especializado em AWS. Mentor ativo na comunidade tech, palestrante e revisor técnico.">
+  <meta name="twitter:title" content="Felipe Kiko - Cloud Architect & DevOps Engineer">
+  <meta name="twitter:description" content="Especialista em arquitetura de nuvem, automação e melhores práticas de DevOps. Transformando ideias em soluções escaláveis.">
   <meta name="twitter:image" content="https://kiko.dev.br/img/og-image.jpg">
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://kiko.dev.br">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
   <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/toast.css">
+  <style>
+    /* Global Variables */
+    :root {
+      --primary: #3b82f6;
+      --primary-hover: #2563eb;
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --dark-bg: #0f172a;
+      --bg: #1e293b;
+      --border: #334155;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --transition: all 0.3s ease;
+    }
+    
+    /* Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: var(--dark-bg);
+      color: var(--text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+    
+    a:hover {
+      color: var(--primary-hover);
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: var(--dark-bg);
+      color: var(--text-primary);
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Layout */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    
+    .section {
+      padding: 5rem 0;
+    }
+    
+    .section-header {
+      margin-bottom: 3rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .section-title {
+      font-size: 1.875rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      position: relative;
+      display: inline-block;
+      margin: 0;
+    }
+    
+    .title-underline {
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--primary), #8b5cf6);
+      border-radius: 3px;
+    }
+    
+    /* Header */
+    header {
+      border-bottom: 1px solid var(--border);
+      background-color: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      transition: var(--transition);
+    }
+    
+    .scrolled {
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 0;
+    }
+    
+    /* Logo */
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      transition: var(--transition);
+    }
+    
+    .logo:hover {
+      transform: translateY(-1px);
+    }
+    
+    .logo-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.25rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      transition: var(--transition);
+    }
+    
+    .logo-icon:hover {
+      transform: rotate(5deg);
+    }
+    
+    .logo-text h1 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin: 0 0 0.125rem 0;
+      color: var(--text-primary);
+      line-height: 1.2;
+      background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .logo-text p {
+      font-size: 0.8125rem;
+      margin: 0;
+      color: var(--text-secondary);
+      font-weight: 400;
+    }
+    
+    /* Social Links */
+    .social-links {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 0.5rem;
+      color: var(--text-secondary);
+      background: rgba(148, 163, 184, 0.1);
+      transition: var(--transition);
+      font-size: 1.125rem;
+    }
+    
+    .social-link:hover {
+      background: rgba(59, 130, 246, 0.2);
+      transform: translateY(-2px);
+      color: var(--primary);
+    }
+    
+    .social-link.github:hover { color: white; background: #333; }
+    .social-link.linkedin:hover { color: white; background: #0a66c2; }
+    .social-link.youtube:hover { color: white; background: #ff0000; }
+    .social-link.email:hover { color: white; background: #ea4335; }
+    
+    /* Section Headers */
+    .section-header i {
+      color: var(--primary);
+      font-size: 1.5rem;
+    }
+    
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    
+    /* Project Cards */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    
+    .project-card {
+      background: linear-gradient(145deg, rgba(30, 41, 59, 0.7), rgba(15, 23, 42, 0.7));
+      border: 1px solid rgba(51, 65, 85, 0.3);
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      transition: var(--transition);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.2);
+      border-color: rgba(59, 130, 246, 0.5);
+    }
+    
+    .project-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+    }
+    
+    .project-date {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-secondary);
+      font-size: 0.8125rem;
+    }
+    
+    .project-tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      background-color: rgba(59, 130, 246, 0.1);
+      color: var(--primary);
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      transition: var(--transition);
+    }
+    
+    .project-tag.live {
+      background-color: rgba(16, 185, 129, 0.1);
+      color: #10b981;
+      border-color: rgba(16, 185, 129, 0.2);
+    }
+    
+    .project-title {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 0 0 0.5rem 0;
+      transition: var(--transition);
+    }
+    
+    .project-description {
+      color: var(--text-secondary);
+      font-size: 0.875rem;
+      margin: 0 0 1rem 0;
+      line-height: 1.5;
+      flex-grow: 1;
+    }
+    
+    .project-location {
+      color: var(--text-secondary);
+      font-size: 0.8125rem;
+      font-style: italic;
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      gap: 0.375rem;
+    }
+    
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.375rem;
+      color: var(--primary);
+      font-size: 0.875rem;
+      font-weight: 500;
+      margin-top: 0.75rem;
+      transition: var(--transition);
+    }
+    
+    .project-link:hover {
+      color: var(--primary-hover);
+    }
+    
+    .project-link i {
+      font-size: 0.75rem;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+      .container {
+        padding: 0 1.25rem;
+      }
+      
+      .section {
+        padding: 4rem 0;
+      }
+      
+      .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.25rem;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        gap: 1.25rem;
+        text-align: center;
+      }
+      
+      .logo {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .logo-text h1 {
+        font-size: 1.5rem;
+      }
+      
+      .section {
+        padding: 3rem 0;
+      }
+      
+      .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+        margin-bottom: 2rem;
+      }
+      
+      .section-title {
+        font-size: 1.5rem;
+      }
+    }
+
+    :root {
+      --primary: #3b82f6;
+      --primary-hover: #2563eb;
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --dark-bg: #0f172a;
+      --bg: #1e293b;
+      --border: #334155;
+    }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: var(--dark-bg);
+      color: var(--text-primary);
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    
+    /* Header Styles */
+    header {
+      border-bottom: 1px solid var(--border);
+      background-color: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    
+    .logo-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+    
+    .logo-text h1 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin: 0;
+      color: var(--text-primary);
+    }
+    
+    .logo-text p {
+      font-size: 0.875rem;
+      margin: 0;
+      color: var(--text-secondary);
+    }
+    
+    .social-links {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 0.5rem;
+      color: var(--text-secondary);
+      transition: all 0.2s ease;
+    }
+    
+    .social-link:hover {
+      background-color: rgba(148, 163, 184, 0.1);
+    }
+    
+    .social-link.github:hover { color: white; }
+    .social-link.linkedin:hover { color: #0ea5e9; }
+    .social-link.youtube:hover { color: #ef4444; }
+    .social-link.email:hover { color: var(--primary); }
+    
+    .contact-button {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: 0.375rem;
+      background-color: transparent;
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    
+    .contact-button:hover {
+      background-color: rgba(59, 130, 246, 0.1);
+      border-color: var(--primary);
+    }
+    
+    .contact-button i {
+      margin-left: 0.5rem;
+      font-size: 0.75rem;
+    }
+    
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      max-width: 48rem;
+      margin: 0 auto;
+      padding: 3rem 0;
+    }
+    
+    .avatar {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      margin: 0 auto 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    
+    .avatar i {
+      font-size: 3rem;
+      color: white;
+    }
+    
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+    
+    .highlight {
+      color: var(--primary);
+    }
+    
+    .subtitle {
+      font-size: 1.125rem;
+      color: var(--text-secondary);
+      max-width: 42rem;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+    
+    /* Skills Section */
+    .section {
+      padding: 3rem 0;
+    }
+    
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+      max-width: 48rem;
+      margin: 0 auto;
+    }
+    
+    .skill-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      background-color: rgba(30, 41, 59, 0.6);
+      border: 1px solid var(--border);
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      color: var(--text-primary);
+      transition: all 0.2s ease;
+    }
+    
+    .skill-badge i {
+      margin-right: 0.5rem;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+      }
+      
+      .logo {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .social-links {
+        margin-top: 1rem;
+      }
+      
+      h1 {
+        font-size: 1.875rem;
+      }
+      
+      .subtitle {
+        font-size: 1rem;
+      }
+    }
+/* Timeline Section Styles */
+.timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 2rem;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--primary), transparent);
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 3rem;
+    }
+
+    .timeline-icon {
+      position: absolute;
+      left: 1.5rem;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), #8b5cf6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+
+    .timeline-content {
+      background: linear-gradient(145deg, rgba(30, 41, 59, 0.7), rgba(15, 23, 42, 0.7));
+      border: 1px solid rgba(51, 65, 85, 0.3);
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      transition: all 0.3s ease;
+    }
+
+    .timeline-item:hover .timeline-content {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.2);
+    }
+
+    .timeline-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-title {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 0;
+    }
+
+    .timeline-period {
+      background: rgba(59, 130, 246, 0.1);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 500;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.25rem;
+    }
+
+    .timeline-company {
+      color: var(--primary);
+      font-size: 0.875rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-description {
+      color: var(--text-secondary);
+      font-size: 0.875rem;
+      margin: 0 0 1rem 0;
+      line-height: 1.5;
+    }
+
+    .timeline-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .timeline-tag {
+      background: rgba(59, 130, 246, 0.1);
+      color: var(--primary);
+      font-size: 0.75rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.25rem;
+    }
+
+    @media (max-width: 768px) {
+      .timeline::before {
+        left: 1.5rem;
+      }
+
+      .timeline-item {
+        padding-left: 3.5rem;
+      }
+
+      .timeline-icon {
+        left: 1.25rem;
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+
+      .timeline-header {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .timeline-period {
+        align-self: flex-start;
+      }
+    }
+    /* Skills Section Styles */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .skill-card {
+      background: linear-gradient(145deg, rgba(30, 41, 59, 0.7), rgba(15, 23, 42, 0.7));
+      border: 1px solid rgba(51, 65, 85, 0.3);
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.2);
+    }
+
+    .skill-icon {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: var(--primary);
+    }
+
+    .skill-img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .skill-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 0 0 0.25rem 0;
+    }
+
+    .skill-category {
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 500;
+      margin: 0 0 0.25rem 0;
+    }
+
+    .skill-year {
+      color: var(--text-secondary);
+      font-size: 0.75rem;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <div id="root">
-    <div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;">
-      <ol tabindex="-1" data-lov-id="src/components/ui/toaster.tsx:21:6" data-lov-name="ToastViewport"
-        data-component-path="src/components/ui/toaster.tsx" data-component-line="21" data-component-file="toaster.tsx"
-        data-component-name="ToastViewport" data-component-content="%7B%7D"
-        class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]">
-      </ol>
-    </div>
-    <div data-lov-id="src/pages/Index.tsx:127:4" data-lov-name="div" data-component-path="src/pages/Index.tsx"
-      data-component-line="127" data-component-file="Index.tsx" data-component-name="div"
-      data-component-content="%7B%22className%22%3A%22min-h-screen%20bg-background%20text-foreground%22%7D"
-      class="min-h-screen bg-background text-foreground">
-      <header data-lov-id="src/pages/Index.tsx:129:6" data-lov-name="header" data-component-path="src/pages/Index.tsx"
-        data-component-line="129" data-component-file="Index.tsx" data-component-name="header"
-        data-component-content="%7B%22className%22%3A%22border-b%20border-border-subtle%20bg-dark-bg%2F95%20backdrop-blur-sm%20sticky%20top-0%20z-50%22%7D"
-        class="border-b border-border-subtle bg-dark-bg/95 backdrop-blur-sm sticky top-0 z-50">
-        <div data-lov-id="src/pages/Index.tsx:130:8" data-lov-name="div" data-component-path="src/pages/Index.tsx"
-          data-component-line="130" data-component-file="Index.tsx" data-component-name="div"
-          data-component-content="%7B%22className%22%3A%22container%20mx-auto%20px-4%20py-4%22%7D"
-          class="container mx-auto px-4 py-4">
-          <div data-lov-id="src/pages/Index.tsx:131:10" data-lov-name="div" data-component-path="src/pages/Index.tsx"
-            data-component-line="131" data-component-file="Index.tsx" data-component-name="div"
-            data-component-content="%7B%22className%22%3A%22flex%20items-center%20justify-between%22%7D"
-            class="flex items-center justify-between">
-            <div data-lov-id="src/pages/Index.tsx:132:12" data-lov-name="div" data-component-path="src/pages/Index.tsx"
-              data-component-line="132" data-component-file="Index.tsx" data-component-name="div"
-              data-component-content="%7B%22className%22%3A%22flex%20items-center%20gap-3%22%7D"
-              class="flex items-center gap-3">
-              <div data-lov-id="src/pages/Index.tsx:133:14" data-lov-name="div"
-                data-component-path="src/pages/Index.tsx" data-component-line="133" data-component-file="Index.tsx"
-                data-component-name="div"
-                data-component-content="%7B%22className%22%3A%22w-10%20h-10%20rounded-full%20bg-gradient-primary%20flex%20items-center%20justify-center%22%7D"
-                class="w-10 h-10 rounded-full bg-gradient-primary flex items-center justify-center"><svg
-                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-user h-5 w-5 text-dark-bg" data-lov-id="src/pages/Index.tsx:134:16"
-                  data-lov-name="User" data-component-path="src/pages/Index.tsx" data-component-line="134"
-                  data-component-file="Index.tsx" data-component-name="User"
-                  data-component-content="%7B%22className%22%3A%22h-5%20w-5%20text-dark-bg%22%7D">
-                  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="12" cy="7" r="4"></circle>
-                </svg></div>
-              <div data-lov-id="src/pages/Index.tsx:136:14" data-lov-name="div"
-                data-component-path="src/pages/Index.tsx" data-component-line="136" data-component-file="Index.tsx"
-                data-component-name="div" data-component-content="%7B%7D">
-                <h1 data-lov-id="src/pages/Index.tsx:137:16" data-lov-name="h1"
-                  data-component-path="src/pages/Index.tsx" data-component-line="137" data-component-file="Index.tsx"
-                  data-component-name="h1"
-                  data-component-content="%7B%22text%22%3A%22Felipe%20Kiko%22%2C%22className%22%3A%22text-xl%20font-bold%20text-text-primary%22%7D"
-                  class="text-xl font-bold text-text-primary">Felipe Kiko</h1>
-                <p data-lov-id="src/pages/Index.tsx:138:16" data-lov-name="p" data-component-path="src/pages/Index.tsx"
-                  data-component-line="138" data-component-file="Index.tsx" data-component-name="p"
-                  data-component-content="%7B%22text%22%3A%22Cloud%20Engineer%20%26%20DevOps%20Enthusiast%22%2C%22className%22%3A%22text-sm%20text-text-secondary%22%7D"
-                  class="text-sm text-text-secondary">Cloud Engineer &amp; DevOps Enthusiast</p>
-              </div>
-            </div>
-            <div data-lov-id="src/components/ui/social-links.tsx:33:4" data-lov-name="div"
-              data-component-path="src/components/ui/social-links.tsx" data-component-line="33"
-              data-component-file="social-links.tsx" data-component-name="div"
-              data-component-content="%7B%22className%22%3A%22flex%20items-center%20gap-4%22%7D"
-              class="flex items-center gap-4"><a data-lov-id="src/components/ui/social-links.tsx:44:12"
-                data-lov-name="a" data-component-path="src/components/ui/social-links.tsx" data-component-line="44"
-                data-component-file="social-links.tsx" data-component-name="a" data-component-content="%7B%7D"
-                href="https://github.com/felipekiko" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
-                class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 w-10 text-text-secondary transition-colors hover:text-white hover:bg-secondary/20"><svg
-                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-github h-5 w-5" data-lov-id="src/components/ui/social-links.tsx:50:14"
-                  data-lov-name="Icon" data-component-path="src/components/ui/social-links.tsx" data-component-line="50"
-                  data-component-file="social-links.tsx" data-component-name="Icon"
-                  data-component-content="%7B%22className%22%3A%22h-5%20w-5%22%7D">
-                  <path
-                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
-                  </path>
-                  <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                </svg></a><a data-lov-id="src/components/ui/social-links.tsx:44:12" data-lov-name="a"
-                data-component-path="src/components/ui/social-links.tsx" data-component-line="44"
-                data-component-file="social-links.tsx" data-component-name="a" data-component-content="%7B%7D"
-                href="https://linkedin.com/in/felipekiko" target="_blank" rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 w-10 text-text-secondary transition-colors hover:text-blue-400 hover:bg-secondary/20"><svg
-                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-linkedin h-5 w-5" data-lov-id="src/components/ui/social-links.tsx:50:14"
-                  data-lov-name="Icon" data-component-path="src/components/ui/social-links.tsx" data-component-line="50"
-                  data-component-file="social-links.tsx" data-component-name="Icon"
-                  data-component-content="%7B%22className%22%3A%22h-5%20w-5%22%7D">
-                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                  <rect width="4" height="12" x="2" y="9"></rect>
-                  <circle cx="4" cy="4" r="2"></circle>
-                </svg></a><a data-lov-id="src/components/ui/social-links.tsx:44:12" data-lov-name="a"
-                data-component-path="src/components/ui/social-links.tsx" data-component-line="44"
-                data-component-file="social-links.tsx" data-component-name="a" data-component-content="%7B%7D"
-                href="https://youtube.com/@felipekiko" target="_blank" rel="noopener noreferrer" aria-label="YouTube"
-                class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 w-10 text-text-secondary transition-colors hover:text-red-500 hover:bg-secondary/20"><svg
-                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-youtube h-5 w-5" data-lov-id="src/components/ui/social-links.tsx:50:14"
-                  data-lov-name="Icon" data-component-path="src/components/ui/social-links.tsx" data-component-line="50"
-                  data-component-file="social-links.tsx" data-component-name="Icon"
-                  data-component-content="%7B%22className%22%3A%22h-5%20w-5%22%7D">
-                  <path
-                    d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17">
-                  </path>
-                  <path d="m10 15 5-3-5-3z"></path>
-                </svg></a><a data-lov-id="src/components/ui/social-links.tsx:44:12" data-lov-name="a"
-                data-component-path="src/components/ui/social-links.tsx" data-component-line="44"
-                data-component-file="social-links.tsx" data-component-name="a" data-component-content="%7B%7D"
-                href="mailto:contato@kiko.dev.br" target="_blank" rel="noopener noreferrer" aria-label="Email"
-                class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 w-10 text-text-secondary transition-colors hover:text-primary hover:bg-secondary/20"><svg
-                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-mail h-5 w-5" data-lov-id="src/components/ui/social-links.tsx:50:14"
-                  data-lov-name="Icon" data-component-path="src/components/ui/social-links.tsx" data-component-line="50"
-                  data-component-file="social-links.tsx" data-component-name="Icon"
-                  data-component-content="%7B%22className%22%3A%22h-5%20w-5%22%7D">
-                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                </svg></a><a data-lov-id="src/components/ui/social-links.tsx:61:8" data-lov-name="a"
-                data-component-path="src/components/ui/social-links.tsx" data-component-line="61"
-                data-component-file="social-links.tsx" data-component-name="a"
-                data-component-content="%7B%22text%22%3A%22Contato%22%7D" href="mailto:contato@kiko.dev.br"
-                class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-9 rounded-md px-3 text-xs border-primary/30 text-primary hover:bg-primary/10">Contato
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-external-link ml-2 h-3 w-3"
-                  data-lov-id="src/components/ui/social-links.tsx:62:18" data-lov-name="ExternalLink"
-                  data-component-path="src/components/ui/social-links.tsx" data-component-line="62"
-                  data-component-file="social-links.tsx" data-component-name="ExternalLink"
-                  data-component-content="%7B%22className%22%3A%22ml-2%20h-3%20w-3%22%7D">
-                  <path d="M15 3h6v6"></path>
-                  <path d="M10 14 21 3"></path>
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                </svg></a></div>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <div class="logo-icon">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="logo-text">
+            <h1>Felipe Kiko</h1>
+            <p>Cloud Engineer & DevOps Enthusiast</p>
           </div>
         </div>
-      </header>
-      <main data-lov-id="src/pages/Index.tsx:146:6" data-lov-name="main" data-component-path="src/pages/Index.tsx"
-        data-component-line="146" data-component-file="Index.tsx" data-component-name="main"
-        data-component-content="%7B%22className%22%3A%22container%20mx-auto%20px-4%20py-12%20space-y-16%22%7D"
-        class="container mx-auto px-4 py-12 space-y-16">
-        <section data-lov-id="src/pages/Index.tsx:148:8" data-lov-name="section"
-          data-component-path="src/pages/Index.tsx" data-component-line="148" data-component-file="Index.tsx"
-          data-component-name="section"
-          data-component-content="%7B%22className%22%3A%22text-center%20max-w-3xl%20mx-auto%22%7D"
-          class="text-center max-w-3xl mx-auto">
-          <div data-lov-id="src/pages/Index.tsx:149:10" data-lov-name="div" data-component-path="src/pages/Index.tsx"
-            data-component-line="149" data-component-file="Index.tsx" data-component-name="div"
-            data-component-content="%7B%22className%22%3A%22w-24%20h-24%20rounded-full%20bg-gradient-primary%20mx-auto%20mb-6%20flex%20items-center%20justify-center%20animate-pulse-glow%22%7D"
-            class="w-24 h-24 rounded-full bg-gradient-primary mx-auto mb-6 flex items-center justify-center animate-pulse-glow">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="lucide lucide-user h-12 w-12 text-dark-bg" data-lov-id="src/pages/Index.tsx:150:12"
-              data-lov-name="User" data-component-path="src/pages/Index.tsx" data-component-line="150"
-              data-component-file="Index.tsx" data-component-name="User"
-              data-component-content="%7B%22className%22%3A%22h-12%20w-12%20text-dark-bg%22%7D">
-              <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-              <circle cx="12" cy="7" r="4"></circle>
-            </svg>
+        <div class="social-links">
+          <a href="https://github.com/felipekiko" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link github">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/felipekiko" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link linkedin">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://youtube.com/@felipekiko" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-link youtube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="mailto:contato@kiko.dev.br" aria-label="Email" class="social-link email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="container">
+    <section class="hero">
+      <div class="avatar">
+        <i class="fas fa-user"></i>
+      </div>
+      <h1>Olá! Eu sou o <span class="highlight">Felipe Kiko</span></h1>
+      <p class="subtitle">
+        Cloud Engineer especializado em AWS, Azure e Google Cloud. Apaixonado por DevOps, FinOps e 
+        automação. Mentor ativo na comunidade tech, palestrante e revisor técnico.
+        Ajudo empresas a otimizar custos e processos na nuvem.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section">
+      <h2 class="section-title">Habilidades & Tecnologias</h2>
+      <div class="skills-container">
+        <span class="skill-badge"><i class="fab fa-aws"></i> AWS</span>
+        <span class="skill-badge"><i class="fas fa-cloud"></i> Azure</span>
+        <span class="skill-badge"><i class="fab fa-google"></i> Google Cloud</span>
+        <span class="skill-badge"><i class="fab fa-docker"></i> Docker</span>
+        <span class="skill-badge"><i class="fas fa-cubes"></i> Kubernetes</span>
+        <span class="skill-badge"><i class="fab fa-linux"></i> Linux</span>
+        <span class="skill-badge"><i class="fab fa-git-alt"></i> Git</span>
+        <span class="skill-badge"><i class="fas fa-code-branch"></i> CI/CD</span>
+        <span class="skill-badge"><i class="fas fa-server"></i> DevOps</span>
+        <span class="skill-badge"><i class="fas fa-calculator"></i> FinOps</span>
+        <span class="skill-badge"><i class="fab fa-python"></i> Python</span>
+        <span class="skill-badge"><i class="fab fa-php"></i> PHP</span>
+      </div>
+    </section>
+  </main>
+
+<!-- Main Content -->
+<main class="container">
+  <!-- Projects Section -->
+  <section class="section">
+    <div class="section-header">
+      <i class="fas fa-briefcase text-primary"></i>
+      <h2 class="section-title">O QUE FIZ?<span class="title-underline"></span></h2>
+    </div>
+    <div class="projects-grid">
+      <!-- Project Card 1 -->
+      <div class="project-card">
+        <div class="project-card-header">
+          <div class="project-date">
+            <i class="far fa-calendar-alt"></i>
+            <span>2023 - Presente</span>
           </div>
-          <h2 data-lov-id="src/pages/Index.tsx:152:10" data-lov-name="h2" data-component-path="src/pages/Index.tsx"
-            data-component-line="152" data-component-file="Index.tsx" data-component-name="h2"
-            data-component-content="%7B%22text%22%3A%22Ol%C3%A1!%20Eu%20sou%20o%22%2C%22className%22%3A%22text-3xl%20md%3Atext-4xl%20font-bold%20text-text-primary%20mb-4%22%7D"
-            class="text-3xl md:text-4xl font-bold text-text-primary mb-4">Olá! Eu sou o <span
-              data-lov-id="src/pages/Index.tsx:153:26" data-lov-name="span" data-component-path="src/pages/Index.tsx"
-              data-component-line="153" data-component-file="Index.tsx" data-component-name="span"
-              data-component-content="%7B%22text%22%3A%22Felipe%20Kiko%22%2C%22className%22%3A%22text-primary%22%7D"
-              class="text-primary">Felipe Kiko</span></h2>
-          <p data-lov-id="src/pages/Index.tsx:155:10" data-lov-name="p" data-component-path="src/pages/Index.tsx"
-            data-component-line="155" data-component-file="Index.tsx" data-component-name="p"
-            data-component-content="%7B%22text%22%3A%22Cloud%20Engineer%20especializado%20em%20AWS%2C%20Azure%20e%20Google%20Cloud.%20Apaixonado%20por%20DevOps%2C%20FinOps%20e%20%5Cn%20%20%20%20%20%20%20%20%20%20%20%20automatiza%C3%A7%C3%A3o.%20Mentor%20ativo%20na%20comunidade%20tech%2C%20palestrante%20e%20revisor%20t%C3%A9cnico.%20%5Cn%20%20%20%20%20%20%20%20%20%20%20%20Ajudo%20empresas%20a%20otimizar%20custos%20e%20processos%20na%20nuvem.%22%2C%22className%22%3A%22text-lg%20text-text-secondary%20leading-relaxed%22%7D"
-            class="text-lg text-text-secondary leading-relaxed">Cloud Engineer especializado em AWS, Azure e Google
-            Cloud. Apaixonado por DevOps, FinOps e automatização. Mentor ativo na comunidade tech, palestrante e revisor
-            técnico. Ajudo empresas a otimizar custos e processos na nuvem.</p>
-        </section>
-        <section data-lov-id="src/pages/Index.tsx:163:8" data-lov-name="section"
-          data-component-path="src/pages/Index.tsx" data-component-line="163" data-component-file="Index.tsx"
-          data-component-name="section" data-component-content="%7B%7D">
-          <div data-lov-id="src/pages/Index.tsx:164:10" data-lov-name="div" data-component-path="src/pages/Index.tsx"
-            data-component-line="164" data-component-file="Index.tsx" data-component-name="div"
-            data-component-content="%7B%22className%22%3A%22flex%20items-center%20gap-3%20mb-8%22%7D"
-            class="flex items-center gap-3 mb-8"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" class="lucide lucide-code h-6 w-6 text-primary"
-              data-lov-id="src/pages/Index.tsx:165:12" data-lov-name="Code" data-component-path="src/pages/Index.tsx"
-              data-component-line="165" data-component-file="Index.tsx" data-component-name="Code"
-              data-component-content="%7B%22className%22%3A%22h-6%20w-6%20text-primary%22%7D">
-              <polyline points="16 18 22 12 16 6"></polyline>
-              <polyline points="8 6 2 12 8 18"></polyline>
-            </svg>
-            <h2 data-lov-id="src/components/ui/section-title.tsx:8:4" data-lov-name="h2"
-              data-component-path="src/components/ui/section-title.tsx" data-component-line="8"
-              data-component-file="section-title.tsx" data-component-name="h2" data-component-content="%7B%7D"
-              class="text-2xl md:text-3xl font-bold text-primary mb-8 relative ">Tecnologias<div
-                data-lov-id="src/components/ui/section-title.tsx:10:6" data-lov-name="div"
-                data-component-path="src/components/ui/section-title.tsx" data-component-line="10"
-                data-component-file="section-title.tsx" data-component-name="div"
-                data-component-content="%7B%22className%22%3A%22absolute%20-bottom-2%20left-0%20w-16%20h-1%20bg-gradient-primary%20rounded-full%22%7D"
-                class="absolute -bottom-2 left-0 w-16 h-1 bg-gradient-primary rounded-full"></div>
-            </h2>
+          <div class="project-tag">
+            Evento
           </div>
-          <div data-lov-id="src/pages/Index.tsx:168:10" data-lov-name="div" data-component-path="src/pages/Index.tsx"
-            data-component-line="168" data-component-file="Index.tsx" data-component-name="div"
-            data-component-content="%7B%22className%22%3A%22flex%20flex-wrap%20gap-3%22%7D"
-            class="flex flex-wrap gap-3">
-            <div data-lov-id="src/components/ui/tech-badge.tsx:12:4" data-lov-name="Badge"
-              data-component-path="src/components/ui/tech-badge.tsx" data-component-line="12"
-              data-component-file="tech-badge.tsx" data-component-name="Badge"
-              data-component-content="%7B%22className%22%3A%22text-xs%20px-3%20py-1%20bg-secondary%2F20%20text-primary%20border-primary%2F30%20hover%3Abg-primary%2F10%20transition-colors%20cursor-default%22%7D"
-              class="inline-flex items-center rounded-full border font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs px-3 py-1 bg-secondary/20 text-primary border-primary/30 hover:bg-primary/10 transition-colors cursor-default">
-              #PHP</div>
-            <div data-lov-id="src/components/ui/tech-badge.tsx:12:4" data-lov-name="Badge"
-              data-component-path="src/components/ui/tech-badge.tsx" data-component-line="12"
-              data-component-file="tech-badge.tsx" data-component-name="Badge"
-              data-component-content="%7B%22className%22%3A%22text-xs%20px-3%20py-1%20bg-secondary%2F20%20text-primary%20border-primary%2F30%20hover%3Abg-primary%2F10%20transition-colors%20cursor-default%22%7D"
-              class="inline-flex items-center rounded-full border font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs px-3 py-1 bg-secondary/20 text-primary border-primary/30 hover:bg-primary/10 transition-colors cursor-default">
-              #Java</div>
-            <div data-lov-id="src/components/ui/tech-badge.tsx:12:4" data-lov-name="Badge"
-              data-component-path="src/components/ui/tech-badge.tsx" data-component-line="12"
-              data-component-file="tech-badge.tsx" data-component-name="Badge"
-              data-component-content="%7B%22className%22%3A%22text-xs%20px-3%20py-1%20bg-secondary%2F20%20text-primary%20border-primary%2F30%20hover%3Abg-primary%2F10%20transition-colors%20cursor-default%22%7D"
-              class="inline-flex items-center rounded-full border font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs px-3 py-1 bg-secondary/20 text-primary border-primary/30 hover:bg-primary/10 transition-colors cursor-default">
-              #JavaScript</div>
-            <div data-lov-id="src/components/ui/tech-badge.tsx:12:4" data-lov-name="Badge"
-              data-component-path="src/components/ui/tech-badge.tsx" data-component-line="12"
-              data-component-file="tech-badge.tsx" data-component-name="Badge"
-              data-component-content="%7B%22className%22%3A%22text-xs%20px-3%20py-1%20bg-secondary%2F20%20text-primary%20border-primary%2F30%20hover%3Abg-primary%2F10%20transition-colors%20cursor-default%22%7D"
-              class="inline-flex items-center rounded-full border font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs px-3 py-1 bg-secondary/20 text-primary border-primary/30 hover:bg-primary/10 transition-colors cursor-default">
-              #React</div>
-            <div data-lov-id="src/components/ui/tech-badge.tsx:12:4" data-lov-name="Badge"
-              data-component-path="src/components/ui/tech-badge.tsx" data-component-line="12"
-              data-component-file="tech-badge.tsx" data-component-name="Badge"
-              data-component-content="%7B%22className%22%3A%22text-xs%20px-3%20py-1%20bg-secondary%2F20%20text-primary%20border-primary%2F30%20hover%3Abg-primary%2F10%20transition-colors%20cursor-default%22%7D"
-              class="inline-flex items-center rounded-full border font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs px-3 py-1 bg-secondary/20 text-primary border-primary/30 hover:bg-primary/10 transition-colors cursor-default">
-              #Angular</div>
-            <div data-lov-id="src/components/ui/tech-badge.tsx:12:4" data-lov-name="Badge"
-              data-component-path="src/components/ui/tech-badge.tsx" data-component-line="12"
-              data-component-file="tech-badge.tsx" data-component-name="Badge"
-              data-component-content="%7B%22className%22%3A%22text-xs%20px-3%20py-1%20bg-secondary%2F20%20text-primary%20border-primary%2F30%20hover%3Abg-primary%2F10%20transition-colors%20cursor-default%22%7D"
-              class="inline-flex items-center rounded-full border font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs px-3 py-1 bg-secondary/20 text-primary border-primary/30 hover:bg-primary/10 transition-colors cursor-default">
-              #Node.js</div>
-            <div data-lov-id="src/components/ui/tech-badge.tsx:12:4" data-lov-name="Badge"
-              data-component-path="src/components/ui/tech-badge.tsx" data-component-line="12"
-              data-component-file="tech-badge.tsx" data-component-name="Badge"
-              data-component-content="%7B%22className%22%3A%22text-xs%20px-3%20py-1%20bg-secondary%2F20%20text-primary%20border-primary%2F30%20hover%3Abg-primary%2F10%20transition-colors%20cursor-default%22%7D"
-              class="inline-flex items-center rounded-full border font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs px-3 py-1 bg-secondary/20 text-primary border-primary/30 hover:bg-primary/10 transition-colors cursor-default">
-              #Python</div>
-            <div data-lov-id="src/components/ui/tech-badge.tsx:12:4" data-lov-name="Badge"
-              data-component-path="src/components/ui/tech-badge.tsx" data-component-line="12"
-              data-component-file="tech-badge.tsx" data-component-name="Badge"
-              data-component-content="%7B%22className%22%3A%22text-xs%20px-3%20py-1%20bg-secondary%2F20%20text-primary%20border-primary%2F30%20hover%3Abg-primary%2F10%20transition-colors%20cursor-default%22%7D"
-              class="inline-flex items-center rounded-full border font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs px-3 py-1 bg-secondary/20 text-primary border-primary/30 hover:bg-primary/10 transition-colors cursor-default">
-              #AWS</div>
-            <div data-lov-id="src/components/ui/tech-badge.tsx:12:4" data-lov-name="Badge"
-              data-component-path="src/components/ui/tech-badge.tsx" data-component-line="12"
-              data-component-file="tech-badge.tsx" data-component-name="Badge"
-              data-component-content="%7B%22className%22%3A%22text-xs%20px-3%20py-1%20bg-secondary%2F20%20text-primary%20border-primary%2F30%20hover%3Abg-primary%2F10%20transition-colors%20cursor-default%22%7D"
-              class="inline-flex items-center rounded-full border font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs px-3 py-1 bg-secondary/20 text-primary border-primary/30 hover:bg-primary/10 transition-colors cursor-default">
-              #Azure</div>
-            <div data-lov-id="src/components/ui/tech-badge.tsx:12:4" data-lov-name="Badge"
-              data-component-path="src/components/ui/tech-badge.tsx" data-component-line="12"
-              data-component-file="tech-badge.tsx" data-component-name="Badge"
-              data-component-content="%7B%22className%22%3A%22text-xs%20px-3%20py-1%20bg-secondary%2F20%20text-primary%20border-primary%2F30%20hover%3Abg-primary%2F10%20transition-colors%20cursor-default%22%7D"
-              class="inline-flex items-center rounded-full border font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs px-3 py-1 bg-secondary/20 text-primary border-primary/30 hover:bg-primary/10 transition-colors cursor-default">
-              #Google Cloud</div>
-            <div data-lov-id="src/components/ui/tech-badge.tsx:12:4" data-lov-name="Badge"
-              data-component-path="src/components/ui/tech-badge.tsx" data-component-line="12"
-              data-component-file="tech-badge.tsx" data-component-name="Badge"
-              data-component-content="%7B%22className%22%3A%22text-xs%20px-3%20py-1%20bg-secondary%2F20%20text-primary%20border-primary%2F30%20hover%3Abg-primary%2F10%20transition-colors%20cursor-default%22%7D"
-              class="inline-flex items-center rounded-full border font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs px-3 py-1 bg-secondary/20 text-primary border-primary/30 hover:bg-primary/10 transition-colors cursor-default">
-              #Docker</div>
-            <div data-lov-id="src/components/ui/tech-badge.tsx:12:4" data-lov-name="Badge"
-              data-component-path="src/components/ui/tech-badge.tsx" data-component-line="12"
-              data-component-file="tech-badge.tsx" data-component-name="Badge"
-              data-component-content="%7B%22className%22%3A%22text-xs%20px-3%20py-1%20bg-secondary%2F20%20text-primary%20border-primary%2F30%20hover%3Abg-primary%2F10%20transition-colors%20cursor-default%22%7D"
-              class="inline-flex items-center rounded-full border font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs px-3 py-1 bg-secondary/20 text-primary border-primary/30 hover:bg-primary/10 transition-colors cursor-default">
-              #Kubernetes</div>
-            <div data-lov-id="src/components/ui/tech-badge.tsx:12:4" data-lov-name="Badge"
-              data-component-path="src/components/ui/tech-badge.tsx" data-component-line="12"
-              data-component-file="tech-badge.tsx" data-component-name="Badge"
-              data-component-content="%7B%22className%22%3A%22text-xs%20px-3%20py-1%20bg-secondary%2F20%20text-primary%20border-primary%2F30%20hover%3Abg-primary%2F10%20transition-colors%20cursor-default%22%7D"
-              class="inline-flex items-center rounded-full border font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs px-3 py-1 bg-secondary/20 text-primary border-primary/30 hover:bg-primary/10 transition-colors cursor-default">
-              #MySQL</div>
-            <div data-lov-id="src/components/ui/tech-badge.tsx:12:4" data-lov-name="Badge"
-              data-component-path="src/components/ui/tech-badge.tsx" data-component-line="12"
-              data-component-file="tech-badge.tsx" data-component-name="Badge"
-              data-component-content="%7B%22className%22%3A%22text-xs%20px-3%20py-1%20bg-secondary%2F20%20text-primary%20border-primary%2F30%20hover%3Abg-primary%2F10%20transition-colors%20cursor-default%22%7D"
-              class="inline-flex items-center rounded-full border font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs px-3 py-1 bg-secondary/20 text-primary border-primary/30 hover:bg-primary/10 transition-colors cursor-default">
-              #PostgreSQL</div>
-            <div data-lov-id="src/components/ui/tech-badge.tsx:12:4" data-lov-name="Badge"
-              data-component-path="src/components/ui/tech-badge.tsx" data-component-line="12"
-              data-component-file="tech-badge.tsx" data-component-name="Badge"
-              data-component-content="%7B%22className%22%3A%22text-xs%20px-3%20py-1%20bg-secondary%2F20%20text-primary%20border-primary%2F30%20hover%3Abg-primary%2F10%20transition-colors%20cursor-default%22%7D"
-              class="inline-flex items-center rounded-full border font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs px-3 py-1 bg-secondary/20 text-primary border-primary/30 hover:bg-primary/10 transition-colors cursor-default">
-              #MongoDB</div>
-            <div data-lov-id="src/components/ui/tech-badge.tsx:12:4" data-lov-name="Badge"
-              data-component-path="src/components/ui/tech-badge.tsx" data-component-line="12"
-              data-component-file="tech-badge.tsx" data-component-name="Badge"
-              data-component-content="%7B%22className%22%3A%22text-xs%20px-3%20py-1%20bg-secondary%2F20%20text-primary%20border-primary%2F30%20hover%3Abg-primary%2F10%20transition-colors%20cursor-default%22%7D"
-              class="inline-flex items-center rounded-full border font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs px-3 py-1 bg-secondary/20 text-primary border-primary/30 hover:bg-primary/10 transition-colors cursor-default">
-              #Linux</div>
-            <div data-lov-id="src/components/ui/tech-badge.tsx:12:4" data-lov-name="Badge"
-              data-component-path="src/components/ui/tech-badge.tsx" data-component-line="12"
-              data-component-file="tech-badge.tsx" data-component-name="Badge"
-              data-component-content="%7B%22className%22%3A%22text-xs%20px-3%20py-1%20bg-secondary%2F20%20text-primary%20border-primary%2F30%20hover%3Abg-primary%2F10%20transition-colors%20cursor-default%22%7D"
-              class="inline-flex items-center rounded-full border font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs px-3 py-1 bg-secondary/20 text-primary border-primary/30 hover:bg-primary/10 transition-colors cursor-default">
-              #DevOps</div>
-            <div data-lov-id="src/components/ui/tech-badge.tsx:12:4" data-lov-name="Badge"
-              data-component-path="src/components/ui/tech-badge.tsx" data-component-line="12"
-              data-component-file="tech-badge.tsx" data-component-name="Badge"
-              data-component-content="%7B%22className%22%3A%22text-xs%20px-3%20py-1%20bg-secondary%2F20%20text-primary%20border-primary%2F30%20hover%3Abg-primary%2F10%20transition-colors%20cursor-default%22%7D"
-              class="inline-flex items-center rounded-full border font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs px-3 py-1 bg-secondary/20 text-primary border-primary/30 hover:bg-primary/10 transition-colors cursor-default">
-              #FinOps</div>
-            <div data-lov-id="src/components/ui/tech-badge.tsx:12:4" data-lov-name="Badge"
-              data-component-path="src/components/ui/tech-badge.tsx" data-component-line="12"
-              data-component-file="tech-badge.tsx" data-component-name="Badge"
-              data-component-content="%7B%22className%22%3A%22text-xs%20px-3%20py-1%20bg-secondary%2F20%20text-primary%20border-primary%2F30%20hover%3Abg-primary%2F10%20transition-colors%20cursor-default%22%7D"
-              class="inline-flex items-center rounded-full border font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs px-3 py-1 bg-secondary/20 text-primary border-primary/30 hover:bg-primary/10 transition-colors cursor-default">
-              #HTML</div>
-            <div data-lov-id="src/components/ui/tech-badge.tsx:12:4" data-lov-name="Badge"
-              data-component-path="src/components/ui/tech-badge.tsx" data-component-line="12"
-              data-component-file="tech-badge.tsx" data-component-name="Badge"
-              data-component-content="%7B%22className%22%3A%22text-xs%20px-3%20py-1%20bg-secondary%2F20%20text-primary%20border-primary%2F30%20hover%3Abg-primary%2F10%20transition-colors%20cursor-default%22%7D"
-              class="inline-flex items-center rounded-full border font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs px-3 py-1 bg-secondary/20 text-primary border-primary/30 hover:bg-primary/10 transition-colors cursor-default">
-              #CSS</div>
-            <div data-lov-id="src/components/ui/tech-badge.tsx:12:4" data-lov-name="Badge"
-              data-component-path="src/components/ui/tech-badge.tsx" data-component-line="12"
-              data-component-file="tech-badge.tsx" data-component-name="Badge"
-              data-component-content="%7B%22className%22%3A%22text-xs%20px-3%20py-1%20bg-secondary%2F20%20text-primary%20border-primary%2F30%20hover%3Abg-primary%2F10%20transition-colors%20cursor-default%22%7D"
-              class="inline-flex items-center rounded-full border font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs px-3 py-1 bg-secondary/20 text-primary border-primary/30 hover:bg-primary/10 transition-colors cursor-default">
-              #Tailwind</div>
-            <div data-lov-id="src/components/ui/tech-badge.tsx:12:4" data-lov-name="Badge"
-              data-component-path="src/components/ui/tech-badge.tsx" data-component-line="12"
-              data-component-file="tech-badge.tsx" data-component-name="Badge"
-              data-component-content="%7B%22className%22%3A%22text-xs%20px-3%20py-1%20bg-secondary%2F20%20text-primary%20border-primary%2F30%20hover%3Abg-primary%2F10%20transition-colors%20cursor-default%22%7D"
-              class="inline-flex items-center rounded-full border font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs px-3 py-1 bg-secondary/20 text-primary border-primary/30 hover:bg-primary/10 transition-colors cursor-default">
-              #TypeScript</div>
-            <div data-lov-id="src/components/ui/tech-badge.tsx:12:4" data-lov-name="Badge"
-              data-component-path="src/components/ui/tech-badge.tsx" data-component-line="12"
-              data-component-file="tech-badge.tsx" data-component-name="Badge"
-              data-component-content="%7B%22className%22%3A%22text-xs%20px-3%20py-1%20bg-secondary%2F20%20text-primary%20border-primary%2F30%20hover%3Abg-primary%2F10%20transition-colors%20cursor-default%22%7D"
-              class="inline-flex items-center rounded-full border font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs px-3 py-1 bg-secondary/20 text-primary border-primary/30 hover:bg-primary/10 transition-colors cursor-default">
-              #Git</div>
-            <div data-lov-id="src/components/ui/tech-badge.tsx:12:4" data-lov-name="Badge"
-              data-component-path="src/components/ui/tech-badge.tsx" data-component-line="12"
-              data-component-file="tech-badge.tsx" data-component-name="Badge"
-              data-component-content="%7B%22className%22%3A%22text-xs%20px-3%20py-1%20bg-secondary%2F20%20text-primary%20border-primary%2F30%20hover%3Abg-primary%2F10%20transition-colors%20cursor-default%22%7D"
-              class="inline-flex items-center rounded-full border font-semibold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs px-3 py-1 bg-secondary/20 text-primary border-primary/30 hover:bg-primary/10 transition-colors cursor-default">
-              #Jenkins</div>
+        </div>
+        <h3 class="project-title">FinOps MeetUp - Voluntário organização</h3>
+        <div class="project-location">
+          <span>BTG Pactual | São Paulo</span>
+        </div>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="project-card">
+        <div class="project-card-header">
+          <div class="project-date">
+            <i class="far fa-calendar-alt"></i>
+            <span>26/07/2024</span>
           </div>
-        </section>
-        <section data-lov-id="src/pages/Index.tsx:176:8" data-lov-name="section"
-          data-component-path="src/pages/Index.tsx" data-component-line="176" data-component-file="Index.tsx"
-          data-component-name="section" data-component-content="%7B%7D">
-          <div data-lov-id="src/pages/Index.tsx:177:10" data-lov-name="div" data-component-path="src/pages/Index.tsx"
-            data-component-line="177" data-component-file="Index.tsx" data-component-name="div"
-            data-component-content="%7B%22className%22%3A%22flex%20items-center%20gap-3%20mb-8%22%7D"
-            class="flex items-center gap-3 mb-8"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" class="lucide lucide-briefcase h-6 w-6 text-primary"
-              data-lov-id="src/pages/Index.tsx:178:12" data-lov-name="Briefcase"
-              data-component-path="src/pages/Index.tsx" data-component-line="178" data-component-file="Index.tsx"
-              data-component-name="Briefcase"
-              data-component-content="%7B%22className%22%3A%22h-6%20w-6%20text-primary%22%7D">
-              <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-              <rect width="20" height="14" x="2" y="6" rx="2"></rect>
-            </svg>
-            <h2 data-lov-id="src/components/ui/section-title.tsx:8:4" data-lov-name="h2"
-              data-component-path="src/components/ui/section-title.tsx" data-component-line="8"
-              data-component-file="section-title.tsx" data-component-name="h2" data-component-content="%7B%7D"
-              class="text-2xl md:text-3xl font-bold text-primary mb-8 relative ">O QUE FIZ?<div
-                data-lov-id="src/components/ui/section-title.tsx:10:6" data-lov-name="div"
-                data-component-path="src/components/ui/section-title.tsx" data-component-line="10"
-                data-component-file="section-title.tsx" data-component-name="div"
-                data-component-content="%7B%22className%22%3A%22absolute%20-bottom-2%20left-0%20w-16%20h-1%20bg-gradient-primary%20rounded-full%22%7D"
-                class="absolute -bottom-2 left-0 w-16 h-1 bg-gradient-primary rounded-full"></div>
-            </h2>
+          <div class="project-tag">
+            Curso
           </div>
-          <div data-lov-id="src/pages/Index.tsx:181:10" data-lov-name="div" data-component-path="src/pages/Index.tsx"
-            data-component-line="181" data-component-file="Index.tsx" data-component-name="div"
-            data-component-content="%7B%22className%22%3A%22grid%20grid-cols-1%20md%3Agrid-cols-2%20lg%3Agrid-cols-3%20gap-6%22%7D"
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div data-lov-id="src/components/ui/project-card.tsx:32:4" data-lov-name="Card"
-              data-component-path="src/components/ui/project-card.tsx" data-component-line="32"
-              data-component-file="project-card.tsx" data-component-name="Card"
-              data-component-content="%7B%22className%22%3A%22group%20hover%3Ashadow-glow-subtle%20transition-all%20duration-300%20hover%3A-translate-y-1%20bg-gradient-card%20border-border-subtle%22%7D"
-              class="rounded-lg border text-card-foreground shadow-sm group hover:shadow-glow-subtle transition-all duration-300 hover:-translate-y-1 bg-gradient-card border-border-subtle">
-              <div data-lov-id="src/components/ui/project-card.tsx:33:6" data-lov-name="CardContent"
-                data-component-path="src/components/ui/project-card.tsx" data-component-line="33"
-                data-component-file="project-card.tsx" data-component-name="CardContent"
-                data-component-content="%7B%22className%22%3A%22p-6%22%7D" class="p-6">
-                <div data-lov-id="src/components/ui/project-card.tsx:34:8" data-lov-name="div"
-                  data-component-path="src/components/ui/project-card.tsx" data-component-line="34"
-                  data-component-file="project-card.tsx" data-component-name="div"
-                  data-component-content="%7B%22className%22%3A%22flex%20items-start%20justify-between%20mb-4%22%7D"
-                  class="flex items-start justify-between mb-4">
-                  <div data-lov-id="src/components/ui/project-card.tsx:35:10" data-lov-name="div"
-                    data-component-path="src/components/ui/project-card.tsx" data-component-line="35"
-                    data-component-file="project-card.tsx" data-component-name="div"
-                    data-component-content="%7B%22className%22%3A%22flex%20items-center%20gap-2%20text-text-secondary%20text-sm%22%7D"
-                    class="flex items-center gap-2 text-text-secondary text-sm"><svg xmlns="http://www.w3.org/2000/svg"
-                      width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                      stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar h-4 w-4"
-                      data-lov-id="src/components/ui/project-card.tsx:36:12" data-lov-name="Calendar"
-                      data-component-path="src/components/ui/project-card.tsx" data-component-line="36"
-                      data-component-file="project-card.tsx" data-component-name="Calendar"
-                      data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D">
-                      <path d="M8 2v4"></path>
-                      <path d="M16 2v4"></path>
-                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
-                      <path d="M3 10h18"></path>
-                    </svg><span data-lov-id="src/components/ui/project-card.tsx:37:12" data-lov-name="span"
-                      data-component-path="src/components/ui/project-card.tsx" data-component-line="37"
-                      data-component-file="project-card.tsx" data-component-name="span"
-                      data-component-content="%7B%7D">24/07/2024</span></div>
-                  <div data-lov-id="src/components/ui/project-card.tsx:39:10" data-lov-name="Badge"
-                    data-component-path="src/components/ui/project-card.tsx" data-component-line="39"
-                    data-component-file="project-card.tsx" data-component-name="Badge" data-component-content="%7B%7D"
-                    class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 text-xs bg-blue-500/20 text-blue-400 border-blue-500/30">
-                    Evento</div>
-                </div>
-                <h3 data-lov-id="src/components/ui/project-card.tsx:44:8" data-lov-name="h3"
-                  data-component-path="src/components/ui/project-card.tsx" data-component-line="44"
-                  data-component-file="project-card.tsx" data-component-name="h3"
-                  data-component-content="%7B%22className%22%3A%22text-lg%20font-semibold%20text-text-primary%20mb-2%20group-hover%3Atext-primary%20transition-colors%22%7D"
-                  class="text-lg font-semibold text-text-primary mb-2 group-hover:text-primary transition-colors">FinOps
-                  MeetUp - Voluntário organização</h3>
-                <div data-lov-id="src/components/ui/project-card.tsx:54:8" data-lov-name="div"
-                  data-component-path="src/components/ui/project-card.tsx" data-component-line="54"
-                  data-component-file="project-card.tsx" data-component-name="div"
-                  data-component-content="%7B%22className%22%3A%22flex%20items-center%20justify-between%22%7D"
-                  class="flex items-center justify-between"><span data-lov-id="src/components/ui/project-card.tsx:55:10"
-                    data-lov-name="span" data-component-path="src/components/ui/project-card.tsx"
-                    data-component-line="55" data-component-file="project-card.tsx" data-component-name="span"
-                    data-component-content="%7B%22className%22%3A%22text-text-secondary%20text-sm%20italic%22%7D"
-                    class="text-text-secondary text-sm italic">BTG Pactual | São Paulo</span></div>
-              </div>
-            </div>
-            <div data-lov-id="src/components/ui/project-card.tsx:32:4" data-lov-name="Card"
-              data-component-path="src/components/ui/project-card.tsx" data-component-line="32"
-              data-component-file="project-card.tsx" data-component-name="Card"
-              data-component-content="%7B%22className%22%3A%22group%20hover%3Ashadow-glow-subtle%20transition-all%20duration-300%20hover%3A-translate-y-1%20bg-gradient-card%20border-border-subtle%22%7D"
-              class="rounded-lg border text-card-foreground shadow-sm group hover:shadow-glow-subtle transition-all duration-300 hover:-translate-y-1 bg-gradient-card border-border-subtle">
-              <div data-lov-id="src/components/ui/project-card.tsx:33:6" data-lov-name="CardContent"
-                data-component-path="src/components/ui/project-card.tsx" data-component-line="33"
-                data-component-file="project-card.tsx" data-component-name="CardContent"
-                data-component-content="%7B%22className%22%3A%22p-6%22%7D" class="p-6">
-                <div data-lov-id="src/components/ui/project-card.tsx:34:8" data-lov-name="div"
-                  data-component-path="src/components/ui/project-card.tsx" data-component-line="34"
-                  data-component-file="project-card.tsx" data-component-name="div"
-                  data-component-content="%7B%22className%22%3A%22flex%20items-start%20justify-between%20mb-4%22%7D"
-                  class="flex items-start justify-between mb-4">
-                  <div data-lov-id="src/components/ui/project-card.tsx:35:10" data-lov-name="div"
-                    data-component-path="src/components/ui/project-card.tsx" data-component-line="35"
-                    data-component-file="project-card.tsx" data-component-name="div"
-                    data-component-content="%7B%22className%22%3A%22flex%20items-center%20gap-2%20text-text-secondary%20text-sm%22%7D"
-                    class="flex items-center gap-2 text-text-secondary text-sm"><svg xmlns="http://www.w3.org/2000/svg"
-                      width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                      stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar h-4 w-4"
-                      data-lov-id="src/components/ui/project-card.tsx:36:12" data-lov-name="Calendar"
-                      data-component-path="src/components/ui/project-card.tsx" data-component-line="36"
-                      data-component-file="project-card.tsx" data-component-name="Calendar"
-                      data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D">
-                      <path d="M8 2v4"></path>
-                      <path d="M16 2v4"></path>
-                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
-                      <path d="M3 10h18"></path>
-                    </svg><span data-lov-id="src/components/ui/project-card.tsx:37:12" data-lov-name="span"
-                      data-component-path="src/components/ui/project-card.tsx" data-component-line="37"
-                      data-component-file="project-card.tsx" data-component-name="span"
-                      data-component-content="%7B%7D">26/07/2024</span></div>
-                  <div data-lov-id="src/components/ui/project-card.tsx:39:10" data-lov-name="Badge"
-                    data-component-path="src/components/ui/project-card.tsx" data-component-line="39"
-                    data-component-file="project-card.tsx" data-component-name="Badge" data-component-content="%7B%7D"
-                    class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 text-xs bg-orange-500/20 text-orange-400 border-orange-500/30">
-                    Curso</div>
-                </div>
-                <h3 data-lov-id="src/components/ui/project-card.tsx:44:8" data-lov-name="h3"
-                  data-component-path="src/components/ui/project-card.tsx" data-component-line="44"
-                  data-component-file="project-card.tsx" data-component-name="h3"
-                  data-component-content="%7B%22className%22%3A%22text-lg%20font-semibold%20text-text-primary%20mb-2%20group-hover%3Atext-primary%20transition-colors%22%7D"
-                  class="text-lg font-semibold text-text-primary mb-2 group-hover:text-primary transition-colors">
-                  Instrutor Cloud - 12º Venturus 4Tech</h3>
-                <div data-lov-id="src/components/ui/project-card.tsx:54:8" data-lov-name="div"
-                  data-component-path="src/components/ui/project-card.tsx" data-component-line="54"
-                  data-component-file="project-card.tsx" data-component-name="div"
-                  data-component-content="%7B%22className%22%3A%22flex%20items-center%20justify-between%22%7D"
-                  class="flex items-center justify-between"><span data-lov-id="src/components/ui/project-card.tsx:55:10"
-                    data-lov-name="span" data-component-path="src/components/ui/project-card.tsx"
-                    data-component-line="55" data-component-file="project-card.tsx" data-component-name="span"
-                    data-component-content="%7B%22className%22%3A%22text-text-secondary%20text-sm%20italic%22%7D"
-                    class="text-text-secondary text-sm italic">Campinas | São Paulo</span></div>
-              </div>
-            </div>
-            <div data-lov-id="src/components/ui/project-card.tsx:32:4" data-lov-name="Card"
-              data-component-path="src/components/ui/project-card.tsx" data-component-line="32"
-              data-component-file="project-card.tsx" data-component-name="Card"
-              data-component-content="%7B%22className%22%3A%22group%20hover%3Ashadow-glow-subtle%20transition-all%20duration-300%20hover%3A-translate-y-1%20bg-gradient-card%20border-border-subtle%22%7D"
-              class="rounded-lg border text-card-foreground shadow-sm group hover:shadow-glow-subtle transition-all duration-300 hover:-translate-y-1 bg-gradient-card border-border-subtle">
-              <div data-lov-id="src/components/ui/project-card.tsx:33:6" data-lov-name="CardContent"
-                data-component-path="src/components/ui/project-card.tsx" data-component-line="33"
-                data-component-file="project-card.tsx" data-component-name="CardContent"
-                data-component-content="%7B%22className%22%3A%22p-6%22%7D" class="p-6">
-                <div data-lov-id="src/components/ui/project-card.tsx:34:8" data-lov-name="div"
-                  data-component-path="src/components/ui/project-card.tsx" data-component-line="34"
-                  data-component-file="project-card.tsx" data-component-name="div"
-                  data-component-content="%7B%22className%22%3A%22flex%20items-start%20justify-between%20mb-4%22%7D"
-                  class="flex items-start justify-between mb-4">
-                  <div data-lov-id="src/components/ui/project-card.tsx:35:10" data-lov-name="div"
-                    data-component-path="src/components/ui/project-card.tsx" data-component-line="35"
-                    data-component-file="project-card.tsx" data-component-name="div"
-                    data-component-content="%7B%22className%22%3A%22flex%20items-center%20gap-2%20text-text-secondary%20text-sm%22%7D"
-                    class="flex items-center gap-2 text-text-secondary text-sm"><svg xmlns="http://www.w3.org/2000/svg"
-                      width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                      stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar h-4 w-4"
-                      data-lov-id="src/components/ui/project-card.tsx:36:12" data-lov-name="Calendar"
-                      data-component-path="src/components/ui/project-card.tsx" data-component-line="36"
-                      data-component-file="project-card.tsx" data-component-name="Calendar"
-                      data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D">
-                      <path d="M8 2v4"></path>
-                      <path d="M16 2v4"></path>
-                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
-                      <path d="M3 10h18"></path>
-                    </svg><span data-lov-id="src/components/ui/project-card.tsx:37:12" data-lov-name="span"
-                      data-component-path="src/components/ui/project-card.tsx" data-component-line="37"
-                      data-component-file="project-card.tsx" data-component-name="span"
-                      data-component-content="%7B%7D">24/07/2023</span></div>
-                  <div data-lov-id="src/components/ui/project-card.tsx:39:10" data-lov-name="Badge"
-                    data-component-path="src/components/ui/project-card.tsx" data-component-line="39"
-                    data-component-file="project-card.tsx" data-component-name="Badge" data-component-content="%7B%7D"
-                    class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 text-xs bg-green-500/20 text-green-400 border-green-500/30">
-                    Artigo</div>
-                </div>
-                <h3 data-lov-id="src/components/ui/project-card.tsx:44:8" data-lov-name="h3"
-                  data-component-path="src/components/ui/project-card.tsx" data-component-line="44"
-                  data-component-file="project-card.tsx" data-component-name="h3"
-                  data-component-content="%7B%22className%22%3A%22text-lg%20font-semibold%20text-text-primary%20mb-2%20group-hover%3Atext-primary%20transition-colors%22%7D"
-                  class="text-lg font-semibold text-text-primary mb-2 group-hover:text-primary transition-colors">
-                  Controle de custos na Cloud com FinOps</h3>
-                <p data-lov-id="src/components/ui/project-card.tsx:49:10" data-lov-name="p"
-                  data-component-path="src/components/ui/project-card.tsx" data-component-line="49"
-                  data-component-file="project-card.tsx" data-component-name="p"
-                  data-component-content="%7B%22className%22%3A%22text-text-secondary%20text-sm%20mb-3%20line-clamp-2%22%7D"
-                  class="text-text-secondary text-sm mb-3 line-clamp-2">Artigo sobre práticas de FinOps</p>
-                <div data-lov-id="src/components/ui/project-card.tsx:54:8" data-lov-name="div"
-                  data-component-path="src/components/ui/project-card.tsx" data-component-line="54"
-                  data-component-file="project-card.tsx" data-component-name="div"
-                  data-component-content="%7B%22className%22%3A%22flex%20items-center%20justify-between%22%7D"
-                  class="flex items-center justify-between"><span data-lov-id="src/components/ui/project-card.tsx:55:10"
-                    data-lov-name="span" data-component-path="src/components/ui/project-card.tsx"
-                    data-component-line="55" data-component-file="project-card.tsx" data-component-name="span"
-                    data-component-content="%7B%22className%22%3A%22text-text-secondary%20text-sm%20italic%22%7D"
-                    class="text-text-secondary text-sm italic">Venturus | Campinas</span><a
-                    data-lov-id="src/components/ui/project-card.tsx:60:12" data-lov-name="a"
-                    data-component-path="src/components/ui/project-card.tsx" data-component-line="60"
-                    data-component-file="project-card.tsx" data-component-name="a"
-                    data-component-content="%7B%22className%22%3A%22text-primary%20hover%3Atext-primary%2F80%20transition-colors%22%7D"
-                    href="https://www.venturus.org.br/blog/controle-de-custos-na-cloud-com-finops" target="_blank"
-                    rel="noopener noreferrer" class="text-primary hover:text-primary/80 transition-colors"
-                    aria-label="Ver mais detalhes"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" class="lucide lucide-external-link h-4 w-4"
-                      data-lov-id="src/components/ui/project-card.tsx:67:14" data-lov-name="ExternalLink"
-                      data-component-path="src/components/ui/project-card.tsx" data-component-line="67"
-                      data-component-file="project-card.tsx" data-component-name="ExternalLink"
-                      data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D">
-                      <path d="M15 3h6v6"></path>
-                      <path d="M10 14 21 3"></path>
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    </svg></a></div>
-              </div>
-            </div>
-            <div data-lov-id="src/components/ui/project-card.tsx:32:4" data-lov-name="Card"
-              data-component-path="src/components/ui/project-card.tsx" data-component-line="32"
-              data-component-file="project-card.tsx" data-component-name="Card"
-              data-component-content="%7B%22className%22%3A%22group%20hover%3Ashadow-glow-subtle%20transition-all%20duration-300%20hover%3A-translate-y-1%20bg-gradient-card%20border-border-subtle%22%7D"
-              class="rounded-lg border text-card-foreground shadow-sm group hover:shadow-glow-subtle transition-all duration-300 hover:-translate-y-1 bg-gradient-card border-border-subtle">
-              <div data-lov-id="src/components/ui/project-card.tsx:33:6" data-lov-name="CardContent"
-                data-component-path="src/components/ui/project-card.tsx" data-component-line="33"
-                data-component-file="project-card.tsx" data-component-name="CardContent"
-                data-component-content="%7B%22className%22%3A%22p-6%22%7D" class="p-6">
-                <div data-lov-id="src/components/ui/project-card.tsx:34:8" data-lov-name="div"
-                  data-component-path="src/components/ui/project-card.tsx" data-component-line="34"
-                  data-component-file="project-card.tsx" data-component-name="div"
-                  data-component-content="%7B%22className%22%3A%22flex%20items-start%20justify-between%20mb-4%22%7D"
-                  class="flex items-start justify-between mb-4">
-                  <div data-lov-id="src/components/ui/project-card.tsx:35:10" data-lov-name="div"
-                    data-component-path="src/components/ui/project-card.tsx" data-component-line="35"
-                    data-component-file="project-card.tsx" data-component-name="div"
-                    data-component-content="%7B%22className%22%3A%22flex%20items-center%20gap-2%20text-text-secondary%20text-sm%22%7D"
-                    class="flex items-center gap-2 text-text-secondary text-sm"><svg xmlns="http://www.w3.org/2000/svg"
-                      width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                      stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar h-4 w-4"
-                      data-lov-id="src/components/ui/project-card.tsx:36:12" data-lov-name="Calendar"
-                      data-component-path="src/components/ui/project-card.tsx" data-component-line="36"
-                      data-component-file="project-card.tsx" data-component-name="Calendar"
-                      data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D">
-                      <path d="M8 2v4"></path>
-                      <path d="M16 2v4"></path>
-                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
-                      <path d="M3 10h18"></path>
-                    </svg><span data-lov-id="src/components/ui/project-card.tsx:37:12" data-lov-name="span"
-                      data-component-path="src/components/ui/project-card.tsx" data-component-line="37"
-                      data-component-file="project-card.tsx" data-component-name="span"
-                      data-component-content="%7B%7D">13/05/2023</span></div>
-                  <div data-lov-id="src/components/ui/project-card.tsx:39:10" data-lov-name="Badge"
-                    data-component-path="src/components/ui/project-card.tsx" data-component-line="39"
-                    data-component-file="project-card.tsx" data-component-name="Badge" data-component-content="%7B%7D"
-                    class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 text-xs bg-purple-500/20 text-purple-400 border-purple-500/30">
-                    Palestra</div>
-                </div>
-                <h3 data-lov-id="src/components/ui/project-card.tsx:44:8" data-lov-name="h3"
-                  data-component-path="src/components/ui/project-card.tsx" data-component-line="44"
-                  data-component-file="project-card.tsx" data-component-name="h3"
-                  data-component-content="%7B%22className%22%3A%22text-lg%20font-semibold%20text-text-primary%20mb-2%20group-hover%3Atext-primary%20transition-colors%22%7D"
-                  class="text-lg font-semibold text-text-primary mb-2 group-hover:text-primary transition-colors">O que
-                  é FinOps?</h3>
-                <p data-lov-id="src/components/ui/project-card.tsx:49:10" data-lov-name="p"
-                  data-component-path="src/components/ui/project-card.tsx" data-component-line="49"
-                  data-component-file="project-card.tsx" data-component-name="p"
-                  data-component-content="%7B%22className%22%3A%22text-text-secondary%20text-sm%20mb-3%20line-clamp-2%22%7D"
-                  class="text-text-secondary text-sm mb-3 line-clamp-2">Palestra no Global Azure 2023</p>
-                <div data-lov-id="src/components/ui/project-card.tsx:54:8" data-lov-name="div"
-                  data-component-path="src/components/ui/project-card.tsx" data-component-line="54"
-                  data-component-file="project-card.tsx" data-component-name="div"
-                  data-component-content="%7B%22className%22%3A%22flex%20items-center%20justify-between%22%7D"
-                  class="flex items-center justify-between"><span data-lov-id="src/components/ui/project-card.tsx:55:10"
-                    data-lov-name="span" data-component-path="src/components/ui/project-card.tsx"
-                    data-component-line="55" data-component-file="project-card.tsx" data-component-name="span"
-                    data-component-content="%7B%22className%22%3A%22text-text-secondary%20text-sm%20italic%22%7D"
-                    class="text-text-secondary text-sm italic">Global Azure 2023 | Campinas</span><a
-                    data-lov-id="src/components/ui/project-card.tsx:60:12" data-lov-name="a"
-                    data-component-path="src/components/ui/project-card.tsx" data-component-line="60"
-                    data-component-file="project-card.tsx" data-component-name="a"
-                    data-component-content="%7B%22className%22%3A%22text-primary%20hover%3Atext-primary%2F80%20transition-colors%22%7D"
-                    href="https://www.sympla.com.br/evento/global-azure-2023-campinas-sp-presencial-e-gratuito/1873212"
-                    target="_blank" rel="noopener noreferrer"
-                    class="text-primary hover:text-primary/80 transition-colors" aria-label="Ver mais detalhes"><svg
-                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="lucide lucide-external-link h-4 w-4" data-lov-id="src/components/ui/project-card.tsx:67:14"
-                      data-lov-name="ExternalLink" data-component-path="src/components/ui/project-card.tsx"
-                      data-component-line="67" data-component-file="project-card.tsx" data-component-name="ExternalLink"
-                      data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D">
-                      <path d="M15 3h6v6"></path>
-                      <path d="M10 14 21 3"></path>
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    </svg></a></div>
-              </div>
-            </div>
-            <div data-lov-id="src/components/ui/project-card.tsx:32:4" data-lov-name="Card"
-              data-component-path="src/components/ui/project-card.tsx" data-component-line="32"
-              data-component-file="project-card.tsx" data-component-name="Card"
-              data-component-content="%7B%22className%22%3A%22group%20hover%3Ashadow-glow-subtle%20transition-all%20duration-300%20hover%3A-translate-y-1%20bg-gradient-card%20border-border-subtle%22%7D"
-              class="rounded-lg border text-card-foreground shadow-sm group hover:shadow-glow-subtle transition-all duration-300 hover:-translate-y-1 bg-gradient-card border-border-subtle">
-              <div data-lov-id="src/components/ui/project-card.tsx:33:6" data-lov-name="CardContent"
-                data-component-path="src/components/ui/project-card.tsx" data-component-line="33"
-                data-component-file="project-card.tsx" data-component-name="CardContent"
-                data-component-content="%7B%22className%22%3A%22p-6%22%7D" class="p-6">
-                <div data-lov-id="src/components/ui/project-card.tsx:34:8" data-lov-name="div"
-                  data-component-path="src/components/ui/project-card.tsx" data-component-line="34"
-                  data-component-file="project-card.tsx" data-component-name="div"
-                  data-component-content="%7B%22className%22%3A%22flex%20items-start%20justify-between%20mb-4%22%7D"
-                  class="flex items-start justify-between mb-4">
-                  <div data-lov-id="src/components/ui/project-card.tsx:35:10" data-lov-name="div"
-                    data-component-path="src/components/ui/project-card.tsx" data-component-line="35"
-                    data-component-file="project-card.tsx" data-component-name="div"
-                    data-component-content="%7B%22className%22%3A%22flex%20items-center%20gap-2%20text-text-secondary%20text-sm%22%7D"
-                    class="flex items-center gap-2 text-text-secondary text-sm"><svg xmlns="http://www.w3.org/2000/svg"
-                      width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                      stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar h-4 w-4"
-                      data-lov-id="src/components/ui/project-card.tsx:36:12" data-lov-name="Calendar"
-                      data-component-path="src/components/ui/project-card.tsx" data-component-line="36"
-                      data-component-file="project-card.tsx" data-component-name="Calendar"
-                      data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D">
-                      <path d="M8 2v4"></path>
-                      <path d="M16 2v4"></path>
-                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
-                      <path d="M3 10h18"></path>
-                    </svg><span data-lov-id="src/components/ui/project-card.tsx:37:12" data-lov-name="span"
-                      data-component-path="src/components/ui/project-card.tsx" data-component-line="37"
-                      data-component-file="project-card.tsx" data-component-name="span"
-                      data-component-content="%7B%7D">28/10/2022</span></div>
-                  <div data-lov-id="src/components/ui/project-card.tsx:39:10" data-lov-name="Badge"
-                    data-component-path="src/components/ui/project-card.tsx" data-component-line="39"
-                    data-component-file="project-card.tsx" data-component-name="Badge" data-component-content="%7B%7D"
-                    class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 text-xs bg-gray-500/20 text-gray-400 border-gray-500/30">
-                    Atividade</div>
-                </div>
-                <h3 data-lov-id="src/components/ui/project-card.tsx:44:8" data-lov-name="h3"
-                  data-component-path="src/components/ui/project-card.tsx" data-component-line="44"
-                  data-component-file="project-card.tsx" data-component-name="h3"
-                  data-component-content="%7B%22className%22%3A%22text-lg%20font-semibold%20text-text-primary%20mb-2%20group-hover%3Atext-primary%20transition-colors%22%7D"
-                  class="text-lg font-semibold text-text-primary mb-2 group-hover:text-primary transition-colors">AWS
-                  FinOps Simplified - Revisor técnico</h3>
-                <p data-lov-id="src/components/ui/project-card.tsx:49:10" data-lov-name="p"
-                  data-component-path="src/components/ui/project-card.tsx" data-component-line="49"
-                  data-component-file="project-card.tsx" data-component-name="p"
-                  data-component-content="%7B%22className%22%3A%22text-text-secondary%20text-sm%20mb-3%20line-clamp-2%22%7D"
-                  class="text-text-secondary text-sm mb-3 line-clamp-2">Eliminate cloud waste through practical FinOps
-                </p>
-                <div data-lov-id="src/components/ui/project-card.tsx:54:8" data-lov-name="div"
-                  data-component-path="src/components/ui/project-card.tsx" data-component-line="54"
-                  data-component-file="project-card.tsx" data-component-name="div"
-                  data-component-content="%7B%22className%22%3A%22flex%20items-center%20justify-between%22%7D"
-                  class="flex items-center justify-between"><span data-lov-id="src/components/ui/project-card.tsx:55:10"
-                    data-lov-name="span" data-component-path="src/components/ui/project-card.tsx"
-                    data-component-line="55" data-component-file="project-card.tsx" data-component-name="span"
-                    data-component-content="%7B%22className%22%3A%22text-text-secondary%20text-sm%20italic%22%7D"
-                    class="text-text-secondary text-sm italic">Amazon/Packt Publishing</span><a
-                    data-lov-id="src/components/ui/project-card.tsx:60:12" data-lov-name="a"
-                    data-component-path="src/components/ui/project-card.tsx" data-component-line="60"
-                    data-component-file="project-card.tsx" data-component-name="a"
-                    data-component-content="%7B%22className%22%3A%22text-primary%20hover%3Atext-primary%2F80%20transition-colors%22%7D"
-                    href="https://www.amazon.com/AWS-FinOps-Simplified-Eliminate-practical/dp/1803247231"
-                    target="_blank" rel="noopener noreferrer"
-                    class="text-primary hover:text-primary/80 transition-colors" aria-label="Ver mais detalhes"><svg
-                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="lucide lucide-external-link h-4 w-4" data-lov-id="src/components/ui/project-card.tsx:67:14"
-                      data-lov-name="ExternalLink" data-component-path="src/components/ui/project-card.tsx"
-                      data-component-line="67" data-component-file="project-card.tsx" data-component-name="ExternalLink"
-                      data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D">
-                      <path d="M15 3h6v6"></path>
-                      <path d="M10 14 21 3"></path>
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    </svg></a></div>
-              </div>
-            </div>
-            <div data-lov-id="src/components/ui/project-card.tsx:32:4" data-lov-name="Card"
-              data-component-path="src/components/ui/project-card.tsx" data-component-line="32"
-              data-component-file="project-card.tsx" data-component-name="Card"
-              data-component-content="%7B%22className%22%3A%22group%20hover%3Ashadow-glow-subtle%20transition-all%20duration-300%20hover%3A-translate-y-1%20bg-gradient-card%20border-border-subtle%22%7D"
-              class="rounded-lg border text-card-foreground shadow-sm group hover:shadow-glow-subtle transition-all duration-300 hover:-translate-y-1 bg-gradient-card border-border-subtle">
-              <div data-lov-id="src/components/ui/project-card.tsx:33:6" data-lov-name="CardContent"
-                data-component-path="src/components/ui/project-card.tsx" data-component-line="33"
-                data-component-file="project-card.tsx" data-component-name="CardContent"
-                data-component-content="%7B%22className%22%3A%22p-6%22%7D" class="p-6">
-                <div data-lov-id="src/components/ui/project-card.tsx:34:8" data-lov-name="div"
-                  data-component-path="src/components/ui/project-card.tsx" data-component-line="34"
-                  data-component-file="project-card.tsx" data-component-name="div"
-                  data-component-content="%7B%22className%22%3A%22flex%20items-start%20justify-between%20mb-4%22%7D"
-                  class="flex items-start justify-between mb-4">
-                  <div data-lov-id="src/components/ui/project-card.tsx:35:10" data-lov-name="div"
-                    data-component-path="src/components/ui/project-card.tsx" data-component-line="35"
-                    data-component-file="project-card.tsx" data-component-name="div"
-                    data-component-content="%7B%22className%22%3A%22flex%20items-center%20gap-2%20text-text-secondary%20text-sm%22%7D"
-                    class="flex items-center gap-2 text-text-secondary text-sm"><svg xmlns="http://www.w3.org/2000/svg"
-                      width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                      stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar h-4 w-4"
-                      data-lov-id="src/components/ui/project-card.tsx:36:12" data-lov-name="Calendar"
-                      data-component-path="src/components/ui/project-card.tsx" data-component-line="36"
-                      data-component-file="project-card.tsx" data-component-name="Calendar"
-                      data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D">
-                      <path d="M8 2v4"></path>
-                      <path d="M16 2v4"></path>
-                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
-                      <path d="M3 10h18"></path>
-                    </svg><span data-lov-id="src/components/ui/project-card.tsx:37:12" data-lov-name="span"
-                      data-component-path="src/components/ui/project-card.tsx" data-component-line="37"
-                      data-component-file="project-card.tsx" data-component-name="span"
-                      data-component-content="%7B%7D">19/08/2022</span></div>
-                  <div data-lov-id="src/components/ui/project-card.tsx:39:10" data-lov-name="Badge"
-                    data-component-path="src/components/ui/project-card.tsx" data-component-line="39"
-                    data-component-file="project-card.tsx" data-component-name="Badge" data-component-content="%7B%7D"
-                    class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 text-xs bg-purple-500/20 text-purple-400 border-purple-500/30">
-                    Palestra</div>
-                </div>
-                <h3 data-lov-id="src/components/ui/project-card.tsx:44:8" data-lov-name="h3"
-                  data-component-path="src/components/ui/project-card.tsx" data-component-line="44"
-                  data-component-file="project-card.tsx" data-component-name="h3"
-                  data-component-content="%7B%22className%22%3A%22text-lg%20font-semibold%20text-text-primary%20mb-2%20group-hover%3Atext-primary%20transition-colors%22%7D"
-                  class="text-lg font-semibold text-text-primary mb-2 group-hover:text-primary transition-colors">
-                  Introdução ao Python</h3>
-                <p data-lov-id="src/components/ui/project-card.tsx:49:10" data-lov-name="p"
-                  data-component-path="src/components/ui/project-card.tsx" data-component-line="49"
-                  data-component-file="project-card.tsx" data-component-name="p"
-                  data-component-content="%7B%22className%22%3A%22text-text-secondary%20text-sm%20mb-3%20line-clamp-2%22%7D"
-                  class="text-text-secondary text-sm mb-3 line-clamp-2">Palestra na Semana da Engenharia</p>
-                <div data-lov-id="src/components/ui/project-card.tsx:54:8" data-lov-name="div"
-                  data-component-path="src/components/ui/project-card.tsx" data-component-line="54"
-                  data-component-file="project-card.tsx" data-component-name="div"
-                  data-component-content="%7B%22className%22%3A%22flex%20items-center%20justify-between%22%7D"
-                  class="flex items-center justify-between"><span data-lov-id="src/components/ui/project-card.tsx:55:10"
-                    data-lov-name="span" data-component-path="src/components/ui/project-card.tsx"
-                    data-component-line="55" data-component-file="project-card.tsx" data-component-name="span"
-                    data-component-content="%7B%22className%22%3A%22text-text-secondary%20text-sm%20italic%22%7D"
-                    class="text-text-secondary text-sm italic">UNESP | Sorocaba / SP</span><a
-                    data-lov-id="src/components/ui/project-card.tsx:60:12" data-lov-name="a"
-                    data-component-path="src/components/ui/project-card.tsx" data-component-line="60"
-                    data-component-file="project-card.tsx" data-component-name="a"
-                    data-component-content="%7B%22className%22%3A%22text-primary%20hover%3Atext-primary%2F80%20transition-colors%22%7D"
-                    href="https://github.com/felipekiko/events/blob/main/20220819_SemanaEngenharia-IntroducaoPython/presentation.pdf"
-                    target="_blank" rel="noopener noreferrer"
-                    class="text-primary hover:text-primary/80 transition-colors" aria-label="Ver mais detalhes"><svg
-                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="lucide lucide-external-link h-4 w-4" data-lov-id="src/components/ui/project-card.tsx:67:14"
-                      data-lov-name="ExternalLink" data-component-path="src/components/ui/project-card.tsx"
-                      data-component-line="67" data-component-file="project-card.tsx" data-component-name="ExternalLink"
-                      data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D">
-                      <path d="M15 3h6v6"></path>
-                      <path d="M10 14 21 3"></path>
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    </svg></a></div>
-              </div>
-            </div>
+        </div>
+        <h3 class="project-title">Instrutor Cloud - 12º Venturus 4Tech</h3>
+        <a href="https://www.venturus.org.br/blog/controle-de-custos-na-cloud-com-finops" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver mais detalhes">
+          Ver detalhes <i class="fas fa-external-link-alt"></i>
+        </a>
+        <div class="project-location">
+          <span>Campinas | São Paulo</span>
+        </div>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="project-card">
+        <div class="project-card-header">
+          <div class="project-date">
+            <i class="far fa-calendar-alt"></i>
+            <span>01/07/2024</span>
           </div>
-        </section>
-        <section data-lov-id="src/pages/Index.tsx:189:8" data-lov-name="section"
-          data-component-path="src/pages/Index.tsx" data-component-line="189" data-component-file="Index.tsx"
-          data-component-name="section" data-component-content="%7B%7D">
-          <div data-lov-id="src/pages/Index.tsx:190:10" data-lov-name="div" data-component-path="src/pages/Index.tsx"
-            data-component-line="190" data-component-file="Index.tsx" data-component-name="div"
-            data-component-content="%7B%22className%22%3A%22flex%20items-center%20gap-3%20mb-8%22%7D"
-            class="flex items-center gap-3 mb-8"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" class="lucide lucide-award h-6 w-6 text-primary"
-              data-lov-id="src/pages/Index.tsx:191:12" data-lov-name="Award" data-component-path="src/pages/Index.tsx"
-              data-component-line="191" data-component-file="Index.tsx" data-component-name="Award"
-              data-component-content="%7B%22className%22%3A%22h-6%20w-6%20text-primary%22%7D">
-              <path
-                d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526">
-              </path>
-              <circle cx="12" cy="8" r="6"></circle>
-            </svg>
-            <h2 data-lov-id="src/components/ui/section-title.tsx:8:4" data-lov-name="h2"
-              data-component-path="src/components/ui/section-title.tsx" data-component-line="8"
-              data-component-file="section-title.tsx" data-component-name="h2" data-component-content="%7B%7D"
-              class="text-2xl md:text-3xl font-bold text-primary mb-8 relative ">BADGES<div
-                data-lov-id="src/components/ui/section-title.tsx:10:6" data-lov-name="div"
-                data-component-path="src/components/ui/section-title.tsx" data-component-line="10"
-                data-component-file="section-title.tsx" data-component-name="div"
-                data-component-content="%7B%22className%22%3A%22absolute%20-bottom-2%20left-0%20w-16%20h-1%20bg-gradient-primary%20rounded-full%22%7D"
-                class="absolute -bottom-2 left-0 w-16 h-1 bg-gradient-primary rounded-full"></div>
-            </h2>
+          <div class="project-tag live">
+            Live
           </div>
-          <div data-lov-id="src/pages/Index.tsx:194:10" data-lov-name="div" data-component-path="src/pages/Index.tsx"
-            data-component-line="194" data-component-file="Index.tsx" data-component-name="div"
-            data-component-content="%7B%22className%22%3A%22grid%20grid-cols-2%20md%3Agrid-cols-4%20lg%3Agrid-cols-6%20gap-4%22%7D"
-            class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            <div data-lov-id="src/components/ui/badge-item.tsx:13:4" data-lov-name="div"
-              data-component-path="src/components/ui/badge-item.tsx" data-component-line="13"
-              data-component-file="badge-item.tsx" data-component-name="div"
-              data-component-content="%7B%22className%22%3A%22group%20relative%20bg-gradient-card%20border%20border-border-subtle%20rounded-lg%20p-4%20hover%3Ashadow-glow-subtle%20transition-all%20duration-300%20hover%3A-translate-y-1%22%7D"
-              class="group relative bg-gradient-card border border-border-subtle rounded-lg p-4 hover:shadow-glow-subtle transition-all duration-300 hover:-translate-y-1">
-              <div data-lov-id="src/components/ui/badge-item.tsx:14:6" data-lov-name="div"
-                data-component-path="src/components/ui/badge-item.tsx" data-component-line="14"
-                data-component-file="badge-item.tsx" data-component-name="div"
-                data-component-content="%7B%22className%22%3A%22aspect-square%20mb-4%20relative%20overflow-hidden%20rounded-lg%20bg-white%2F5%22%7D"
-                class="aspect-square mb-4 relative overflow-hidden rounded-lg bg-white/5"><img
-                  data-lov-id="src/components/ui/badge-item.tsx:15:8" data-lov-name="img"
-                  data-component-path="src/components/ui/badge-item.tsx" data-component-line="15"
-                  data-component-file="badge-item.tsx" data-component-name="img"
-                  data-component-content="%7B%22className%22%3A%22w-full%20h-full%20object-contain%20p-2%22%7D"
-                  src="/placeholder.svg?height=100&amp;width=100"
-                  alt="AWS Certified Solutions Architect - Amazon Web Services"
-                  class="w-full h-full object-contain p-2"></div>
-              <h3 data-lov-id="src/components/ui/badge-item.tsx:35:6" data-lov-name="h3"
-                data-component-path="src/components/ui/badge-item.tsx" data-component-line="35"
-                data-component-file="badge-item.tsx" data-component-name="h3"
-                data-component-content="%7B%22className%22%3A%22font-semibold%20text-text-primary%20text-sm%20mb-1%20line-clamp-2%22%7D"
-                class="font-semibold text-text-primary text-sm mb-1 line-clamp-2">AWS Certified Solutions Architect</h3>
-              <p data-lov-id="src/components/ui/badge-item.tsx:38:6" data-lov-name="p"
-                data-component-path="src/components/ui/badge-item.tsx" data-component-line="38"
-                data-component-file="badge-item.tsx" data-component-name="p"
-                data-component-content="%7B%22className%22%3A%22text-primary%20text-xs%20mb-1%22%7D"
-                class="text-primary text-xs mb-1">Amazon Web Services</p>
-              <p data-lov-id="src/components/ui/badge-item.tsx:41:6" data-lov-name="p"
-                data-component-path="src/components/ui/badge-item.tsx" data-component-line="41"
-                data-component-file="badge-item.tsx" data-component-name="p"
-                data-component-content="%7B%22className%22%3A%22text-text-secondary%20text-xs%22%7D"
-                class="text-text-secondary text-xs">2023</p>
-            </div>
-            <div data-lov-id="src/components/ui/badge-item.tsx:13:4" data-lov-name="div"
-              data-component-path="src/components/ui/badge-item.tsx" data-component-line="13"
-              data-component-file="badge-item.tsx" data-component-name="div"
-              data-component-content="%7B%22className%22%3A%22group%20relative%20bg-gradient-card%20border%20border-border-subtle%20rounded-lg%20p-4%20hover%3Ashadow-glow-subtle%20transition-all%20duration-300%20hover%3A-translate-y-1%22%7D"
-              class="group relative bg-gradient-card border border-border-subtle rounded-lg p-4 hover:shadow-glow-subtle transition-all duration-300 hover:-translate-y-1">
-              <div data-lov-id="src/components/ui/badge-item.tsx:14:6" data-lov-name="div"
-                data-component-path="src/components/ui/badge-item.tsx" data-component-line="14"
-                data-component-file="badge-item.tsx" data-component-name="div"
-                data-component-content="%7B%22className%22%3A%22aspect-square%20mb-4%20relative%20overflow-hidden%20rounded-lg%20bg-white%2F5%22%7D"
-                class="aspect-square mb-4 relative overflow-hidden rounded-lg bg-white/5"><img
-                  data-lov-id="src/components/ui/badge-item.tsx:15:8" data-lov-name="img"
-                  data-component-path="src/components/ui/badge-item.tsx" data-component-line="15"
-                  data-component-file="badge-item.tsx" data-component-name="img"
-                  data-component-content="%7B%22className%22%3A%22w-full%20h-full%20object-contain%20p-2%22%7D"
-                  src="/placeholder.svg?height=100&amp;width=100"
-                  alt="AWS Certified Cloud Practitioner - Amazon Web Services" class="w-full h-full object-contain p-2">
-              </div>
-              <h3 data-lov-id="src/components/ui/badge-item.tsx:35:6" data-lov-name="h3"
-                data-component-path="src/components/ui/badge-item.tsx" data-component-line="35"
-                data-component-file="badge-item.tsx" data-component-name="h3"
-                data-component-content="%7B%22className%22%3A%22font-semibold%20text-text-primary%20text-sm%20mb-1%20line-clamp-2%22%7D"
-                class="font-semibold text-text-primary text-sm mb-1 line-clamp-2">AWS Certified Cloud Practitioner</h3>
-              <p data-lov-id="src/components/ui/badge-item.tsx:38:6" data-lov-name="p"
-                data-component-path="src/components/ui/badge-item.tsx" data-component-line="38"
-                data-component-file="badge-item.tsx" data-component-name="p"
-                data-component-content="%7B%22className%22%3A%22text-primary%20text-xs%20mb-1%22%7D"
-                class="text-primary text-xs mb-1">Amazon Web Services</p>
-              <p data-lov-id="src/components/ui/badge-item.tsx:41:6" data-lov-name="p"
-                data-component-path="src/components/ui/badge-item.tsx" data-component-line="41"
-                data-component-file="badge-item.tsx" data-component-name="p"
-                data-component-content="%7B%22className%22%3A%22text-text-secondary%20text-xs%22%7D"
-                class="text-text-secondary text-xs">2022</p>
-            </div>
-            <div data-lov-id="src/components/ui/badge-item.tsx:13:4" data-lov-name="div"
-              data-component-path="src/components/ui/badge-item.tsx" data-component-line="13"
-              data-component-file="badge-item.tsx" data-component-name="div"
-              data-component-content="%7B%22className%22%3A%22group%20relative%20bg-gradient-card%20border%20border-border-subtle%20rounded-lg%20p-4%20hover%3Ashadow-glow-subtle%20transition-all%20duration-300%20hover%3A-translate-y-1%22%7D"
-              class="group relative bg-gradient-card border border-border-subtle rounded-lg p-4 hover:shadow-glow-subtle transition-all duration-300 hover:-translate-y-1">
-              <div data-lov-id="src/components/ui/badge-item.tsx:14:6" data-lov-name="div"
-                data-component-path="src/components/ui/badge-item.tsx" data-component-line="14"
-                data-component-file="badge-item.tsx" data-component-name="div"
-                data-component-content="%7B%22className%22%3A%22aspect-square%20mb-4%20relative%20overflow-hidden%20rounded-lg%20bg-white%2F5%22%7D"
-                class="aspect-square mb-4 relative overflow-hidden rounded-lg bg-white/5"><img
-                  data-lov-id="src/components/ui/badge-item.tsx:15:8" data-lov-name="img"
-                  data-component-path="src/components/ui/badge-item.tsx" data-component-line="15"
-                  data-component-file="badge-item.tsx" data-component-name="img"
-                  data-component-content="%7B%22className%22%3A%22w-full%20h-full%20object-contain%20p-2%22%7D"
-                  src="/placeholder.svg?height=100&amp;width=100"
-                  alt="FinOps Certified Practitioner - FinOps Foundation" class="w-full h-full object-contain p-2">
-              </div>
-              <h3 data-lov-id="src/components/ui/badge-item.tsx:35:6" data-lov-name="h3"
-                data-component-path="src/components/ui/badge-item.tsx" data-component-line="35"
-                data-component-file="badge-item.tsx" data-component-name="h3"
-                data-component-content="%7B%22className%22%3A%22font-semibold%20text-text-primary%20text-sm%20mb-1%20line-clamp-2%22%7D"
-                class="font-semibold text-text-primary text-sm mb-1 line-clamp-2">FinOps Certified Practitioner</h3>
-              <p data-lov-id="src/components/ui/badge-item.tsx:38:6" data-lov-name="p"
-                data-component-path="src/components/ui/badge-item.tsx" data-component-line="38"
-                data-component-file="badge-item.tsx" data-component-name="p"
-                data-component-content="%7B%22className%22%3A%22text-primary%20text-xs%20mb-1%22%7D"
-                class="text-primary text-xs mb-1">FinOps Foundation</p>
-              <p data-lov-id="src/components/ui/badge-item.tsx:41:6" data-lov-name="p"
-                data-component-path="src/components/ui/badge-item.tsx" data-component-line="41"
-                data-component-file="badge-item.tsx" data-component-name="p"
-                data-component-content="%7B%22className%22%3A%22text-text-secondary%20text-xs%22%7D"
-                class="text-text-secondary text-xs">2023</p>
-            </div>
+        </div>
+        <h3 class="project-title">Live FinOps: Otimização de Custos na Nuvem com Kiko</h3>
+        <a href="https://www.youtube.com/watch?v=example" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Assistir no YouTube">
+          Assistir <i class="fab fa-youtube"></i>
+        </a>
+        <div class="project-location">
+          <span>Online</span>
+        </div>
+      </div>
+
+      <!-- Project Card 4 -->
+      <div class="project-card">
+        <div class="project-card-header">
+          <div class="project-date">
+            <i class="far fa-calendar-alt"></i>
+            <span>13/05/2023</span>
           </div>
-        </section>
-        <section data-lov-id="src/pages/Index.tsx:202:8" data-lov-name="section"
-          data-component-path="src/pages/Index.tsx" data-component-line="202" data-component-file="Index.tsx"
-          data-component-name="section" data-component-content="%7B%7D">
-          <div data-lov-id="src/pages/Index.tsx:203:10" data-lov-name="div" data-component-path="src/pages/Index.tsx"
-            data-component-line="203" data-component-file="Index.tsx" data-component-name="div"
-            data-component-content="%7B%22className%22%3A%22flex%20items-center%20gap-3%20mb-8%22%7D"
-            class="flex items-center gap-3 mb-8"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" class="lucide lucide-briefcase h-6 w-6 text-primary"
-              data-lov-id="src/pages/Index.tsx:204:12" data-lov-name="Briefcase"
-              data-component-path="src/pages/Index.tsx" data-component-line="204" data-component-file="Index.tsx"
-              data-component-name="Briefcase"
-              data-component-content="%7B%22className%22%3A%22h-6%20w-6%20text-primary%22%7D">
-              <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-              <rect width="20" height="14" x="2" y="6" rx="2"></rect>
-            </svg>
-            <h2 data-lov-id="src/components/ui/section-title.tsx:8:4" data-lov-name="h2"
-              data-component-path="src/components/ui/section-title.tsx" data-component-line="8"
-              data-component-file="section-title.tsx" data-component-name="h2" data-component-content="%7B%7D"
-              class="text-2xl md:text-3xl font-bold text-primary mb-8 relative ">LINHA DO TEMPO<div
-                data-lov-id="src/components/ui/section-title.tsx:10:6" data-lov-name="div"
-                data-component-path="src/components/ui/section-title.tsx" data-component-line="10"
-                data-component-file="section-title.tsx" data-component-name="div"
-                data-component-content="%7B%22className%22%3A%22absolute%20-bottom-2%20left-0%20w-16%20h-1%20bg-gradient-primary%20rounded-full%22%7D"
-                class="absolute -bottom-2 left-0 w-16 h-1 bg-gradient-primary rounded-full"></div>
-            </h2>
+          <div class="project-tag">
+            Palestra
           </div>
-          <div data-lov-id="src/pages/Index.tsx:207:10" data-lov-name="div" data-component-path="src/pages/Index.tsx"
-            data-component-line="207" data-component-file="Index.tsx" data-component-name="div"
-            data-component-content="%7B%22className%22%3A%22max-w-3xl%22%7D" class="max-w-3xl">
-            <div data-lov-id="src/components/ui/timeline-item.tsx:23:4" data-lov-name="div"
-              data-component-path="src/components/ui/timeline-item.tsx" data-component-line="23"
-              data-component-file="timeline-item.tsx" data-component-name="div"
-              data-component-content="%7B%22className%22%3A%22relative%20flex%20items-start%20gap-4%20pb-8%22%7D"
-              class="relative flex items-start gap-4 pb-8">
-              <div data-lov-id="src/components/ui/timeline-item.tsx:26:8" data-lov-name="div"
-                data-component-path="src/components/ui/timeline-item.tsx" data-component-line="26"
-                data-component-file="timeline-item.tsx" data-component-name="div"
-                data-component-content="%7B%22className%22%3A%22absolute%20left-6%20top-12%20w-px%20h-full%20bg-border-subtle%22%7D"
-                class="absolute left-6 top-12 w-px h-full bg-border-subtle"></div>
-              <div data-lov-id="src/components/ui/timeline-item.tsx:30:6" data-lov-name="div"
-                data-component-path="src/components/ui/timeline-item.tsx" data-component-line="30"
-                data-component-file="timeline-item.tsx" data-component-name="div"
-                data-component-content="%7B%22className%22%3A%22relative%20z-10%20flex-shrink-0%20w-12%20h-12%20rounded-full%20bg-primary%2F20%20border-2%20border-primary%20flex%20items-center%20justify-center%22%7D"
-                class="relative z-10 flex-shrink-0 w-12 h-12 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center">
-                <div data-lov-id="src/components/ui/timeline-item.tsx:38:10" data-lov-name="div"
-                  data-component-path="src/components/ui/timeline-item.tsx" data-component-line="38"
-                  data-component-file="timeline-item.tsx" data-component-name="div"
-                  data-component-content="%7B%22className%22%3A%22w-3%20h-3%20rounded-full%20bg-primary%20animate-pulse-glow%22%7D"
-                  class="w-3 h-3 rounded-full bg-primary animate-pulse-glow"></div>
-              </div>
-              <div data-lov-id="src/components/ui/timeline-item.tsx:43:6" data-lov-name="div"
-                data-component-path="src/components/ui/timeline-item.tsx" data-component-line="43"
-                data-component-file="timeline-item.tsx" data-component-name="div"
-                data-component-content="%7B%22className%22%3A%22flex-1%20min-w-0%22%7D" class="flex-1 min-w-0">
-                <div data-lov-id="src/components/ui/timeline-item.tsx:44:8" data-lov-name="div"
-                  data-component-path="src/components/ui/timeline-item.tsx" data-component-line="44"
-                  data-component-file="timeline-item.tsx" data-component-name="div"
-                  data-component-content="%7B%22className%22%3A%22bg-gradient-card%20p-4%20rounded-lg%20border%20border-border-subtle%22%7D"
-                  class="bg-gradient-card p-4 rounded-lg border border-border-subtle">
-                  <h3 data-lov-id="src/components/ui/timeline-item.tsx:45:10" data-lov-name="h3"
-                    data-component-path="src/components/ui/timeline-item.tsx" data-component-line="45"
-                    data-component-file="timeline-item.tsx" data-component-name="h3"
-                    data-component-content="%7B%22className%22%3A%22text-lg%20font-semibold%20text-text-primary%20mb-1%22%7D"
-                    class="text-lg font-semibold text-text-primary mb-1">Senior Cloud Engineer</h3>
-                  <p data-lov-id="src/components/ui/timeline-item.tsx:48:10" data-lov-name="p"
-                    data-component-path="src/components/ui/timeline-item.tsx" data-component-line="48"
-                    data-component-file="timeline-item.tsx" data-component-name="p"
-                    data-component-content="%7B%22className%22%3A%22text-primary%20font-medium%20mb-2%22%7D"
-                    class="text-primary font-medium mb-2">GFT</p>
-                  <div data-lov-id="src/components/ui/timeline-item.tsx:52:10" data-lov-name="div"
-                    data-component-path="src/components/ui/timeline-item.tsx" data-component-line="52"
-                    data-component-file="timeline-item.tsx" data-component-name="div"
-                    data-component-content="%7B%22className%22%3A%22flex%20flex-col%20sm%3Aflex-row%20sm%3Aitems-center%20gap-2%20text-sm%20text-text-secondary%22%7D"
-                    class="flex flex-col sm:flex-row sm:items-center gap-2 text-sm text-text-secondary">
-                    <div data-lov-id="src/components/ui/timeline-item.tsx:53:12" data-lov-name="div"
-                      data-component-path="src/components/ui/timeline-item.tsx" data-component-line="53"
-                      data-component-file="timeline-item.tsx" data-component-name="div"
-                      data-component-content="%7B%22className%22%3A%22flex%20items-center%20gap-1%22%7D"
-                      class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="lucide lucide-calendar h-4 w-4"
-                        data-lov-id="src/components/ui/timeline-item.tsx:54:14" data-lov-name="Calendar"
-                        data-component-path="src/components/ui/timeline-item.tsx" data-component-line="54"
-                        data-component-file="timeline-item.tsx" data-component-name="Calendar"
-                        data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D">
-                        <path d="M8 2v4"></path>
-                        <path d="M16 2v4"></path>
-                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
-                        <path d="M3 10h18"></path>
-                      </svg><span data-lov-id="src/components/ui/timeline-item.tsx:55:14" data-lov-name="span"
-                        data-component-path="src/components/ui/timeline-item.tsx" data-component-line="55"
-                        data-component-file="timeline-item.tsx" data-component-name="span"
-                        data-component-content="%7B%7D">2022 - Atual</span></div>
-                    <div data-lov-id="src/components/ui/timeline-item.tsx:61:14" data-lov-name="div"
-                      data-component-path="src/components/ui/timeline-item.tsx" data-component-line="61"
-                      data-component-file="timeline-item.tsx" data-component-name="div"
-                      data-component-content="%7B%22className%22%3A%22flex%20items-center%20gap-1%22%7D"
-                      class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="lucide lucide-map-pin h-4 w-4"
-                        data-lov-id="src/components/ui/timeline-item.tsx:62:16" data-lov-name="MapPin"
-                        data-component-path="src/components/ui/timeline-item.tsx" data-component-line="62"
-                        data-component-file="timeline-item.tsx" data-component-name="MapPin"
-                        data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D">
-                        <path
-                          d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-                        </path>
-                        <circle cx="12" cy="10" r="3"></circle>
-                      </svg><span data-lov-id="src/components/ui/timeline-item.tsx:63:16" data-lov-name="span"
-                        data-component-path="src/components/ui/timeline-item.tsx" data-component-line="63"
-                        data-component-file="timeline-item.tsx" data-component-name="span"
-                        data-component-content="%7B%7D">São Paulo, SP</span></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div data-lov-id="src/components/ui/timeline-item.tsx:23:4" data-lov-name="div"
-              data-component-path="src/components/ui/timeline-item.tsx" data-component-line="23"
-              data-component-file="timeline-item.tsx" data-component-name="div"
-              data-component-content="%7B%22className%22%3A%22relative%20flex%20items-start%20gap-4%20pb-8%22%7D"
-              class="relative flex items-start gap-4 pb-8">
-              <div data-lov-id="src/components/ui/timeline-item.tsx:26:8" data-lov-name="div"
-                data-component-path="src/components/ui/timeline-item.tsx" data-component-line="26"
-                data-component-file="timeline-item.tsx" data-component-name="div"
-                data-component-content="%7B%22className%22%3A%22absolute%20left-6%20top-12%20w-px%20h-full%20bg-border-subtle%22%7D"
-                class="absolute left-6 top-12 w-px h-full bg-border-subtle"></div>
-              <div data-lov-id="src/components/ui/timeline-item.tsx:30:6" data-lov-name="div"
-                data-component-path="src/components/ui/timeline-item.tsx" data-component-line="30"
-                data-component-file="timeline-item.tsx" data-component-name="div"
-                data-component-content="%7B%22className%22%3A%22relative%20z-10%20flex-shrink-0%20w-12%20h-12%20rounded-full%20bg-primary%2F20%20border-2%20border-primary%20flex%20items-center%20justify-center%22%7D"
-                class="relative z-10 flex-shrink-0 w-12 h-12 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center">
-                <div data-lov-id="src/components/ui/timeline-item.tsx:38:10" data-lov-name="div"
-                  data-component-path="src/components/ui/timeline-item.tsx" data-component-line="38"
-                  data-component-file="timeline-item.tsx" data-component-name="div"
-                  data-component-content="%7B%22className%22%3A%22w-3%20h-3%20rounded-full%20bg-primary%20animate-pulse-glow%22%7D"
-                  class="w-3 h-3 rounded-full bg-primary animate-pulse-glow"></div>
-              </div>
-              <div data-lov-id="src/components/ui/timeline-item.tsx:43:6" data-lov-name="div"
-                data-component-path="src/components/ui/timeline-item.tsx" data-component-line="43"
-                data-component-file="timeline-item.tsx" data-component-name="div"
-                data-component-content="%7B%22className%22%3A%22flex-1%20min-w-0%22%7D" class="flex-1 min-w-0">
-                <div data-lov-id="src/components/ui/timeline-item.tsx:44:8" data-lov-name="div"
-                  data-component-path="src/components/ui/timeline-item.tsx" data-component-line="44"
-                  data-component-file="timeline-item.tsx" data-component-name="div"
-                  data-component-content="%7B%22className%22%3A%22bg-gradient-card%20p-4%20rounded-lg%20border%20border-border-subtle%22%7D"
-                  class="bg-gradient-card p-4 rounded-lg border border-border-subtle">
-                  <h3 data-lov-id="src/components/ui/timeline-item.tsx:45:10" data-lov-name="h3"
-                    data-component-path="src/components/ui/timeline-item.tsx" data-component-line="45"
-                    data-component-file="timeline-item.tsx" data-component-name="h3"
-                    data-component-content="%7B%22className%22%3A%22text-lg%20font-semibold%20text-text-primary%20mb-1%22%7D"
-                    class="text-lg font-semibold text-text-primary mb-1">Cloud Solutions Architect</h3>
-                  <p data-lov-id="src/components/ui/timeline-item.tsx:48:10" data-lov-name="p"
-                    data-component-path="src/components/ui/timeline-item.tsx" data-component-line="48"
-                    data-component-file="timeline-item.tsx" data-component-name="p"
-                    data-component-content="%7B%22className%22%3A%22text-primary%20font-medium%20mb-2%22%7D"
-                    class="text-primary font-medium mb-2">Venturus</p>
-                  <div data-lov-id="src/components/ui/timeline-item.tsx:52:10" data-lov-name="div"
-                    data-component-path="src/components/ui/timeline-item.tsx" data-component-line="52"
-                    data-component-file="timeline-item.tsx" data-component-name="div"
-                    data-component-content="%7B%22className%22%3A%22flex%20flex-col%20sm%3Aflex-row%20sm%3Aitems-center%20gap-2%20text-sm%20text-text-secondary%22%7D"
-                    class="flex flex-col sm:flex-row sm:items-center gap-2 text-sm text-text-secondary">
-                    <div data-lov-id="src/components/ui/timeline-item.tsx:53:12" data-lov-name="div"
-                      data-component-path="src/components/ui/timeline-item.tsx" data-component-line="53"
-                      data-component-file="timeline-item.tsx" data-component-name="div"
-                      data-component-content="%7B%22className%22%3A%22flex%20items-center%20gap-1%22%7D"
-                      class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="lucide lucide-calendar h-4 w-4"
-                        data-lov-id="src/components/ui/timeline-item.tsx:54:14" data-lov-name="Calendar"
-                        data-component-path="src/components/ui/timeline-item.tsx" data-component-line="54"
-                        data-component-file="timeline-item.tsx" data-component-name="Calendar"
-                        data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D">
-                        <path d="M8 2v4"></path>
-                        <path d="M16 2v4"></path>
-                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
-                        <path d="M3 10h18"></path>
-                      </svg><span data-lov-id="src/components/ui/timeline-item.tsx:55:14" data-lov-name="span"
-                        data-component-path="src/components/ui/timeline-item.tsx" data-component-line="55"
-                        data-component-file="timeline-item.tsx" data-component-name="span"
-                        data-component-content="%7B%7D">2020 - 2022</span></div>
-                    <div data-lov-id="src/components/ui/timeline-item.tsx:61:14" data-lov-name="div"
-                      data-component-path="src/components/ui/timeline-item.tsx" data-component-line="61"
-                      data-component-file="timeline-item.tsx" data-component-name="div"
-                      data-component-content="%7B%22className%22%3A%22flex%20items-center%20gap-1%22%7D"
-                      class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="lucide lucide-map-pin h-4 w-4"
-                        data-lov-id="src/components/ui/timeline-item.tsx:62:16" data-lov-name="MapPin"
-                        data-component-path="src/components/ui/timeline-item.tsx" data-component-line="62"
-                        data-component-file="timeline-item.tsx" data-component-name="MapPin"
-                        data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D">
-                        <path
-                          d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-                        </path>
-                        <circle cx="12" cy="10" r="3"></circle>
-                      </svg><span data-lov-id="src/components/ui/timeline-item.tsx:63:16" data-lov-name="span"
-                        data-component-path="src/components/ui/timeline-item.tsx" data-component-line="63"
-                        data-component-file="timeline-item.tsx" data-component-name="span"
-                        data-component-content="%7B%7D">Campinas, SP</span></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div data-lov-id="src/components/ui/timeline-item.tsx:23:4" data-lov-name="div"
-              data-component-path="src/components/ui/timeline-item.tsx" data-component-line="23"
-              data-component-file="timeline-item.tsx" data-component-name="div"
-              data-component-content="%7B%22className%22%3A%22relative%20flex%20items-start%20gap-4%20pb-8%22%7D"
-              class="relative flex items-start gap-4 pb-8">
-              <div data-lov-id="src/components/ui/timeline-item.tsx:30:6" data-lov-name="div"
-                data-component-path="src/components/ui/timeline-item.tsx" data-component-line="30"
-                data-component-file="timeline-item.tsx" data-component-name="div"
-                data-component-content="%7B%22className%22%3A%22relative%20z-10%20flex-shrink-0%20w-12%20h-12%20rounded-full%20bg-primary%2F20%20border-2%20border-primary%20flex%20items-center%20justify-center%22%7D"
-                class="relative z-10 flex-shrink-0 w-12 h-12 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center">
-                <div data-lov-id="src/components/ui/timeline-item.tsx:38:10" data-lov-name="div"
-                  data-component-path="src/components/ui/timeline-item.tsx" data-component-line="38"
-                  data-component-file="timeline-item.tsx" data-component-name="div"
-                  data-component-content="%7B%22className%22%3A%22w-3%20h-3%20rounded-full%20bg-primary%20animate-pulse-glow%22%7D"
-                  class="w-3 h-3 rounded-full bg-primary animate-pulse-glow"></div>
-              </div>
-              <div data-lov-id="src/components/ui/timeline-item.tsx:43:6" data-lov-name="div"
-                data-component-path="src/components/ui/timeline-item.tsx" data-component-line="43"
-                data-component-file="timeline-item.tsx" data-component-name="div"
-                data-component-content="%7B%22className%22%3A%22flex-1%20min-w-0%22%7D" class="flex-1 min-w-0">
-                <div data-lov-id="src/components/ui/timeline-item.tsx:44:8" data-lov-name="div"
-                  data-component-path="src/components/ui/timeline-item.tsx" data-component-line="44"
-                  data-component-file="timeline-item.tsx" data-component-name="div"
-                  data-component-content="%7B%22className%22%3A%22bg-gradient-card%20p-4%20rounded-lg%20border%20border-border-subtle%22%7D"
-                  class="bg-gradient-card p-4 rounded-lg border border-border-subtle">
-                  <h3 data-lov-id="src/components/ui/timeline-item.tsx:45:10" data-lov-name="h3"
-                    data-component-path="src/components/ui/timeline-item.tsx" data-component-line="45"
-                    data-component-file="timeline-item.tsx" data-component-name="h3"
-                    data-component-content="%7B%22className%22%3A%22text-lg%20font-semibold%20text-text-primary%20mb-1%22%7D"
-                    class="text-lg font-semibold text-text-primary mb-1">DevOps Engineer</h3>
-                  <p data-lov-id="src/components/ui/timeline-item.tsx:48:10" data-lov-name="p"
-                    data-component-path="src/components/ui/timeline-item.tsx" data-component-line="48"
-                    data-component-file="timeline-item.tsx" data-component-name="p"
-                    data-component-content="%7B%22className%22%3A%22text-primary%20font-medium%20mb-2%22%7D"
-                    class="text-primary font-medium mb-2">Stefanini</p>
-                  <div data-lov-id="src/components/ui/timeline-item.tsx:52:10" data-lov-name="div"
-                    data-component-path="src/components/ui/timeline-item.tsx" data-component-line="52"
-                    data-component-file="timeline-item.tsx" data-component-name="div"
-                    data-component-content="%7B%22className%22%3A%22flex%20flex-col%20sm%3Aflex-row%20sm%3Aitems-center%20gap-2%20text-sm%20text-text-secondary%22%7D"
-                    class="flex flex-col sm:flex-row sm:items-center gap-2 text-sm text-text-secondary">
-                    <div data-lov-id="src/components/ui/timeline-item.tsx:53:12" data-lov-name="div"
-                      data-component-path="src/components/ui/timeline-item.tsx" data-component-line="53"
-                      data-component-file="timeline-item.tsx" data-component-name="div"
-                      data-component-content="%7B%22className%22%3A%22flex%20items-center%20gap-1%22%7D"
-                      class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="lucide lucide-calendar h-4 w-4"
-                        data-lov-id="src/components/ui/timeline-item.tsx:54:14" data-lov-name="Calendar"
-                        data-component-path="src/components/ui/timeline-item.tsx" data-component-line="54"
-                        data-component-file="timeline-item.tsx" data-component-name="Calendar"
-                        data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D">
-                        <path d="M8 2v4"></path>
-                        <path d="M16 2v4"></path>
-                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
-                        <path d="M3 10h18"></path>
-                      </svg><span data-lov-id="src/components/ui/timeline-item.tsx:55:14" data-lov-name="span"
-                        data-component-path="src/components/ui/timeline-item.tsx" data-component-line="55"
-                        data-component-file="timeline-item.tsx" data-component-name="span"
-                        data-component-content="%7B%7D">2018 - 2020</span></div>
-                    <div data-lov-id="src/components/ui/timeline-item.tsx:61:14" data-lov-name="div"
-                      data-component-path="src/components/ui/timeline-item.tsx" data-component-line="61"
-                      data-component-file="timeline-item.tsx" data-component-name="div"
-                      data-component-content="%7B%22className%22%3A%22flex%20items-center%20gap-1%22%7D"
-                      class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="lucide lucide-map-pin h-4 w-4"
-                        data-lov-id="src/components/ui/timeline-item.tsx:62:16" data-lov-name="MapPin"
-                        data-component-path="src/components/ui/timeline-item.tsx" data-component-line="62"
-                        data-component-file="timeline-item.tsx" data-component-name="MapPin"
-                        data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D">
-                        <path
-                          d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-                        </path>
-                        <circle cx="12" cy="10" r="3"></circle>
-                      </svg><span data-lov-id="src/components/ui/timeline-item.tsx:63:16" data-lov-name="span"
-                        data-component-path="src/components/ui/timeline-item.tsx" data-component-line="63"
-                        data-component-file="timeline-item.tsx" data-component-name="span"
-                        data-component-content="%7B%7D">São Paulo, SP</span></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        </div>
+        <h3 class="project-title">O que é FinOps?</h3>
+        <p class="project-description">Palestra no Global Azure 2023</p>
+        <a href="https://www.sympla.com.br/evento/global-azure-2023-campinas-sp-presencial-e-gratuito/1873212" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver mais detalhes">
+          Ver detalhes <i class="fas fa-external-link-alt"></i>
+        </a>
+        <div class="project-location">
+          <span>Online</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Skills Section -->
+  <section class="section">
+    <div class="section-header">
+      <i class="fas fa-code text-primary"></i>
+      <h2 class="section-title">HABILIDADES<span class="title-underline"></span></h2>
+    </div>
+    <div class="skills-grid">
+      <!-- Skill 1 -->
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://via.placeholder.com/100" alt="Amazon Web Services" class="skill-img">
+        </div>
+        <h3 class="skill-title">AWS Certified Cloud Practitioner</h3>
+        <p class="skill-category">Amazon Web Services</p>
+        <p class="skill-year">2023</p>
+      </div>
+
+      <!-- Add more skills following the same pattern -->
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fab fa-aws"></i>
+        </div>
+        <h3 class="skill-title">AWS Solutions Architect</h3>
+        <p class="skill-category">Amazon Web Services</p>
+        <p class="skill-year">2023</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fab fa-docker"></i>
+        </div>
+        <h3 class="skill-title">Docker Certified Associate</h3>
+        <p class="skill-category">Containerization</p>
+        <p class="skill-year">2023</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fab fa-google"></i>
+        </div>
+        <h3 class="skill-title">Google Cloud Engineer</h3>
+        <p class="skill-category">Google Cloud Platform</p>
+        <p class="skill-year">2023</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fab fa-microsoft"></i>
+        </div>
+        <h3 class="skill-title">Azure Administrator</h3>
+        <p class="skill-category">Microsoft Azure</p>
+        <p class="skill-year">2023</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fab fa-linux"></i>
+        </div>
+        <h3 class="skill-title">Linux Professional</h3>
+        <p class="skill-category">Operating Systems</p>
+        <p class="skill-year">2023</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section class="section">
+    <div class="section-header">
+      <i class="fas fa-history text-primary"></i>
+      <h2 class="section-title">EXPERIÊNCIA<span class="title-underline"></span></h2>
+    </div>
+    <div class="timeline">
+      <!-- Timeline Item 1 -->
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fas fa-briefcase"></i>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3 class="timeline-title">Cloud Architect</h3>
+            <div class="timeline-period">2023 - Presente</div>
           </div>
-        </section>
-        <section data-lov-id="src/pages/Index.tsx:219:8" data-lov-name="section"
-          data-component-path="src/pages/Index.tsx" data-component-line="219" data-component-file="Index.tsx"
-          data-component-name="section" data-component-content="%7B%7D">
-          <div data-lov-id="src/pages/Index.tsx:220:10" data-lov-name="div" data-component-path="src/pages/Index.tsx"
-            data-component-line="220" data-component-file="Index.tsx" data-component-name="div"
-            data-component-content="%7B%22className%22%3A%22flex%20items-center%20gap-3%20mb-8%22%7D"
-            class="flex items-center gap-3 mb-8"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" class="lucide lucide-graduation-cap h-6 w-6 text-primary"
-              data-lov-id="src/pages/Index.tsx:221:12" data-lov-name="GraduationCap"
-              data-component-path="src/pages/Index.tsx" data-component-line="221" data-component-file="Index.tsx"
-              data-component-name="GraduationCap"
-              data-component-content="%7B%22className%22%3A%22h-6%20w-6%20text-primary%22%7D">
-              <path
-                d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z">
-              </path>
-              <path d="M22 10v6"></path>
-              <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
-            </svg>
-            <h2 data-lov-id="src/components/ui/section-title.tsx:8:4" data-lov-name="h2"
-              data-component-path="src/components/ui/section-title.tsx" data-component-line="8"
-              data-component-file="section-title.tsx" data-component-name="h2" data-component-content="%7B%7D"
-              class="text-2xl md:text-3xl font-bold text-primary mb-8 relative ">ACADÊMICO<div
-                data-lov-id="src/components/ui/section-title.tsx:10:6" data-lov-name="div"
-                data-component-path="src/components/ui/section-title.tsx" data-component-line="10"
-                data-component-file="section-title.tsx" data-component-name="div"
-                data-component-content="%7B%22className%22%3A%22absolute%20-bottom-2%20left-0%20w-16%20h-1%20bg-gradient-primary%20rounded-full%22%7D"
-                class="absolute -bottom-2 left-0 w-16 h-1 bg-gradient-primary rounded-full"></div>
-            </h2>
+          <div class="timeline-company">Empresa Atual</div>
+          <p class="timeline-description">Desenvolvimento e arquitetura de soluções em nuvem, otimização de custos e implementação de melhores práticas de DevOps.</p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">AWS</span>
+            <span class="timeline-tag">Terraform</span>
+            <span class="timeline-tag">Kubernetes</span>
           </div>
-          <div data-lov-id="src/pages/Index.tsx:224:10" data-lov-name="div" data-component-path="src/pages/Index.tsx"
-            data-component-line="224" data-component-file="Index.tsx" data-component-name="div"
-            data-component-content="%7B%22className%22%3A%22max-w-3xl%22%7D" class="max-w-3xl">
-            <div data-lov-id="src/components/ui/timeline-item.tsx:23:4" data-lov-name="div"
-              data-component-path="src/components/ui/timeline-item.tsx" data-component-line="23"
-              data-component-file="timeline-item.tsx" data-component-name="div"
-              data-component-content="%7B%22className%22%3A%22relative%20flex%20items-start%20gap-4%20pb-8%22%7D"
-              class="relative flex items-start gap-4 pb-8">
-              <div data-lov-id="src/components/ui/timeline-item.tsx:26:8" data-lov-name="div"
-                data-component-path="src/components/ui/timeline-item.tsx" data-component-line="26"
-                data-component-file="timeline-item.tsx" data-component-name="div"
-                data-component-content="%7B%22className%22%3A%22absolute%20left-6%20top-12%20w-px%20h-full%20bg-border-subtle%22%7D"
-                class="absolute left-6 top-12 w-px h-full bg-border-subtle"></div>
-              <div data-lov-id="src/components/ui/timeline-item.tsx:30:6" data-lov-name="div"
-                data-component-path="src/components/ui/timeline-item.tsx" data-component-line="30"
-                data-component-file="timeline-item.tsx" data-component-name="div"
-                data-component-content="%7B%22className%22%3A%22relative%20z-10%20flex-shrink-0%20w-12%20h-12%20rounded-full%20bg-primary%2F20%20border-2%20border-primary%20flex%20items-center%20justify-center%22%7D"
-                class="relative z-10 flex-shrink-0 w-12 h-12 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center">
-                <div data-lov-id="src/components/ui/timeline-item.tsx:38:10" data-lov-name="div"
-                  data-component-path="src/components/ui/timeline-item.tsx" data-component-line="38"
-                  data-component-file="timeline-item.tsx" data-component-name="div"
-                  data-component-content="%7B%22className%22%3A%22w-3%20h-3%20rounded-full%20bg-primary%20animate-pulse-glow%22%7D"
-                  class="w-3 h-3 rounded-full bg-primary animate-pulse-glow"></div>
-              </div>
-              <div data-lov-id="src/components/ui/timeline-item.tsx:43:6" data-lov-name="div"
-                data-component-path="src/components/ui/timeline-item.tsx" data-component-line="43"
-                data-component-file="timeline-item.tsx" data-component-name="div"
-                data-component-content="%7B%22className%22%3A%22flex-1%20min-w-0%22%7D" class="flex-1 min-w-0">
-                <div data-lov-id="src/components/ui/timeline-item.tsx:44:8" data-lov-name="div"
-                  data-component-path="src/components/ui/timeline-item.tsx" data-component-line="44"
-                  data-component-file="timeline-item.tsx" data-component-name="div"
-                  data-component-content="%7B%22className%22%3A%22bg-gradient-card%20p-4%20rounded-lg%20border%20border-border-subtle%22%7D"
-                  class="bg-gradient-card p-4 rounded-lg border border-border-subtle">
-                  <h3 data-lov-id="src/components/ui/timeline-item.tsx:45:10" data-lov-name="h3"
-                    data-component-path="src/components/ui/timeline-item.tsx" data-component-line="45"
-                    data-component-file="timeline-item.tsx" data-component-name="h3"
-                    data-component-content="%7B%22className%22%3A%22text-lg%20font-semibold%20text-text-primary%20mb-1%22%7D"
-                    class="text-lg font-semibold text-text-primary mb-1">Análise e Desenvolvimento de Sistemas</h3>
-                  <p data-lov-id="src/components/ui/timeline-item.tsx:48:10" data-lov-name="p"
-                    data-component-path="src/components/ui/timeline-item.tsx" data-component-line="48"
-                    data-component-file="timeline-item.tsx" data-component-name="p"
-                    data-component-content="%7B%22className%22%3A%22text-primary%20font-medium%20mb-2%22%7D"
-                    class="text-primary font-medium mb-2">Universidade Metodista de Piracicaba</p>
-                  <div data-lov-id="src/components/ui/timeline-item.tsx:52:10" data-lov-name="div"
-                    data-component-path="src/components/ui/timeline-item.tsx" data-component-line="52"
-                    data-component-file="timeline-item.tsx" data-component-name="div"
-                    data-component-content="%7B%22className%22%3A%22flex%20flex-col%20sm%3Aflex-row%20sm%3Aitems-center%20gap-2%20text-sm%20text-text-secondary%22%7D"
-                    class="flex flex-col sm:flex-row sm:items-center gap-2 text-sm text-text-secondary">
-                    <div data-lov-id="src/components/ui/timeline-item.tsx:53:12" data-lov-name="div"
-                      data-component-path="src/components/ui/timeline-item.tsx" data-component-line="53"
-                      data-component-file="timeline-item.tsx" data-component-name="div"
-                      data-component-content="%7B%22className%22%3A%22flex%20items-center%20gap-1%22%7D"
-                      class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="lucide lucide-calendar h-4 w-4"
-                        data-lov-id="src/components/ui/timeline-item.tsx:54:14" data-lov-name="Calendar"
-                        data-component-path="src/components/ui/timeline-item.tsx" data-component-line="54"
-                        data-component-file="timeline-item.tsx" data-component-name="Calendar"
-                        data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D">
-                        <path d="M8 2v4"></path>
-                        <path d="M16 2v4"></path>
-                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
-                        <path d="M3 10h18"></path>
-                      </svg><span data-lov-id="src/components/ui/timeline-item.tsx:55:14" data-lov-name="span"
-                        data-component-path="src/components/ui/timeline-item.tsx" data-component-line="55"
-                        data-component-file="timeline-item.tsx" data-component-name="span"
-                        data-component-content="%7B%7D">2014 - 2016</span></div>
-                    <div data-lov-id="src/components/ui/timeline-item.tsx:61:14" data-lov-name="div"
-                      data-component-path="src/components/ui/timeline-item.tsx" data-component-line="61"
-                      data-component-file="timeline-item.tsx" data-component-name="div"
-                      data-component-content="%7B%22className%22%3A%22flex%20items-center%20gap-1%22%7D"
-                      class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="lucide lucide-map-pin h-4 w-4"
-                        data-lov-id="src/components/ui/timeline-item.tsx:62:16" data-lov-name="MapPin"
-                        data-component-path="src/components/ui/timeline-item.tsx" data-component-line="62"
-                        data-component-file="timeline-item.tsx" data-component-name="MapPin"
-                        data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D">
-                        <path
-                          d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-                        </path>
-                        <circle cx="12" cy="10" r="3"></circle>
-                      </svg><span data-lov-id="src/components/ui/timeline-item.tsx:63:16" data-lov-name="span"
-                        data-component-path="src/components/ui/timeline-item.tsx" data-component-line="63"
-                        data-component-file="timeline-item.tsx" data-component-name="span"
-                        data-component-content="%7B%7D">Piracicaba, SP</span></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div data-lov-id="src/components/ui/timeline-item.tsx:23:4" data-lov-name="div"
-              data-component-path="src/components/ui/timeline-item.tsx" data-component-line="23"
-              data-component-file="timeline-item.tsx" data-component-name="div"
-              data-component-content="%7B%22className%22%3A%22relative%20flex%20items-start%20gap-4%20pb-8%22%7D"
-              class="relative flex items-start gap-4 pb-8">
-              <div data-lov-id="src/components/ui/timeline-item.tsx:30:6" data-lov-name="div"
-                data-component-path="src/components/ui/timeline-item.tsx" data-component-line="30"
-                data-component-file="timeline-item.tsx" data-component-name="div"
-                data-component-content="%7B%22className%22%3A%22relative%20z-10%20flex-shrink-0%20w-12%20h-12%20rounded-full%20bg-primary%2F20%20border-2%20border-primary%20flex%20items-center%20justify-center%22%7D"
-                class="relative z-10 flex-shrink-0 w-12 h-12 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center">
-                <div data-lov-id="src/components/ui/timeline-item.tsx:38:10" data-lov-name="div"
-                  data-component-path="src/components/ui/timeline-item.tsx" data-component-line="38"
-                  data-component-file="timeline-item.tsx" data-component-name="div"
-                  data-component-content="%7B%22className%22%3A%22w-3%20h-3%20rounded-full%20bg-primary%20animate-pulse-glow%22%7D"
-                  class="w-3 h-3 rounded-full bg-primary animate-pulse-glow"></div>
-              </div>
-              <div data-lov-id="src/components/ui/timeline-item.tsx:43:6" data-lov-name="div"
-                data-component-path="src/components/ui/timeline-item.tsx" data-component-line="43"
-                data-component-file="timeline-item.tsx" data-component-name="div"
-                data-component-content="%7B%22className%22%3A%22flex-1%20min-w-0%22%7D" class="flex-1 min-w-0">
-                <div data-lov-id="src/components/ui/timeline-item.tsx:44:8" data-lov-name="div"
-                  data-component-path="src/components/ui/timeline-item.tsx" data-component-line="44"
-                  data-component-file="timeline-item.tsx" data-component-name="div"
-                  data-component-content="%7B%22className%22%3A%22bg-gradient-card%20p-4%20rounded-lg%20border%20border-border-subtle%22%7D"
-                  class="bg-gradient-card p-4 rounded-lg border border-border-subtle">
-                  <h3 data-lov-id="src/components/ui/timeline-item.tsx:45:10" data-lov-name="h3"
-                    data-component-path="src/components/ui/timeline-item.tsx" data-component-line="45"
-                    data-component-file="timeline-item.tsx" data-component-name="h3"
-                    data-component-content="%7B%22className%22%3A%22text-lg%20font-semibold%20text-text-primary%20mb-1%22%7D"
-                    class="text-lg font-semibold text-text-primary mb-1">Técnico em Informática</h3>
-                  <p data-lov-id="src/components/ui/timeline-item.tsx:48:10" data-lov-name="p"
-                    data-component-path="src/components/ui/timeline-item.tsx" data-component-line="48"
-                    data-component-file="timeline-item.tsx" data-component-name="p"
-                    data-component-content="%7B%22className%22%3A%22text-primary%20font-medium%20mb-2%22%7D"
-                    class="text-primary font-medium mb-2">Centro Paula Souza</p>
-                  <div data-lov-id="src/components/ui/timeline-item.tsx:52:10" data-lov-name="div"
-                    data-component-path="src/components/ui/timeline-item.tsx" data-component-line="52"
-                    data-component-file="timeline-item.tsx" data-component-name="div"
-                    data-component-content="%7B%22className%22%3A%22flex%20flex-col%20sm%3Aflex-row%20sm%3Aitems-center%20gap-2%20text-sm%20text-text-secondary%22%7D"
-                    class="flex flex-col sm:flex-row sm:items-center gap-2 text-sm text-text-secondary">
-                    <div data-lov-id="src/components/ui/timeline-item.tsx:53:12" data-lov-name="div"
-                      data-component-path="src/components/ui/timeline-item.tsx" data-component-line="53"
-                      data-component-file="timeline-item.tsx" data-component-name="div"
-                      data-component-content="%7B%22className%22%3A%22flex%20items-center%20gap-1%22%7D"
-                      class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="lucide lucide-calendar h-4 w-4"
-                        data-lov-id="src/components/ui/timeline-item.tsx:54:14" data-lov-name="Calendar"
-                        data-component-path="src/components/ui/timeline-item.tsx" data-component-line="54"
-                        data-component-file="timeline-item.tsx" data-component-name="Calendar"
-                        data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D">
-                        <path d="M8 2v4"></path>
-                        <path d="M16 2v4"></path>
-                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
-                        <path d="M3 10h18"></path>
-                      </svg><span data-lov-id="src/components/ui/timeline-item.tsx:55:14" data-lov-name="span"
-                        data-component-path="src/components/ui/timeline-item.tsx" data-component-line="55"
-                        data-component-file="timeline-item.tsx" data-component-name="span"
-                        data-component-content="%7B%7D">2012 - 2014</span></div>
-                    <div data-lov-id="src/components/ui/timeline-item.tsx:61:14" data-lov-name="div"
-                      data-component-path="src/components/ui/timeline-item.tsx" data-component-line="61"
-                      data-component-file="timeline-item.tsx" data-component-name="div"
-                      data-component-content="%7B%22className%22%3A%22flex%20items-center%20gap-1%22%7D"
-                      class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="lucide lucide-map-pin h-4 w-4"
-                        data-lov-id="src/components/ui/timeline-item.tsx:62:16" data-lov-name="MapPin"
-                        data-component-path="src/components/ui/timeline-item.tsx" data-component-line="62"
-                        data-component-file="timeline-item.tsx" data-component-name="MapPin"
-                        data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D">
-                        <path
-                          d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-                        </path>
-                        <circle cx="12" cy="10" r="3"></circle>
-                      </svg><span data-lov-id="src/components/ui/timeline-item.tsx:63:16" data-lov-name="span"
-                        data-component-path="src/components/ui/timeline-item.tsx" data-component-line="63"
-                        data-component-file="timeline-item.tsx" data-component-name="span"
-                        data-component-content="%7B%7D">São João da Boa Vista, SP</span></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        </div>
+      </div>
+
+      <!-- Timeline Item 2 -->
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3 class="timeline-title">DevOps Engineer</h3>
+            <div class="timeline-period">2021 - 2023</div>
           </div>
-        </section>
+          <div class="timeline-company">Empresa Anterior</div>
+          <p class="timeline-description">Implementação de pipelines CI/CD, automação de infraestrutura e gerenciamento de ambientes em nuvem.</p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Docker</span>
+            <span class="timeline-tag">Jenkins</span>
+            <span class="timeline-tag">AWS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline Item 3 -->
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3 class="timeline-title">Formação Acadêmica</h3>
+            <div class="timeline-period">2018 - 2021</div>
+          </div>
+          <div class="timeline-company">Universidade Exemplo</div>
+          <p class="timeline-description">Bacharelado em Ciência da Computação com foco em Arquitetura de Software e Computação em Nuvem.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+  <script>
+    // Simple script for smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+        
       </main>
-      <footer data-lov-id="src/pages/Index.tsx:237:6" data-lov-name="footer" data-component-path="src/pages/Index.tsx"
-        data-component-line="237" data-component-file="Index.tsx" data-component-name="footer"
-        data-component-content="%7B%22className%22%3A%22border-t%20border-border-subtle%20bg-dark-bg%2F95%20backdrop-blur-sm%22%7D"
-        class="border-t border-border-subtle bg-dark-bg/95 backdrop-blur-sm">
-        <div data-lov-id="src/pages/Index.tsx:238:8" data-lov-name="div" data-component-path="src/pages/Index.tsx"
-          data-component-line="238" data-component-file="Index.tsx" data-component-name="div"
-          data-component-content="%7B%22className%22%3A%22container%20mx-auto%20px-4%20py-8%20text-center%22%7D"
-          class="container mx-auto px-4 py-8 text-center">
-          <p data-lov-id="src/pages/Index.tsx:239:10" data-lov-name="p" data-component-path="src/pages/Index.tsx"
-            data-component-line="239" data-component-file="Index.tsx" data-component-name="p"
-            data-component-content="%7B%22text%22%3A%22%C2%A9%202024%20Felipe%20Kiko.%20Feito%20com%20%E2%9D%A4%EF%B8%8F%20e%20muito%20%E2%98%95%22%2C%22className%22%3A%22text-text-secondary%22%7D"
-            class="text-text-secondary">© 2024 Felipe Kiko. Feito com ❤️ e muito ☕</p>
+      <footer class="footer">
+        <div class="footer-content">
+          <p class="footer-text">© 2024 Felipe Kiko. Feito com ❤️ e muito ☕</p>
         </div>
       </footer>
     </div>
