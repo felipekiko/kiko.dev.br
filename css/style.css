@@ -335,6 +335,10 @@ header {
   position: relative;
   overflow: hidden;
   backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 200px; /* Garante uma altura mínima para o card */
 }
 
 .project-card:hover {
@@ -387,6 +391,8 @@ header {
   font-size: 0.95rem;
   margin: 0.75rem 0;
   line-height: 1.5;
+  margin-top: auto;
+  margin-bottom: 0.5rem;
 }
 
 .project-link {
@@ -424,11 +430,12 @@ header {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
   font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.7);
-  margin-top: 1rem;
-  padding-top: 1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* ===== Skills Grid ===== */
