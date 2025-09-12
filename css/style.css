@@ -97,8 +97,8 @@ header {
 }
 
 .logo-icon {
-  width: 44px;
-  height: 44px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid var(--yellow-accent);
@@ -181,8 +181,8 @@ header {
 }
 
 .avatar {
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   margin: 0 auto 1.5rem;
   border-radius: 50%;
   background-color: var(--bg-light);
