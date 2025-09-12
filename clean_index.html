@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felipe Kiko - Cloud Architect & DevOps Engineer</title>
+
+  <!-- Meta Tags -->
+  <meta name="description" content="Felipe Kiko - Cloud Architect especializado em AWS. Mentor ativo na comunidade tech, palestrante e revisor técnico.">
+  <meta name="author" content="Felipe Kiko">
+  <meta name="keywords" content="Felipe Kiko, Cloud Engineer, DevOps, AWS, Azure, Google Cloud, FinOps, Kubernetes, Docker, PHP, Python">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kiko.dev.br">
+  <meta property="og:title" content="Felipe Kiko - Cloud Architect & DevOps Engineer">
+  <meta property="og:description" content="Especialista em arquitetura de nuvem, automação e melhores práticas de DevOps. Transformando ideias em soluções escaláveis.">
+  <meta property="og:image" content="https://kiko.dev.br/img/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@felipekiko">
+  <meta name="twitter:title" content="Felipe Kiko - Cloud Architect & DevOps Engineer">
+  <meta name="twitter:description" content="Especialista em arquitetura de nuvem, automação e melhores práticas de DevOps. Transformando ideias em soluções escaláveis.">
+  <meta name="twitter:image" content="https://kiko.dev.br/img/og-image.jpg">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://kiko.dev.br">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/toast.css">
+  <style>
+    /* Global Variables */
+    :root {
+      --primary: #3b82f6;
+      --primary-hover: #2563eb;
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --dark-bg: #0f172a;
+      --bg: #1e293b;
+      --border: #334155;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --transition: all 0.3s ease;
+    }
+    
+    /* Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: var(--dark-bg);
+      color: var(--text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+    
+    a:hover {
+      color: var(--primary-hover);
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: var(--dark-bg);
+      color: var(--text-primary);
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Layout */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    
+    .section {
+      padding: 5rem 0;
+    }
+    
+    .section-header {
+      margin-bottom: 3rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .section-title {
+      font-size: 1.875rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      position: relative;
+      display: inline-block;
+      margin: 0;
+    }
+    
+    .title-underline {
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--primary), #8b5cf6);
+      border-radius: 3px;
+    }
+    
+    /* Header */
+    header {
+      border-bottom: 1px solid var(--border);
+      background-color: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      transition: var(--transition);
+    }
+    
+    .scrolled {
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 0;
+    }
+    
+    /* Logo */
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      transition: var(--transition);
+    }
+    
+    .logo:hover {
+      transform: translateY(-1px);
+    }
+    
+    .logo-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.25rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      transition: var(--transition);
+    }
+    
+    .logo-icon:hover {
+      transform: rotate(5deg);
+    }
+    
+    .logo-text h1 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin: 0 0 0.125rem 0;
+      color: var(--text-primary);
+      line-height: 1.2;
+      background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .logo-text p {
+      font-size: 0.8125rem;
+      margin: 0;
+      color: var(--text-secondary);
+      font-weight: 400;
+    }
+    
+    /* Social Links */
+    .social-links {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 0.5rem;
+      color: var(--text-secondary);
+      background: rgba(148, 163, 184, 0.1);
+      transition: var(--transition);
+      font-size: 1.125rem;
+    }
+    
+    .social-link:hover {
+      background: rgba(59, 130, 246, 0.2);
+      transform: translateY(-2px);
+      color: var(--primary);
+    }
+    
+    .social-link.github:hover { color: white; background: #333; }
+    .social-link.linkedin:hover { color: white; background: #0a66c2; }
+    .social-link.youtube:hover { color: white; background: #ff0000; }
+    .social-link.email:hover { color: white; background: #ea4335; }
+    
+    /* Section Headers */
+    .section-header i {
+      color: var(--primary);
+      font-size: 1.5rem;
+    }
+    
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    
+    /* Project Cards */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    
+    .project-card {
+      background: linear-gradient(145deg, rgba(30, 41, 59, 0.7), rgba(15, 23, 42, 0.7));
+      border: 1px solid rgba(51, 65, 85, 0.3);
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      transition: var(--transition);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.2);
+      border-color: rgba(59, 130, 246, 0.5);
+    }
+    
+    .project-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+    }
+    
+    .project-date {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-secondary);
+      font-size: 0.8125rem;
+    }
+    
+    .project-tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      background-color: rgba(59, 130, 246, 0.1);
+      color: var(--primary);
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      transition: var(--transition);
+    }
+    
+    .project-tag.live {
+      background-color: rgba(16, 185, 129, 0.1);
+      color: #10b981;
+      border-color: rgba(16, 185, 129, 0.2);
+    }
+    
+    .project-title {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 0 0 0.5rem 0;
+      transition: var(--transition);
+    }
+    
+    .project-description {
+      color: var(--text-secondary);
+      font-size: 0.875rem;
+      margin: 0 0 1rem 0;
+      line-height: 1.5;
+      flex-grow: 1;
+    }
+    
+    .project-location {
+      color: var(--text-secondary);
+      font-size: 0.8125rem;
+      font-style: italic;
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      gap: 0.375rem;
+    }
+    
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.375rem;
+      color: var(--primary);
+      font-size: 0.875rem;
+      font-weight: 500;
+      margin-top: 0.75rem;
+      transition: var(--transition);
+    }
+    
+    .project-link:hover {
+      color: var(--primary-hover);
+    }
+    
+    .project-link i {
+      font-size: 0.75rem;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+      .container {
+        padding: 0 1.25rem;
+      }
+      
+      .section {
+        padding: 4rem 0;
+      }
+      
+      .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.25rem;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        gap: 1.25rem;
+        text-align: center;
+        padding: 1rem 0;
+      }
+      
+      .logo {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .logo-text h1 {
+        font-size: 1.5rem;
+      }
+      
+      .section {
+        padding: 3rem 0;
+      }
+      
+      .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+        margin-bottom: 2rem;
+      }
+      
+      .section-title {
+        font-size: 1.5rem;
+      }
+      
+      .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+      
+      .project-card {
+        padding: 1.25rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 1rem;
+      }
+      
+      .section {
+        padding: 2.5rem 0;
+      }
+      
+      .section-title {
+        font-size: 1.375rem;
+      }
+      
+      .project-card {
+        padding: 1.25rem 1rem;
+      }
+      
+      .project-title {
+        font-size: 1.0625rem;
+      }
+      
+      .project-description {
+        font-size: 0.8125rem;
+      }
+      
+      .project-date, .project-location {
+        font-size: 0.75rem;
+      }
+    }
+    
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .animate-fade-in {
+      animation: fadeIn 0.6s ease-out forwards;
+    }
+    
+    /* Accessibility */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+    
+    /* Focus Styles */
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: 2px;
+      border-radius: 0.25rem;
+    }
+    
+    /* Print Styles */
+    @media print {
+      body {
+        background: white;
+        color: #000;
+        font-size: 12pt;
+        line-height: 1.5;
+      }
+      
+      .container {
+        max-width: 100%;
+        padding: 0 1cm;
+      }
+      
+      header, .section {
+        padding: 0.5cm 0;
+      }
+      
+      .section-title {
+        color: #000;
+      }
+      
+      .project-card, .skill-card, .timeline-content {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+      
+      a {
+        text-decoration: underline;
+      }
+      
+      .no-print {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <div class="logo-icon">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="logo-text">
+            <h1>Felipe Kiko</h1>
+            <p>Cloud Engineer & DevOps Enthusiast</p>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/felipekiko" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link github">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/felipekiko" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link linkedin">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://youtube.com/@felipekiko" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-link youtube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="mailto:contato@kiko.dev.br" aria-label="Email" class="social-link email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Projects Section -->
+    <section class="section">
+      <div class="section-header">
+        <i class="fas fa-briefcase text-primary"></i>
+        <h2 class="section-title">O QUE FIZ?<span class="title-underline"></span></h2>
+      </div>
+      <div class="projects-grid">
+        <!-- Project Card 1 -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date">
+              <i class="far fa-calendar-alt"></i>
+              <span>2023 - Presente</span>
+            </div>
+            <div class="project-tag">
+              Evento
+            </div>
+          </div>
+          <h3 class="project-title">FinOps MeetUp - Voluntário organização</h3>
+          <div class="project-location">
+            <span>BTG Pactual | São Paulo</span>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date">
+              <i class="far fa-calendar-alt"></i>
+              <span>26/07/2024</span>
+            </div>
+            <div class="project-tag">
+              Curso
+            </div>
+          </div>
+          <h3 class="project-title">Instrutor Cloud - 12º Venturus 4Tech</h3>
+          <a href="https://www.venturus.org.br/blog/controle-de-custos-na-cloud-com-finops" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver mais detalhes">
+            Ver detalhes <i class="fas fa-external-link-alt"></i>
+          </a>
+          <div class="project-location">
+            <span>Campinas | São Paulo</span>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date">
+              <i class="far fa-calendar-alt"></i>
+              <span>01/07/2024</span>
+            </div>
+            <div class="project-tag live">
+              Live
+            </div>
+          </div>
+          <h3 class="project-title">Live FinOps: Otimização de Custos na Nuvem com Kiko</h3>
+          <a href="https://www.youtube.com/watch?v=example" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Assistir no YouTube">
+            Assistir <i class="fab fa-youtube"></i>
+          </a>
+          <div class="project-location">
+            <span>Online</span>
+          </div>
+        </div>
+
+        <!-- Project Card 4 -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date">
+              <i class="far fa-calendar-alt"></i>
+              <span>13/05/2023</span>
+            </div>
+            <div class="project-tag">
+              Palestra
+            </div>
+          </div>
+          <h3 class="project-title">O que é FinOps?</h3>
+          <p class="project-description">Palestra no Global Azure 2023</p>
+          <a href="https://www.sympla.com.br/evento/global-azure-2023-campinas-sp-presencial-e-gratuito/1873212" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver mais detalhes">
+            Ver detalhes <i class="fas fa-external-link-alt"></i>
+          </a>
+          <div class="project-location">
+            <span>Online</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section -->
+    <section class="section">
+      <div class="section-header">
+        <i class="fas fa-code text-primary"></i>
+        <h2 class="section-title">HABILIDADES<span class="title-underline"></span></h2>
+      </div>
+      <div class="skills-grid">
+        <!-- Skill 1 -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="https://via.placeholder.com/100" alt="Amazon Web Services" class="skill-img">
+          </div>
+          <h3 class="skill-title">AWS Certified Cloud Practitioner</h3>
+          <p class="skill-category">Amazon Web Services</p>
+          <p class="skill-year">2023</p>
+        </div>
+
+        <!-- Add more skills following the same pattern -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-aws"></i>
+          </div>
+          <h3 class="skill-title">AWS Solutions Architect</h3>
+          <p class="skill-category">Amazon Web Services</p>
+          <p class="skill-year">2023</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-docker"></i>
+          </div>
+          <h3 class="skill-title">Docker Certified Associate</h3>
+          <p class="skill-category">Containerization</p>
+          <p class="skill-year">2023</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-google"></i>
+          </div>
+          <h3 class="skill-title">Google Cloud Engineer</h3>
+          <p class="skill-category">Google Cloud Platform</p>
+          <p class="skill-year">2023</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-microsoft"></i>
+          </div>
+          <h3 class="skill-title">Azure Administrator</h3>
+          <p class="skill-category">Microsoft Azure</p>
+          <p class="skill-year">2023</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-linux"></i>
+          </div>
+          <h3 class="skill-title">Linux Professional</h3>
+          <p class="skill-category">Operating Systems</p>
+          <p class="skill-year">2023</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="section">
+      <div class="section-header">
+        <i class="fas fa-history text-primary"></i>
+        <h2 class="section-title">EXPERIÊNCIA<span class="title-underline"></span></h2>
+      </div>
+      <div class="timeline">
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-title">Cloud Architect</h3>
+              <div class="timeline-period">2023 - Presente</div>
+            </div>
+            <div class="timeline-company">Empresa Atual</div>
+            <p class="timeline-description">Desenvolvimento e arquitetura de soluções em nuvem, otimização de custos e implementação de melhores práticas de DevOps.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">AWS</span>
+              <span class="timeline-tag">Terraform</span>
+              <span class="timeline-tag">Kubernetes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-title">DevOps Engineer</h3>
+              <div class="timeline-period">2021 - 2023</div>
+            </div>
+            <div class="timeline-company">Empresa Anterior</div>
+            <p class="timeline-description">Implementação de pipelines CI/CD, automação de infraestrutura e gerenciamento de ambientes em nuvem.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Docker</span>
+              <span class="timeline-tag">Jenkins</span>
+              <span class="timeline-tag">AWS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-title">Formação Acadêmica</h3>
+              <div class="timeline-period">2018 - 2021</div>
+            </div>
+            <div class="timeline-company">Universidade Exemplo</div>
+            <p class="timeline-description">Bacharelado em Ciência da Computação com foco em Arquitetura de Software e Computação em Nuvem.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <style>
+    /* Timeline Section Styles */
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 2rem;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--primary), transparent);
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 3rem;
+    }
+
+    .timeline-icon {
+      position: absolute;
+      left: 1.5rem;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), #8b5cf6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+
+    .timeline-content {
+      background: linear-gradient(145deg, rgba(30, 41, 59, 0.7), rgba(15, 23, 42, 0.7));
+      border: 1px solid rgba(51, 65, 85, 0.3);
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      transition: all 0.3s ease;
+    }
+
+    .timeline-item:hover .timeline-content {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.2);
+    }
+
+    .timeline-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-title {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 0;
+    }
+
+    .timeline-period {
+      background: rgba(59, 130, 246, 0.1);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 500;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.25rem;
+    }
+
+    .timeline-company {
+      color: var(--primary);
+      font-size: 0.875rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-description {
+      color: var(--text-secondary);
+      font-size: 0.875rem;
+      margin: 0 0 1rem 0;
+      line-height: 1.5;
+    }
+
+    .timeline-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .timeline-tag {
+      background: rgba(59, 130, 246, 0.1);
+      color: var(--primary);
+      font-size: 0.75rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.25rem;
+    }
+
+    @media (max-width: 768px) {
+      .timeline::before {
+        left: 1.5rem;
+      }
+
+      .timeline-item {
+        padding-left: 3.5rem;
+      }
+
+      .timeline-icon {
+        left: 1.25rem;
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+
+      .timeline-header {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .timeline-period {
+        align-self: flex-start;
+      }
+    }
+    /* Skills Section Styles */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .skill-card {
+      background: linear-gradient(145deg, rgba(30, 41, 59, 0.7), rgba(15, 23, 42, 0.7));
+      border: 1px solid rgba(51, 65, 85, 0.3);
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.2);
+    }
+
+    .skill-icon {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: var(--primary);
+    }
+
+    .skill-img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .skill-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 0 0 0.25rem 0;
+    }
+
+    .skill-category {
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 500;
+      margin: 0 0 0.25rem 0;
+    }
+
+    .skill-year {
+      color: var(--text-secondary);
+      font-size: 0.75rem;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <!-- Scripts -->
+  <script>
+    // Add smooth scrolling to all links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Add shadow to header on scroll
+    const header = document.querySelector('header');
+    if (header) {
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 10) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+    }
+
+    // Add animation classes on scroll
+    const animateOnScroll = () => {
+      const elements = document.querySelectorAll('.project-card, .skill-card, .timeline-item');
+      elements.forEach((element, index) => {
+        const elementPosition = element.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.2;
+        
+        if (elementPosition < screenPosition) {
+          setTimeout(() => {
+            element.classList.add('animate-fade-in');
+          }, index * 100);
+        }
+      });
+    };
+
+    // Run once on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      // Add loaded class to body for transition effects
+      document.body.classList.add('loaded');
+      
+      // Initial animation check
+      animateOnScroll();
+      
+      // Check for prefers-reduced-motion
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!prefersReducedMotion) {
+        // Add scroll event listener for animations
+        window.addEventListener('scroll', animateOnScroll);
+      }
+    });
+  </script>
+</body>
+</html>
