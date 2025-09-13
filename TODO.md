@@ -1,13 +1,21 @@
 - cards
+    - adicionar 2020
+    - adicionar 2021
+    - adicionar 2022
+    - adicionar 2023
+    - adicionar 2024
+    - adicionar 2025
     - ordenar por data
     - curadoria
     - ajustar layout
     - ver se tem alguma coisa no linkedin que nao esta aqui
     - ver o que tenho no slide.com e linkar com os cards
     - colocar artigos do dev.to ou medium
+    - colocar os que estão ocultos
 - experiencia profissional
 - experiencia academia
 - todos meus links
+- footer
 - otimizar codigo
 - remover css externos
 - comprar as informacoes com o atual
