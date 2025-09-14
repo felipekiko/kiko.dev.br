@@ -398,10 +398,11 @@ header {
 .project-link {
   display: inline-flex;
   align-items: center;
+  margin-top: auto;
+  margin-bottom: 0.5rem;
   gap: 0.5rem;
   color: var(--primary-color);
   font-weight: 500;
-  margin-top: 1rem;
   transition: all 0.3s ease;
   position: relative;
 }
