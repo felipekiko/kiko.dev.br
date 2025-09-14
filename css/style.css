@@ -338,23 +338,52 @@ header {
   display: flex;
   flex-direction: column;
   height: 100%;
-  min-height: 200px; /* Garante uma altura mínima para o card */
+  min-height: 200px;
 }
 
+/* Card content layout */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Push all content to top */
 .project-card > *:not(.project-link):not(.project-location) {
   margin-bottom: 0.5rem;
+  flex-shrink: 0;
 }
 
-.project-link {
+/* Create a container for bottom-aligned items */
+.project-card-footer {
   margin-top: auto;
-  margin-bottom: 0.25rem;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
+/* Style the link */
+.project-link {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the location */
 .project-location {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 0.5rem;
+  margin: 0;
+  padding: 0.5rem 0 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Style the link */
+.project-link a {
+  display: inline-block;
+  margin: 0;
+  text-align: left;
+  width: auto;
 }
 
 .project-card:hover {
