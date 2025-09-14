@@ -1,7 +1,5 @@
 - cards
     - colocar os videos do youtube
-    - tirar os links do titulo e colocar na sessao de links
-    - ajustar layout
     - ver se tem alguma coisa no linkedin que nao esta aqui
     - ver o que tenho no slide.com e linkar com os cards
     - colocar artigos do dev.to ou medium
