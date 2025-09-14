@@ -1,12 +1,5 @@
 - cards
-    - adicionar 2020
-    - adicionar 2021
-    - adicionar 2022
-    - adicionar 2023
-    - adicionar 2024
-    - adicionar 2025
-    - ordenar por data
-    - curadoria
+    - colocar os videos do youtube
     - ajustar layout
     - ver se tem alguma coisa no linkedin que nao esta aqui
     - ver o que tenho no slide.com e linkar com os cards
@@ -20,3 +13,4 @@
 - remover css externos
 - comprar as informacoes com o atual
 - theme #2
+- em ingles
