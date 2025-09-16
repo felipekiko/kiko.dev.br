@@ -1,1024 +1,953 @@
-<!--
-OK! Voce chegou ate aqui, então no minimo quis ver um codigo meu, certo?
-Bom, esse template peguei ele no Bootstrap Themes, e fiz somente algumas adaptacoes de texto e imagens,
-somente para ter um portifolio atualizado com uma tecnologia tao usada como o Bootstrap, mas desculpe decepcionar,
-mas nao foi criado por mim...porem existe diversos trabalhos meus por ai, que tal dar uma olhada no site, e se tiver
-alguma duvida, terei imenso prazer em responder! Valeu!
--->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felipe Kiko - Cloud Architect, FinOps & Developer</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <!-- Meta Tags -->
+  <meta name="description"
+    content="Felipe Kiko - Cloud Architect especializado em AWS. Mentor ativo na comunidade tech, palestrante e revisor técnico.">
+  <meta name="author" content="Felipe Kiko">
+  <meta name="keywords"
+    content="Felipe Kiko, Cloud Engineer, Cloud Architect, DevOps, AWS, Azure, Google Cloud, FinOps, Kubernetes, Docker, PHP, Python">
 
-    <title>Felipe KiKo</title>
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kiko.dev.br">
+  <meta property="og:title" content="Felipe Kiko - Cloud Architect, FinOps & Developer">
+  <meta property="og:description"
+    content="Cloud Architect especializado em AWS. Mentor ativo na comunidade tech, palestrante e revisor técnico.">
+  <meta property="og:image" content="https://kiko.dev.br/img/profile/og.jpg">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@felipekiko">
+  <meta name="twitter:title" content="Felipe Kiko - Cloud Architect, FinOps & Developer">
+  <meta name="twitter:description"
+    content="Cloud Architect especializado em AWS. Mentor ativo na comunidade tech, palestrante e revisor técnico.">
+  <meta name="twitter:image" content="https://kiko.dev.br/img/profile/og.jpg">
 
-    <!-- Custom CSS -->
-    <link href="css/agency.css" rel="stylesheet">
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://kiko.dev.br">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-    <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-    <script src="https://kit.fontawesome.com/7478fdf0e8.js" crossorigin="anonymous"></script>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-5623065-5', 'auto');
-      ga('send', 'pageview');
-    </script>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body id="page-top" class="index">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Felipe KiKo</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <!-- <li>
-                        <a class="page-scroll" href="#services">O QUE FAÇO?</a>
-                    </li> -->
-                    <!-- <li>
-                        <a class="page-scroll" href="#portfolio">TRABALHOS</a>
-                    </li> -->
-                    <li>
-                        <a class="page-scroll" href="#did">O QUE FIZ?</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">LINHA DO TEMPO</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#team">EU!</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">CONTATO</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <div class="logo-icon">
+            <img src="img/profile/50.jpg" alt="Felipe Kiko" class="header-profile-photo">
+          </div>
+          <div class="logo-text">
+            <h1>Felipe Kiko</h1>
+            <p>Cloud Architect, FinOps & Developer</p>
+          </div>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">echo "Seja Bem Vind...opa!!!</div>
-                <div class="intro-heading">Seja Bem Vindo!</div>
-                <a href="#did" class="page-scroll btn btn-xl">Vamos começar?</a>
-            </div>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/felipekiko" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+            class="social-link linkedin">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/felipekiko" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+            class="social-link github">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:felipe.kiko@gmail.com" aria-label="Email" class="social-link email">
+            <i class="fas fa-envelope"></i>
+          </a>
         </div>
-    </header>
+      </div>
+    </div>
+  </header>
 
-    <!-- Services Section -->
-    <section id="did" style="padding: 0;">
-        <div class="container">
-            <!--<div class="row">
-                <div class="col-lg-12 text-center">
-                    <br /><br />
-                    <h2 class="section-heading">QUEM SOU EU?</h2>
-                    <h3 class="section-subheading text-muted">
-                        Esse portifólio tem o intuito de mostrar um pouco mais sobre quem sou eu...aliás, muito prazer, sou o Felipe KiKo!<br />
-                        Espero que tenha gostado e fique sempre a vontade para voltar!<br />
-                        <br />
-                        Agora vamos ao que interessa!<br />
-                        <br />
-                        Comecei minha carreira na área de desenvolvimento em meados de 2006 com <strong>PHP</strong>, onde desde então se tornou a minha linguagem preferida, porém ao longo desse tempo tive contatos com outras diversas linguagens como .Net, C#, Java, Ruby (Rails), Phyton e JS (puro e/ou com Frameworks como Node.JS, React, Angular, Vue.js, JQuery, Prototype...e contando!), mas sempre quando tenho oportunidade de conhecer uma nova, não recuso a chance! Inclusive com estudos em aplicações Mobile<br />
-                        <br />
-                        Já na parte de bancos, desde a mesma época, atuei (e atuo) bastante com bancos relacionais como MySQL (MariaDB) e PostgreSQL, mas também com conhecimento em Oracle e SQL Server; Já nos bancos não relacionais, atuei muito com MongoDB (também com DocumentDB e CosmosDB) e DynamoDB.<br />
-                        <br />
-                        Em meados de 2012 entrei de cabeça no mundo de Infra Estrutura Cloud, onde estou atuando a maior parte do tempo desde então, trabalhando com AWS, Azure, Google Cloud, IBM Cloud e Oracle Cloud, trabalhando com metodologias IaaS (maior parte do tempo com Linux mas em Windows também), PaaS e SaaS, indo desde o provisionamento de máquinas virtuais até a entrega de aplicações serverless, sempre atuando e dando preferência com a cultura DevOps, pois tenho esse conhecimento em ambos os mundos (e sei muito bem as brigas entre eles rss)<br />
-                        <br />
-                        <strong>Bom, é isso...esse sou eu</strong>!
-                    </h3>
-                </div>
-            </div>-->
-            <br /><br /><br />
-            <div class="row text-center">
-                <div class="col-lg-12 text-center space-img">
-                    <img alt='PHP' src="img/tecnologia/php.jpg" />
-                    <img alt='.Net' src="img/tecnologia/aspnet.jpg" />
-                    <img alt='Java' src="img/tecnologia/java.png" />
-                    <img alt='Android' src="img/tecnologia/android.jpg" />
-                    <img alt='HTML' src="img/tecnologia/html.png" />
-                    <img alt='CSS' src="img/tecnologia/css.jpg" />
-                    <img alt='Javascript' src="img/tecnologia/javascript.png" />
-                    <img alt='React' src="img/tecnologia/react.png" />
-                    <img alt='Angular' src="img/tecnologia/angular.png" />
-                    <img alt='Node.js' src="img/tecnologia/nodejs.png" />
-                    <img alt='Jquery' src="img/tecnologia/jquery.png" />
-
-                    <img alt='MySQL' src="img/tecnologia/mysql.jpg" />
-                    <img alt='PostgreSQL' src="img/tecnologia/Postgre.gif" />
-                    <img alt='SQL' src="img/tecnologia/mssql.jpg" />
-                    <img alt='Oracle' src="img/tecnologia/oracle.png" />
-
-                    <img alt='Linux' src="img/tecnologia/linux.gif" />
-                    <img alt='Windows' src="img/tecnologia/windows.gif" />
-                    <img alt='Amazon Web Services' src="img/tecnologia/aws.jpeg" />
-                    <img alt='Azure' src="img/tecnologia/azure.png" />
-                    <img alt='Google Cloud' src="img/tecnologia/gcloud.png" />
-                    <img alt='IBM Cloud jpg' src="img/tecnologia/ibmcloud.jpg" />
-                    <img alt='Oracle Cloud' src="img/tecnologia/oraclecloud.png" />
-
-                    <img alt='VisualStudio Code' src="img/tecnologia/vscode.png" />
-                    <img alt='NetBeans' src="img/tecnologia/netbeans.png" />
-                    <img alt='Eclipse' src="img/tecnologia/Eclipse.png" />
-                    <img alt='Zend' src="img/tecnologia/zend.png" />
-
-                    <img alt='Moodle' src="img/tecnologia/moodle.png" />
-                    <img alt='Magento' src="img/tecnologia/magento.png" />
-                    <img alt='WordPress' src="img/tecnologia/wordpress.png" />
-                    <img alt='Facebook' src="img/tecnologia/facebook.jpg" />
-                    <img alt='Twitter' src="img/tecnologia/twitter.jpg" />
-
-                    <img alt='Photoshop' src="img/tecnologia/photoshop.gif" />
-                    <img alt='Flash' src="img/tecnologia/flash.png" />
-                    <img alt='Flash Builder' src="img/tecnologia/flashbuilder.gif" />
-                    <img alt='Premiere' src="img/tecnologia/premiere.png" />
-                </div>
-            </div>
-            <br /><br /><br />
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">O QUE FIZ?</h2>
-                    <br />
-                    <div class="row">
-                        <div class="col-lg-3 post-it"><p><strong>08/11/2014 - 15/11/2014</strong>Participante do AWS re:invent<br >Edicão 2014<i>Las Vegas / NV</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>24/10/2015</strong>Palestrante<br />"Material Design"<i>GDG | Cabreúva / SP</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>20/10/2016</strong>Palestrante no Meetup .NET Campinas<br />".NET Campinas #01"<i>Campinas / SP</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>07/02/2019</strong>Palestrante no HackerDay<br />"Ameaças dentro do mundo Coorporativo"<i>UNIFEOB | São João da Boa Vista / SP</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>26/10/2019</strong>Palestrande no DevFest<br />"Mas enfim...o que é esse tal de DevOps?"<i>GDG | São João da Boa Vista / SP</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>01/12/2019 - 07/12/2019</strong>Participante do AWS re:invent<br >Edicão 2019<i>Las Vegas / NV</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>27/11/2021 - 05/12/2021</strong>Participante do AWS re:invent<br >Edicão 2021<i>Las Vegas / NV</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>31/03/2022</strong>Organizador do Dojo de IaC<i>GFT | São Paulo</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>02/05/2022 - 03/06/2022</strong>Mentor da turma de AWS<i>Escola da Nuvem - Online</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>19/08/2022</strong>Palestrante na Semana da Engenharia<br /><a href="https://github.com/felipekiko/events/blob/main/20220819_SemanaEngenharia-IntroducaoPython/presentation.pdf">Introdução ao Python</a><i>UNESP | Sorocaba / SP</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>28/10/2022</strong>Revisor técnico do livro:<br /><a href="https://www.amazon.com/AWS-FinOps-Simplified-Eliminate-practical/dp/1803247231">AWS FinOps Simplified: Eliminate cloud waste through practical FinOps</a><i></i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>20/03/2023</strong>Mentor no curso de Lógica de Programação e Java para PCD<i>Venturus | Campinas</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>13/05/2023</strong>Palestrante:<br /><a href="https://www.sympla.com.br/evento/global-azure-2023-campinas-sp-presencial-e-gratuito/1873212">O que é FinOps?</a><i>Global Azure 2023 | Campinas</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>19/07/2023</strong>FinOps MeetUp<br />Voluntário na organização<i>Itaú | São Paulo</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>24/07/2023</strong>Artigo:<br /><a href="https://www.venturus.org.br/blog/controle-de-custos-na-cloud-com-finops">Controle de custos na Cloud com FinOps</a><br /><i>Venturus | Campinas</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>20/09/2023</strong>FinOps MeetUp<br />Voluntário na organização (Fotos)<i>Banco BV | São Paulo</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>26/10/2023</strong>Avaliador do 14ª BENTOTEC<i>Campinas / SP</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>08/11/2023</strong>FinOps MeetUp<br /><a href="https://www.linkedin.com/posts/finops-foundation_brasil-finops-community-ugcPost-7128430752014204928-JNvu">Voluntário na organização</a><i>São Paulo</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>02/12/2023</strong>Professor e suporte no programa <a href="https://www.linkedin.com/posts/venturus_novos-alunos-formados-em-l%C3%B3gica-da-programa%C3%A7%C3%A3o-activity-7143948362403291136-UF3m">VNT Descomplica</a> na Trilha de Lógica de Programação e Web<i>Venturus | Campinas</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>08/01/2024</strong>Mentor no curso Web Start<i>TIC em Trilhas | Campinas</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>21/02/2024</strong>FinOps MeetUp<br />Voluntário na organização (Fotos)<i>Banco BV | São Paulo</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>25/04/2024</strong>FinOps MeetUp<br />Voluntário na organização (Fotos)<i>John Deere | Indaiatuba</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>15/05/2024</strong>FinOps MeetUp<br />Voluntário na organização (Fotos)<i>Itaú | São Paulo</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>01/06/2024</strong>Mentor no curso Web Start [Primavera]<i>TIC em Trilhas | Campinas</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>24/07/2024</strong>FinOps MeetUp<br />Voluntário na organização (Fotos)<i>BTG Pactual | São Paulo</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>26/07/2024</strong>Instrutor Cloud<br />12º Venturus 4Tech<i>Campinas | São Paulo</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>30/07/2024</strong>AWS User Group Campinas<br />Organização Meetup: <a href="https://www.youtube.com/watch?v=-rVq8BdGeX0" target="_blank">Terraform de A a Z: Um Guia Completo para Gerenciamento de IaC</a><i>Campinas | São Paulo</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>01/10/2024</strong>Blog Post: <a href="https://www.venturus.org.br/en/insights/blog/como-funciona-ai-practitioner-nova-certificacao-aws" target="_blank">Como funciona a AI Practitioner, a nova certificação da AWS</a><i>Venturus | Campinas / SP</i></p></div>
-                        <!-- 2025 -->
-                        <div class="col-lg-3 post-it"><p><strong>30/04/2025</strong>Organizador AWS UG Meetup<br /><a href="https://www.meetup.com/pt-BR/awscampinas/events/307464647/" target="_blank">Vibe Coding DOJO com Amazon Q Developer CLI</a><i>Wevy | Campinas / SP</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>14/05/2025</strong>Organizador AWS UG Campinas Meetup<br /><a href="https://www.meetup.com/awscampinas/events/307679937/" target="_blank">Lean Talk</a><i>Venturus | Campinas / SP</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>17/06/2025</strong>Blog Post: <a href="https://www.venturus.org.br/insights/blog/vibe-coding-tudo-o-que-voce-precisa-saber" target="_blank">Vibe Coding: Tudo o que você precisa saber</a><i>Venturus | Campinas / SP</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>31/07/2025</strong>Organizador AWS UG Campinas Meetup<br /><a href="https://www.meetup.com/awscampinas/events/309980953/" target="_blank">Acelere o Desenvolvimento de Plataformas Customizadas com soluções de IA da AWS</a><i>Sensedia | Campinas / SP</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>04/09/2025</strong>Organizador AWS UG Campinas Meetup<br /><a href="https://www.youtube.com/watch?v=2lk_ptMZBIk" target="_blank">Segurança e Tendências na Nuvem</a><i>Levva | Campinas / SP</i></p></div>
-                        <div class="col-lg-3 post-it"><p><strong>27/09/2025</strong>Organização do <a href="https://awscommunityday.com.br/" target="_blank">AWS Community Day 2025</a><i>Campinas / SP</i></p></div>
-                    </div>
-                    <h3 class="section-subheading text-muted">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/aRM4Ja5KPIY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/8iSoP_92fS8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/W8pvztdBco8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <iframe width="560" height="315" src="https://kiko.dev.br/img/done/recruta-tech-2020.png" frameborder="0"></iframe>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/CZXABGmCRa0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/PSWqQSbofaE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/kcnSyKCn4OU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <iframe width="560" height="315" src="https://kiko.dev.br/img/done/1621941925145.jpg" frameborder="0"></iframe>
-                        <iframe width="560" height="315" src="https://kiko.dev.br/img/done/1635246867708.png" frameborder="0"></iframe>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/uWuHBncyyGg" frameborder="0"></iframe>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/EeyXw6vFrXU?si=ke0zYaMZeDwe2MvO&amp;start=3623" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jF-0jDYdYXY?si=RkHG0aKOmKjivBIC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/zM5fMS-wL2c" frameborder="0"></iframe>
-                        <iframe width="560" height="315" src="https://kiko.dev.br/img/done/1687305926864.jpeg" frameborder="0"></iframe>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6NrZzZSX88o?si=kN6n0TGlz-0UTcyV" frameborder="0"></iframe>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/01ieYpGxigc?si=skA9NVDcs6X_Nt0z" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <iframe width="560" height="315" src="https://kiko.dev.br/img/done/1701523497446.jpeg" frameborder="0"></iframe>
-                        <iframe width="560" height="315" src="https://kiko.dev.br/img/done/20240528213507.png" frameborder="0"></iframe>
-                        <iframe width="560" height="315" src="https://kiko.dev.br/img/done/tdc-florianopolis-2024-ai.png" frameborder="0"></iframe>
-                        <!-- 2025 -->
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5rNtjkN5d_A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/qhFlma9T-UA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Xj0tWJazL9A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <iframe width="560" height="315" src="/img/done/tic-trilha-cloud.html" frameborder="0" style="border: none; overflow: hidden;" scrolling="no"></iframe>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/fUtzYr2C9cM?si=AB6dlg4KeBBgKPoX" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/D5W814ElYb0?si=J10dxTh5ZpV_Xdy0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </h3>
-                </div>
-            </div>
-            <br /><br />
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">BADGES</h2>
-                    <h3 class="section-subheading text-muted">
-                        <a href="https://aws.amazon.com/developer/community/community-builders/" target="_blank">
-                            <img src="img/aws-community-builders-badge-5-combined.png" style="width: 200px;" />
-                        </a>
-                        <a href="https://www.meetup.com/awscampinas/" target="_blank">
-                            <img src="img/aws-user-group-leader.jpeg" style="width: 168px;" />
-                        </a>
-                        <a href="https://www.credly.com/badges/d2f6d97b-89d9-440f-8ba5-ebc7f57321f3" target='_blank'>
-                            <img src="https://images.credly.com/size/340x340/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png" style="width: 200px;" />
-                        </a>
-                        <a href="https://www.youracclaim.com/badges/496eb3fe-bd16-43df-b8b0-8f423fbcd351/public_url" target='_blank'>
-                            <img src="https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" style="width: 200px;" />
-                        </a>
-                        <a href="https://www.credly.com/badges/cda41fce-8172-4684-b39a-f63e87076c15/public_url" target='_blank'>
-                            <img src="https://images.credly.com/size/340x340/images/4d4693bb-530e-4bca-9327-de07f3aa2348/image.png" style="width: 200px;" />
-                        </a>
-                        <a href="https://www.finops.org/" target="_blank">
-                            <img src="img/finops-foundation-community-member-badge.png" />
-                        </a>
-                        <a href="https://www.credly.com/badges/26a94f1e-2e01-44cc-8758-b61e4e8fb338/linked_in?t=s3lpob" target='_blank'>
-                            <img src="https://images.credly.com/size/340x340/images/08a5010a-0c0a-448c-981e-c116fedd380c/image.png" style="width: 200px;" />
-                        </a>
-                        <a href="https://www.credly.com/badges/11fb3559-23c7-4eeb-811a-e8fa5083e300/public_url" target='_blank'>
-                            <img src="https://images.credly.com/images/90c78afd-e885-4525-8f5e-e5834d8cb13d/image.png" style="width: 200px;" />
-                        </a>
-                    </h3>
-                </div>
-            </div>
-        </div>
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="avatar">
+        <img src="img/profile/200.jpg" alt="Felipe Kiko" class="profile-photo">
+      </div>
+      <h1>Olá! Eu sou o <span class="highlight">Felipe Kiko</span></h1>
+      <p class="subtitle">
+        Desde 2006 mergulhado em tecnologia, onde comecei no <strong>PHP</strong>, passando por outras linguagens, e
+        hoje com bastante <strong>Python</strong>! Também falo a língua dos bancos de dados (SQL e NoSQL) e, desde 2012,
+        flutuo feliz nas nuvens, com destaque especial para a <strong>AWS</strong>, onde sou <strong>Community
+          Builder</strong> e líder do <strong>AWS User Group Campinas</strong>...mas também navegando por Azure, GCP,
+        IBM e Oracle, seja com IaaS, PaaS, Serverless, IaC ou até com meu grande amor, o <strong>FinOps</strong>. Curto
+        demais Arquitetar Soluções, defender todos os "Ops" e compartilhar conhecimento, seja palestrando, mentorando ou
+        organizando eventos. Hoje estou focado em <strong>IA</strong> e como ela pode revolucionar nosso jeito de criar
+        e inovar! É isso ai...no fim, sou movido a #Curiosidade, #Desafios, #Comunidade, #Tecnologia, #Pokémon e #Café!
+      </p>
     </section>
 
-    <!-- Portfolio Grid Section -->
-    <!-- <section id="portfolio" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">TRABALHOS</h2>
-                    <h3 class="section-subheading text-muted">
-                        Esse são alguns dos trabalhos que desenvolvi e ou participei do desenvolvimento.<br />
-                        Alguns dos meu trabalhos não serão divulgados aqui por motivos de contratos.<br />
-                        <br />
-                        <strong>Clique e arraste para os lados! =D</strong>
-                    </h3>
-                </div>
-            </div>
-            <div id='works' class='owl-carousel'>
-                <div>
-                    <img src="img/portifolio/inglesdigital.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Inglês Digital</h4>
-                        <p class="text-muted">Site desenvolvido em PHP + MySQL utilizando o CMS WordPress, com customização do Core</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/midiasvirtuais.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Midias Virtuais</h4>
-                        <p class="text-muted">Site desenvolvido em PHP + MySQL utilizando o CMS WordPress, com customização do Core</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/joycebarbi.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Joyce Barbi</h4>
-                        <p class="text-muted">Site desenvolvido em PHP + MySQL utilizando o CMS WordPress, com customização do Core</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/maxdatacenter.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>MaxData Center</h4>
-                        <p class="text-muted">Site desenvolvido em PHP + MySQL utilizando o CMS WordPress, com customização do Core</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/docupdown.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>DocUpDown</h4>
-                        <p class="text-muted">Criação de site baseado em WordPress com o desenvolvimento de plugin para o mesmo onde coverte a página gerada em .html para agilidade no carregamento</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/diginota.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Diginota</h4>
-                        <p class="text-muted">Manutenção e desenvolvimento de novo site utilizando PHP + MySQL e JQuery</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/cupidodigital.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Cupido Digital</h4>
-                        <p class="text-muted">Site de relacionamentos com transmissão do programa Ao Vivo com apresentadores em tempo real, utilizando a tecnologia da Mesa Digital. Foi usado PHP + MySQL com o CMS WordPress para o site institucional. Fiz também edições de vídeos das chamadas utilizando Adobe Premiere</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/anonovovirtual.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Ano Novo Virtual</h4>
-                        <p class="text-muted">Site para o evento do Ano Novo Virtual, com concurso culturar sorteando um tablet, cápsula do tempo e bate papo utilizando a tecnologia da Mesa Digital. Foi usado PHP + MySQL para o desenvolvimento do site</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/mesadigital.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Mesa Digital</h4>
-                        <p class="text-muted">Bate Papo em formato de Mesa onde as pessoas podem conversar em tempo real, compartilhar vídeos e links. A mesa possui um administrador onde pode monitorar as conversas e banir usuários caso seja necessário. Foi usado PHP + MySQL e JQuery para o dinamismo das mensagens</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/byteseguro.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Byte Seguro</h4>
-                        <p class="text-muted">Site desenvolvido em PHP + MySQL utilizando o CMS WordPress, com customização do Core</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/ecomposites.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Ecomposites</h4>
-                        <p class="text-muted">Site feito em HTML + CSS com animações em Javascript utilizando a biblioteca JQuery, utilizando alguns plugins do mesmo</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/carangel.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Carangel</h4>
-                        <p class="text-muted">Site feito em HTML + CSS a partir de layout enviado feito em Photoshop</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/amabrasil.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Ama Brasil</h4>
-                        <p class="text-muted">Site feito em HTML + CSS com animações em Javascript utilizando a biblioteca JQuery, utilizando alguns plugins do mesmo</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/nexcamp.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Nexcamp</h4>
-                        <p class="text-muted">Loja virtual de vendas de celulares, com carrinho e integração com o Pagamento Digital. Área de administração do site, acompanhamento de pedidos, contatos, cadastro de produtos e acompanhamento de métricas</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/tatwong.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>TatWong Kung Fu Academy</h4>
-                        <p class="text-muted">Manutenção de site e conteúdo. Criação de email marketing e disparo de emails</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/buffettropical.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Buffet Tropical</h4>
-                        <p class="text-muted">Desenvolvimento de site institucional, com animações em JQuery, formulario de contato entre outros. Trabalho de SEO e Google Analytics. Área de administração do site na parte de conteúdos, contatos e métricas de acesso</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/pedroerafael.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Colégio Pedro e Rafael</h4>
-                        <p class="text-muted">HTML + PHP + MySQL</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/hugohanielli.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Hugo Hanielli</h4>
-                        <p class="text-muted">Desenvolvimento de site institucional, com animações em JQuery, formulario de contato entre outros. Trabalho de SEO e Google Analytics. Área de administração do site na parte de conteúdos, contatos e métricas de acesso</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/unianhanguera.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Anhanguera Educacional</h4>
-                        <p class="text-muted">Manutenção e desenvolvimento da área restrita do alunos dos módulos acadêmicos e principalmente financeiros. Desenvolvimento de Currículo Lattes para Professores. Desenvolvimento de sistema de pesquisa desktop. Desenvolvimento de módulos de integrações com outros sistemas através de Web Service e Rest. Desenvolvimento e análise de integração da Anhanguera com Google Apps. Desenvolvimento de plataforma de streaming de vídeos. Desenvolvimento de 15 LMS em Moodle</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/vistocar.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Vistocar</h4>
-                        <p class="text-muted">Manutenção no cadastro de produtos e área administrativa</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/result.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Result Contabilidades</h4>
-                        <p class="text-muted">Criação de área restrita para adminstração de funcionários, com upload de arquivos fiscais</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/nevily.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Nevily</h4>
-                        <p class="text-muted">Desenvolvimento do módulo de produtos com administração de cadastro de produtos</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/delta.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Laboratório Delta</h4>
-                        <p class="text-muted">Desenvolvimento de módulo de produto, com área de administração de cadastro de produtos</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/cazi.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Cazi Quimica</h4>
-                        <p class="text-muted">Desenvolvimento de módulo de produto, com área de administração de cadastro de produtos</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/belikar.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Belikar</h4>
-                        <p class="text-muted">Desenvolvimento de módulo de peças, busca, notícias e estoque. Área de administração de peças, busca, notícias e estoque</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/uvline.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>UV Line</h4>
-                        <p class="text-muted">Manutenção e cadastramento de produtos</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/kyocera.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Kyocera</h4>
-                        <p class="text-muted">Manutenção no site em questão de conteúdo e desenvolvimento de notícias. Desenvolvimento de área de administração de notícias</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/exportaminas.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Exporta Minas</h4>
-                        <p class="text-muted">Manutenção no conteúdo do site institucional</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/suvinil.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Suvinil</h4>
-                        <p class="text-muted">Manutenção nos módulos de serviços, produtos, calculadora de tinta e banners</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/younglions.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Young Lions</h4>
-                        <p class="text-muted">Manutenção no formulário de cadastro e upload de peças</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/saintgobain.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Saint Gobain Embalagens</h4>
-                        <p class="text-muted">Manutenção em cadastro de novos produtos</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/lifeisaloop.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Life is a Loop</h4>
-                        <p class="text-muted">Desenvolvimento de site utilizando metodologia MVC com módulos de vídeos, notícias, histórias, formulários, downloads e integração de dados com Flash. Área de administração de conteúdo com upload e rich text para notícias e histórias</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/andreiafarah.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Andreia Farah</h4>
-                        <p class="text-muted">Manutenção nas notícias no site e área administrativa e criação de paginação</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/spga.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>SPGA</h4>
-                        <p class="text-muted">Desenvolvimento de site, notícias, arquivos, artigos e sistema de busca. Site multilinguagem (Inglês e Português) com área administrativa de linguagens. Administração do site, notícias, artigos e cadastro de palavras chaves de busca</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/quemamabloqueia.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Quem ama Bloqueia</h4>
-                        <p class="text-muted">Programação do site com módulos de upload de videos do Youtube, cadastro de pessoas, ranking de vídeos, votação, indicação de vídeo e comentários. Área administrativa de conteúdo, cadastros, comentário e vídeos</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/bloqueionao.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>Bloqueio Não</h4>
-                        <p class="text-muted">Programação do site, fórum, chat, Ajax de cidades e área de administração de contéudo, dados e exportações de relatórios em formato .xls</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/siproem.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>SIPROEM</h4>
-                        <p class="text-muted">Programação do site e área de administração de notícias, enquetes e conteúdo</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="img/portifolio/ibm.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-caption">
-                        <h4>IBM.com</h4>
-                        <p class="text-muted">Manutenção de módulos de e-commerce, cadastro e pedidos de venda de servidores. QA de módulos de produção</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">LINHA DO TEMPO</h2>
-                    <h3 class="section-subheading text-muted">Um pouco da minha trilha profissional...</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/18.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Venturus</h4>
-                                    <h4 class="subheading">Dezembro 2022 até agora!</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Arquiteto Cloud</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/17.png" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Wildlife Studios</h4>
-                                    <h4 class="subheading">Agosto 2022 até Dezembro 2022</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Arquiteto Cloud e Especialista FinOps</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/16.png" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>iFood</h4>
-                                    <h4 class="subheading">Maio 2021 até Agosto 2022</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Especialista FinOps e Arquiteto Cloud</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/15.png" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>GFT</h4>
-                                    <h4 class="subheading">Março 2020 até Abril 2021</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Arquiteto Cloud AWS</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/14.png" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Cogna Educação</h4>
-                                    <h4 class="subheading">Julho 2019 até Fevereiro 2020</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Arquiteto Cloud</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/13.png" alt="">
-                            </div>
-                                <div class="timeline-panel">
-                                    <div class="timeline-heading">
-                                        <h4>VC Intelligence</h4>
-                                        <h4 class="subheading">Novembro 2018 até Julho 2019</h4>
-                                    </div>
-                                    <div class="timeline-body">
-                                        <p class="text-muted">CTO</p>
-                                    </div>
-                                </div>
-                            </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/12.png" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Kroton Educacional</h4>
-                                    <h4 class="subheading">Dezembro 2015 até Novembro 2018</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Arquiteto Moodle, Cloud e DevOps</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/11.png" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Industria Fox</h4>
-                                    <h4 class="subheading">Abril 2015 até Dezembro 2015</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Programador Sênior PHP e Infra Estrutura</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/8.png" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Kroton/ Anhanguera Educacional</h4>
-                                    <h4 class="subheading">Março 2012 até Abril 2015</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Analista e Programador Sênior PHP</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/9.png" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Criar Sistemas/ Midias Virtuais</h4>
-                                    <h4 class="subheading">Setembro 2011 até Março 2012</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Sócio e Lider Técnico</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/8.png" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Anhanguera Educacional</h4>
-                                    <h4 class="subheading">Abril 2009 até Setembro 2011</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Analista e Programador PHP Pleno</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/7.png" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Nitromidia</h4>
-                                    <h4 class="subheading">Agosto 2007 até Abril 2009</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Programador PHP/ ASP.net</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/6.png" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>IBM.com</h4>
-                                    <h4 class="subheading">Setembro 2006 até Agosto 2007</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Web Developer e Q.A.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/5.png" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>RCT Retail</h4>
-                                    <h4 class="subheading">Março 2006 até Setembro 2006</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Estágio em programação PHP</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/4.png" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Lombardi Advocacia</h4>
-                                    <h4 class="subheading">Janeiro 2006 até Março 2006</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Analista de Infra Estrutura/ Hardware e Software</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.png" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>TIVIT</h4>
-                                    <h4 class="subheading">Junho 2005 até Janeiro 2006</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Service Desk</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.png" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Casas Bahia</h4>
-                                    <h4 class="subheading">Novembro 2004 até Junho 2005</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Auxiliar de Escritório</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.png" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Colégio Santo Américo</h4>
-                                    <h4 class="subheading">Fevereiro 2001 até Novembro 2004</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Office Boy Interno...Auxiliar de Escritório (Arquivo)</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <!-- Skills Section -->
+    <section class="section">
+      <h2 class="section-title">Habilidades & Tecnologias</h2>
+      <div class="skills-container">
+        <span class="skill-badge"><i class="fab fa-aws"></i> AWS</span>
+        <span class="skill-badge"><i class="fas fa-cloud"></i> Azure</span>
+        <span class="skill-badge"><i class="fab fa-google"></i> Google Cloud</span>
+        <span class="skill-badge"><i class="fas fa-database"></i> Oracle Cloud</span>
+        <span class="skill-badge"><i class="fas fa-server"></i> IBM Cloud</span>
+        <span class="skill-badge"><i class="fab fa-docker"></i> Docker</span>
+        <span class="skill-badge"><i class="fas fa-cubes"></i> Kubernetes</span>
+        <span class="skill-badge"><i class="fab fa-linux"></i> Linux</span>
+        <span class="skill-badge"><i class="fab fa-git-alt"></i> Git</span>
+        <span class="skill-badge"><i class="fas fa-code-branch"></i> CI/CD</span>
+        <span class="skill-badge"><i class="fas fa-server"></i> DevOps</span>
+        <span class="skill-badge"><i class="fas fa-calculator"></i> FinOps</span>
+        <span class="skill-badge"><i class="fas fa-robot"></i> GenAI</span>
+        <span class="skill-badge"><i class="fas fa-network-wired"></i> IaC</span>
+        <span class="skill-badge"><i class="fas fa-server"></i> Serverless</span>
+        <span class="skill-badge"><i class="fas fa-code"></i> Python</span>
+        <span class="skill-badge"><i class="fab fa-php"></i> PHP</span>
+        <span class="skill-badge"><i class="fas fa-database"></i> SQL</span>
+        <span class="skill-badge"><i class="fas fa-database"></i> NoSQL</span>
+      </div>
     </section>
 
-    <!-- Team Section -->
-    <section id="team" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Felipe de Freitas Campos</h2>
-                    <h3 class="section-subheading text-muted">...ou mais conhecido simplemente por <strong>KiKo</strong></h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                        <br />
-                        <ul class="list-inline social-buttons">
-                            <li><a href="https://twitter.com/felipekiko"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/felipekiko"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="https://www.facebook.com/hiperkiko"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="https://github.com/felipekiko"><i class="fa fa-github"></i></a></li>
-                            <li><a href="https://dev.to/felipekiko"><i class="fab fa-dev"></i></a></li>
-                            <li><a href="https://pt2.slideshare.net/FelipeCampos41"><i class="fa fa-slideshare"></i></a></li>
-                        </ul>
-			<br />
-			<a style='font-size:40px;font-weight:bold' href='CV_FelipeCampos_ptbr.pdf' target='_blank'>Currículo!</a><br /><br />
-			<a style='font-size:20px;font-weight:bold' href='CV_FelipeCampos_en.pdf' target='_blank'>English Version of my Curriculum!</a>
-			<br /><br />
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">
-                        <!--
-                        <strong>Data de nascimento:</strong> 30/07/1984<br />
-                        <br />
-                        -->
-                        <h2>Acadêmico</h2>
-                        <br />
-                        <strong>Pós Graduação em BI, Big Data e Analytics (Data Science)</strong> pela<br />
-                        <strong>Anhanguera Educacional</strong><br />
-                        <strong>Ano de conclusão:</strong> Dezembro de 2024<br />
-                        <br />
-                        <strong>MBA em Cybersecurity e Cybercrimes</strong> pela<br />
-                        <strong>Anhanguera Educacional</strong><br />
-                        <strong>Ano de conclusão:</strong> Setembro de 2024<br />
-                        <br />
-                        <strong>MBA em Liderança, Gestão de Equipes e Produtividade</strong> pela<br />
-                        <strong>PUCRS</strong><br />
-                        <strong>Ano de conclusão:</strong> Dezembro de 2022<br />
-                        <br />
-                        <strong>MBA em SOA - Arquitetura Orientada a Serviço</strong> pelo<br />
-                        <strong>IBTA / Metrocamp</strong><br />
-                        <strong>Ano de conclusão:</strong> Junho de 2016<br />
-                        <br />
-                        <strong>Graduação em Sistema de Informação (Ánalise de Sistemas)</strong> pelo<br />
-                        <strong>IBTA - Instituto Brasileiro de Técnologia Avançadas</strong><br />
-                        <strong>Ano de conclusão:</strong> Dezembro de 2007<br />
-                        <!-- <br /><br />
-                        <h2>Projetos</h2>
-                        <br />
-                        <strong>GDG Cabreúva - Google Developer Groups</strong><br />
-                        Organizador<br />
-                        <br />
-                        <strong>ONG Instituto Fair Fox</strong><br />
-                        Desenvolvedor LMS<br /> -->
-                    </p>
-                </div>
-            </div>
+    <!-- Projects Section -->
+    <section class="section">
+      <h2 class="section-title">O que tenho feito por aí</h2>
+      <!-- BIG CARDS -->
+      <div class="projects-grid">
+        <!-- 2025 -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>10/07/2025</span></div>
+            <div class="project-tag">Podcast</div>
+          </div>
+          <h3 class="project-title">Futurus #17 - Um papo sobre Cloud</h3>
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/D5W814ElYb0?si=J10dxTh5ZpV_Xdy0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="project-description">Podcast Futurus | Venturus</p>
+          <div class="project-card-footer">
+            <div class="project-location"><span>Campinas / SP</span></div>
+          </div>
         </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>22/05/2025</span></div>
+            <div class="project-tag">Palestrante</div>
+          </div>
+          <h3 class="project-title">FINOPS: Como economizar na Nuvem</h3>
+          <iframe width="100%" height="200" src="img/done/aws-ug-monte-claros-meetup-1-finops.html" frameborder="0" style="border: none; overflow: hidden;" scrolling="no"></iframe>
+          <p class="project-description">AWS User Group Montes Claros</p>
+          <div class="project-card-footer">
+            <a href="https://www.youtube.com/watch?v=fUtzYr2C9cM" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver vídeo">Ver vídeo <i class="fas fa-external-link-alt"></i></a>
+            <div class="project-location"><span>Online</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>01/05/2025</span></div>
+            <div class="project-tag">Instrutor</div>
+          </div>
+          <h3 class="project-title">Curso Introdução a Cloud</h3>
+          <iframe width="100%" height="200" src="img/done/tic-trilha-cloud.html" frameborder="0" style="border: none; overflow: hidden;" scrolling="no"></iframe>
+          <p class="project-description">TIC em Trilhas | Venturus</p>
+          <div class="project-card-footer">
+            <a href="https://ticemtrilhas.org.br/trail/1f8c0a7a-d14e-46a4-b563-23bab855a667" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver curso">Ver curso <i class="fas fa-external-link-alt"></i></a>
+            <div class="project-location"><span>Online</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>22/01/2025</span></div>
+            <div class="project-tag">Palestrante</div>
+          </div>
+          <h3 class="project-title">Desbravando o Potencial da IA Generativa com Amazon Bedrock</h3>
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/Xj0tWJazL9A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="project-description">AWS User Group Campinas Meetup</p>
+          <div class="project-location"><span>Wevy | Campinas / SP</span></div>
+        </div>
+
+        <!-- 2024 -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>04/10/2024</span></div>
+            <div class="project-tag">Palestrante</div>
+          </div>
+          <h3 class="project-title">Como a IA pode ajudar no dia-a-dia do Arquiteto Cloud</h3>
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/qhFlma9T-UA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="project-description">TDC São Paulo</p>
+          <div class="project-location"><span>São Paulo / SP</span></div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>21/08/2024</span></div>
+            <div class="project-tag">Podcast</div>
+          </div>
+          <h3 class="project-title">Futurus #07 - IA para aumentar produtividade</h3>
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/5rNtjkN5d_A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="project-description">Podcast Futurus | Venturus</p>
+          <div class="project-card-footer">
+            <div class="project-location"><span>Campinas / SP</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>12/06/2024</span></div>
+            <div class="project-tag">Palestrante</div>
+          </div>
+          <h3 class="project-title">Workshop: Como implementar IA no Ciclo de Desenvolvimento</h3>
+          <img src="img/done/tdc-florianopolis-2024-ai.png" width="100%" height="200" style="border: none; overflow: hidden;" scrolling="no">
+          <p class="project-description">TDC Florianópolis</p>
+          <div class="project-card-footer">
+            <div class="project-location"><span>Florianópolis / SC</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>10/01/2024</span></div>
+            <div class="project-tag">Instrutor</div>
+          </div>
+          <h3 class="project-title">Trilha Web Start</h3>
+          <img src="img/done/trilha-web-start.png" width="100%" height="200" style="border: none; overflow: hidden;" scrolling="no">
+          <p class="project-description">TIC em Trilhas</p>
+          <div class="project-card-footer">
+            <div class="project-location"><span>Venturus | Remoto</span></div>
+          </div>
+        </div>
+
+        <!-- 2023 -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>09/12/2023</span></div>
+            <div class="project-tag">Palestrante</div>
+          </div>
+          <h3 class="project-title">FinOps e ESG...Tudo a vê!</h3>
+          <img src="img/done/finops-esg-tudo-a-ve.jpg" width="100%" height="200" style="border: none; overflow: hidden;" scrolling="no">
+          <p class="project-description">DevFest | GDG São Paulo</p>
+          <div class="project-card-footer">
+            <div class="project-location"><span>São Paulo / SP</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>19/10/2023</span></div>
+            <div class="project-tag">Palestrante</div>
+          </div>
+          <h3 class="project-title">Você acha que conhece todos os seus recursos na nuvem?</h3>
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/01ieYpGxigc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="project-description">AWS User Group Campinas Meetup</p>
+          <div class="project-card-footer">
+            <div class="project-location"><span>Venturus | Campinas / SP</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>16/10/2023</span></div>
+            <div class="project-tag">Palestrante</div>
+          </div>
+          <h3 class="project-title">Como o Cloud Query pode te ajudar!</h3>
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/6NrZzZSX88o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="project-description">TDC São Paulo</p>
+          <div class="project-card-footer">
+            <div class="project-location"><span>São Paulo/ SP</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>24/06/2023</span></div>
+            <div class="project-tag">Palestrante</div>
+          </div>
+          <h3 class="project-title">Governança na Cloud</h3>
+          <img src="img/done/cloud-wknd.jpeg" width="100%" height="200" style="border: none; overflow: hidden;" scrolling="no">
+          <p class="project-description">Cloud Wknd | DevPira + SENAC</p>
+          <div class="project-card-footer">
+            <div class="project-location"><span>Piracicaba / SP</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>30/01/2023</span></div>
+            <div class="project-tag">Palestrante</div>
+          </div>
+          <h3 class="project-title">Desmitificando o Cost Usage Report (CUR) + QuickSight</h3>
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/zM5fMS-wL2c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="project-description">TDC Future</p>
+          <div class="project-card-footer">
+            <div class="project-location"><span>São Paulo/ SP</span></div>
+          </div>
+        </div>
+
+        <!-- 2022 -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>23/11/2022</span></div>
+            <div class="project-tag">Palestrante</div>
+          </div>
+          <h3 class="project-title">O que é FinOps? Descubra como gerenciar seus custos na nuvem</h3>
+          <iframe width="100%" height="200" src="img/done/o-que-e-finops.html" frameborder="0" style="border: none; overflow: hidden;" scrolling="no"></iframe>
+          <p class="project-description">TIC em Trilhas | Venturus</p>
+          <div class="project-card-footer">
+            <a href="https://www.youtube.com/watch?v=jF-0jDYdYXY" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver vídeo">Ver vídeo <i class="fas fa-external-link-alt"></i></a>
+            <div class="project-location"><span>Online</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>05/11/2022</span></div>
+            <div class="project-tag">Palestrante</div>
+          </div>
+          <h3 class="project-title">Como procurar e otimizar seus custos de rede na AWS</h3>
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/EeyXw6vFrXU?si=ke0zYaMZeDwe2MvO&amp;start=3623" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="project-description">AWS Community Day Brasil</p>
+          <div class="project-card-footer">
+            <div class="project-location"><span>Online</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>13/07/2022</span></div>
+            <div class="project-tag">Palestrante</div>
+          </div>
+          <h3 class="project-title">Automações em FinOps: Tempo é dinheiro...então economize os dois!</h3>
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/uWuHBncyyGg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="project-description">TDC Innovation</p>
+          <div class="project-card-footer">
+            <div class="project-location"><span>Online</span></div>
+          </div>
+        </div>
+
+        <!-- 2021 -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>01/12/2021</span></div>
+            <div class="project-tag">Palestrante</div>
+          </div>
+          <h3 class="project-title">Você conhece Governance as Code? (Cloud Custodian)</h3>
+          <img src="img/done/governance-as-code.png" width="100%" height="200" style="border: none; overflow: hidden;" scrolling="no">
+          <p class="project-description">TDC Future</p>
+          <div class="project-card-footer">
+            <div class="project-location"><span>Online</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>09/06/2021</span></div>
+            <div class="project-tag">Palestrante</div>
+          </div>
+          <h3 class="project-title">Como gerenciar os custos da sua Cloud? (FinOps)</h3>
+          <img src="img/done/como-gerenciar-custos-cloud.jpg" width="100%" height="200" style="border: none; overflow: hidden;" scrolling="no">
+          <p class="project-description">TDC Connections</p>
+          <div class="project-card-footer">
+            <div class="project-location"><span>Online</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>18/02/2021</span></div>
+            <div class="project-tag">Palestrante</div>
+          </div>
+          <h3 class="project-title">Vai trocar seu rim por EC2? Calma, vem comigo!</h3>
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/kcnSyKCn4OU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="project-description">DevelopersBR</p>
+          <div class="project-card-footer">
+            <div class="project-location"><span>Online</span></div>
+          </div>
+        </div>
+
+        <!-- 2020 -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>05/12/2020</span></div>
+            <div class="project-tag">Palestrante</div>
+          </div>
+          <h3 class="project-title">FinOps...como usar Cloud sem precisar cortar o "cafezinho"</h3>
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/PSWqQSbofaE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="project-description">DevPira</p>
+          <div class="project-card-footer">
+            <div class="project-location"><span>Online</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>27/11/2020</span></div>
+            <div class="project-tag">Host</div>
+          </div>
+          <h3 class="project-title">Infraestrutura na nuvem com Troposphere</h3>
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/CZXABGmCRa0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="project-description">Webinar@GFT</p>
+          <div class="project-card-footer">
+            <div class="project-location"><span>Online</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>06/10/2021</span></div>
+            <div class="project-tag">Palestrante</div>
+          </div>
+          <h3 class="project-title">Dev, Sec, Fin, Data Ops...mas por que tanto Ops?</h3>
+          <img src="img/done/recruta-tech-2020.png" width="100%" height="200" style="border: none; overflow: hidden;" scrolling="no">
+          <p class="project-description">Recruta Tech</p>
+          <div class="project-card-footer">
+            <div class="project-location"><span>Online</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>17/09/2020</span></div>
+            <div class="project-tag">Palestrante</div>
+          </div>
+          <h3 class="project-title">Integração e entrega contínua usando AWS na GFT</h3>
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/W8pvztdBco8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="project-description">DIO</p>
+          <div class="project-card-footer">
+            <div class="project-location"><span>Online</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>24/04/2020</span></div>
+            <div class="project-tag">Palestrante</div>
+          </div>
+          <h3 class="project-title">Adotando práticas de Infraestrutura como Código (IaC)</h3>
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/8iSoP_92fS8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="project-description">Webinar@GFT</p>
+          <div class="project-card-footer">
+            <div class="project-location"><span>Online</span></div>
+          </div>
+        </div>
+
+        <!-- 2018 -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>31/08/2018</span></div>
+            <div class="project-tag">Palestrante</div>
+          </div>
+          <h3 class="project-title">Kroton: How to Provide Learning Content to Millions of Students Using AWS</h3>
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/aRM4Ja5KPIY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="project-description">AWS | This is My Architecture</p>
+          <div class="project-card-footer">
+            <div class="project-location"><span>Online</span></div>
+          </div>
+        </div>
+
+      </div>
+      <!-- MINI CARDS -->
+      <div class="projects-grid">
+        <!-- 2025 -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>27/09/2025</span></div>
+            <div class="project-tag">Organização</div>
+          </div>
+          <h3 class="project-title">AWS Community Day 2025</h3>
+          <p class="project-description">Organização do evento</p>
+          <div class="project-card-footer">
+            <a href="https://awscommunityday.com.br/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver evento">Ver evento <i class="fas fa-external-link-alt"></i></a>
+            <div class="project-location"><span>Campinas / SP</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>04/09/2025</span></div>
+            <div class="project-tag">Organização</div>
+          </div>
+          <h3 class="project-title">Segurança e Tendências na Nuvem</h3>
+          <p class="project-description">AWS User Group Campinas Meetup</p>
+          <div class="project-card-footer">
+            <a href="https://www.youtube.com/watch?v=2lk_ptMZBIk" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Assistir">Assistir <i class="fab fa-youtube"></i></a>
+            <div class="project-location"><span>Levva | Campinas / SP</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>31/07/2025</span></div>
+            <div class="project-tag">Organização</div>
+          </div>
+          <h3 class="project-title">Acelere o Desenvolvimento de Plataformas Customizadas com soluções de IA da AWS</h3>
+          <p class="project-description">AWS User Group Campinas Meetup</p>
+          <div class="project-card-footer">
+            <a href="https://www.meetup.com/awscampinas/events/309980953/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver evento">Ver evento <i class="fas fa-external-link-alt"></i></a>
+            <div class="project-location"><span>Sensedia | Campinas / SP</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>17/06/2025</span></div>
+            <div class="project-tag">Artigo</div>
+          </div>
+          <h3 class="project-title">Vibe Coding: Tudo o que você precisa saber</h3>
+          <div class="project-card-footer">
+            <a href="https://www.venturus.org.br/insights/blog/vibe-coding-tudo-o-que-voce-precisa-saber" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ler artigo">Ler artigo <i class="fas fa-external-link-alt"></i></a>
+            <div class="project-location"><span>Venturus | Campinas / SP</span></div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>14/05/2025</span></div>
+            <div class="project-tag">Organização</div>
+          </div>
+          <h3 class="project-title">Lean Talk</h3>
+          <p class="project-description">AWS User Group Campinas Meetup</p>
+          <div class="project-card-footer">
+            <a href="https://www.meetup.com/awscampinas/events/307679937/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver evento">Ver evento <i class="fas fa-external-link-alt"></i></a>
+            <div class="project-location"><span>Venturus | Campinas / SP</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>30/04/2025</span></div>
+            <div class="project-tag">Organização</div>
+          </div>
+          <h3 class="project-title">Vibe Coding DOJO com Amazon Q Developer CLI</h3>
+          <p class="project-description">AWS User Group Meetup</p>
+          <div class="project-card-footer">
+            <a href="https://www.meetup.com/pt-BR/awscampinas/events/307464647/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver evento">Ver evento <i class="fas fa-external-link-alt"></i></a>
+            <div class="project-location"><span>Wevy | Campinas / SP</span></div>
+          </div>
+        </div>
+
+        <!-- 2024 -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>01/10/2024</span></div>
+            <div class="project-tag">Artigo</div>
+          </div>
+          <h3 class="project-title">Como funciona a AI Practitioner, a nova certificação da AWS</h3>
+          <div class="project-card-footer">
+            <a href="https://www.venturus.org.br/insights/blog/como-funciona-ai-practitioner-nova-certificacao-aws" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ler artigo">Ler artigo <i class="fas fa-external-link-alt"></i></a>
+            <div class="project-location"><span>Venturus | Campinas / SP</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>30/07/2024</span></div>
+            <div class="project-tag">Organização</div>
+          </div>
+          <h3 class="project-title">Terraform de A a Z: Um Guia Completo para Gerenciamento de IaC</h3>
+          <p class="project-description">Meetup AWS User Group Campinas</p>
+          <div class="project-card-footer">
+            <a href="https://www.youtube.com/watch?v=-rVq8BdGeX0" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Assistir">Assistir <i class="fab fa-youtube"></i></a>
+            <div class="project-location"><span>Wevy | Campinas / SP</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>26/07/2024</span></div>
+            <div class="project-tag">Instrutor</div>
+          </div>
+          <h3 class="project-title">12º Venturus 4Tech</h3>
+          <p class="project-description">Curso de Cloud</p>
+          <div class="project-card-footer">
+            <div class="project-location"><span>Campinas / SP</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>24/07/2024</span></div>
+            <div class="project-tag">Organização</div>
+          </div>
+          <h3 class="project-title">FinOps MeetUp</h3>
+          <p class="project-description">BTG Pactual</p>
+          <div class="project-card-footer">
+            <div class="project-location"><span>São Paulo / SP</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>01/06/2024</span></div>
+            <div class="project-tag">Mentoria</div>
+          </div>
+          <h3 class="project-title">Curso Web Start [Primavera]</h3>
+          <p class="project-description">TIC em Trilhas | Venturus</p>
+          <div class="project-card-footer">
+            <div class="project-location"><span>Campinas / SP</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>15/05/2024</span></div>
+            <div class="project-tag">Organização</div>
+          </div>
+          <h3 class="project-title">FinOps MeetUp</h3>
+          <p class="project-description">Itaú</p>
+          <div class="project-location"><span>São Paulo / SP</span></div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>25/04/2024</span></div>
+            <div class="project-tag">Organização</div>
+          </div>
+          <h3 class="project-title">FinOps MeetUp</h3>
+          <p class="project-description">John Deere</p>
+          <div class="project-card-footer">
+            <div class="project-location"><span>Indaiatuba / SP</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>21/02/2024</span></div>
+            <div class="project-tag">Organização</div>
+          </div>
+          <h3 class="project-title">FinOps MeetUp</h3>
+          <p class="project-description">Banco BV</p>
+          <div class="project-location"><span>São Paulo / SP</span></div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>08/01/2024</span></div>
+            <div class="project-tag">Mentoria</div>
+          </div>
+          <h3 class="project-title">Curso Web Start</h3>
+          <p class="project-description">TIC em Trilhas | Venturus</p>
+          <div class="project-location"><span>Campinas / SP</span></div>
+        </div>
+
+        <!-- 2023 -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>02/12/2023</span></div>
+            <div class="project-tag">Professor</div>
+          </div>
+          <h3 class="project-title">Trilha de Lógica de Programação e Web</h3>
+          <p class="project-description">VNT Descomplica | Venturus</p>
+          <div class="project-card-footer">
+            <a href="https://www.linkedin.com/posts/venturus_novos-alunos-formados-em-l%C3%B3gica-da-programa%C3%A7%C3%A3o-activity-7143948362403291136-UF3m" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Post LinkedIn">Post LinkedIn <i class="fas fa-external-link-alt"></i></a>
+            <div class="project-location"><span>Campinas / SP</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>08/11/2023</span></div>
+            <div class="project-tag">Organização</div>
+          </div>
+          <h3 class="project-title">FinOps MeetUp</h3>
+          <p class="project-description">FinOps MeetUp Brasil</p>
+          <div class="project-card-footer">
+            <a href="https://www.linkedin.com/posts/finops-foundation_brasil-finops-community-ugcPost-7128430752014204928-JNvu" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Post LinkedIn">Post LinkedIn <i class="fas fa-external-link-alt"></i></a>
+            <div class="project-location"><span>São Paulo / SP</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>26/10/2023</span></div>
+            <div class="project-tag">Avaliador</div>
+          </div>
+          <h3 class="project-title">14ª BENTOTEC</h3>
+          <p class="project-description">ETEC Bento Quirino</p>
+          <div class="project-location"><span>Campinas / SP</span></div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>20/09/2023</span></div>
+            <div class="project-tag">Organização</div>
+          </div>
+          <h3 class="project-title">FinOps MeetUp</h3>
+          <p class="project-description">Banco BV</p>
+          <div class="project-location"><span>São Paulo / SP</span></div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>24/07/2023</span></div>
+            <div class="project-tag">Artigo</div>
+          </div>
+          <h3 class="project-title">Controle de custos na Cloud com FinOps</h3>
+          <div class="project-card-footer">
+            <a href="https://www.venturus.org.br/blog/controle-de-custos-na-cloud-com-finops" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ler artigo">Ler artigo <i class="fas fa-external-link-alt"></i></a>
+            <div class="project-location"><span>Venturus | Campinas</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>19/07/2023</span></div>
+            <div class="project-tag">Organização</div>
+          </div>
+          <h3 class="project-title">FinOps MeetUp</h3>
+          <p class="project-description">Itaú</p>
+          <div class="project-location"><span>São Paulo / SP</span></div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>13/05/2023</span></div>
+            <div class="project-tag">Palestrante</div>
+          </div>
+          <h3 class="project-title">O que é FinOps?</h3>
+          <p class="project-description">Global Azure 2023</p>
+          <div class="project-card-footer">
+            <a href="https://www.sympla.com.br/evento/global-azure-2023-campinas-sp-presencial-e-gratuito/1873212" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Link do evento">Link do evento <i class="fas fa-external-link-alt"></i></a>
+            <div class="project-location"><span>Campinas / SP</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>20/03/2023</span></div>
+            <div class="project-tag">Mentoria</div>
+          </div>
+          <h3 class="project-title">Lógica de Programação e Java para PCD</h3>
+          <p class="project-description">Venturus</p>
+          <div class="project-location"><span>Campinas / SP</span></div>
+        </div>
+
+        <!-- 2022 -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>28/10/2022</span></div>
+            <div class="project-tag">Revisão Técnica</div>
+          </div>
+          <h3 class="project-title">Livro: AWS FinOps Simplified</h3>
+          <p class="project-description">Revisor técnico do livro</p>
+          <div class="project-card-footer">
+            <a href="https://www.amazon.com/AWS-FinOps-Simplified-Eliminate-practical/dp/1803247231" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver livro">Ver livro <i class="fas fa-external-link-alt"></i></a>
+            <div class="project-location"><span>Online</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>19/08/2022</span></div>
+            <div class="project-tag">Palestrante</div>
+          </div>
+          <h3 class="project-title">Introdução ao Python</h3>
+          <p class="project-description">Semana da Engenharia UNESP</p>
+          <div class="project-card-footer">
+            <a href="https://github.com/felipekiko/events/blob/main/20220819_SemanaEngenharia-IntroducaoPython/presentation.pdf" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver apresentação">Ver apresentação <i class="fas fa-external-link-alt"></i></a>
+            <div class="project-location"><span>Sorocaba / SP</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>02/05/2022 - 03/06/2022</span></div>
+            <div class="project-tag">Mentor</div>
+          </div>
+          <h3 class="project-title">Turma: Formação AWS</h3>
+          <p class="project-description">Escola da Nuvem</p>
+          <div class="project-location"><span>Online</span></div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>31/03/2022</span></div>
+            <div class="project-tag">Instrutor</div>
+          </div>
+          <h3 class="project-title">Dojo de IaC</h3>
+          <p class="project-description">GFT São Paulo</p>
+          <div class="project-location"><span>Online</span></div>
+        </div>
+
+        <!-- 2021 -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>27/11/2021 - 05/12/2021</span></div>
+            <div class="project-tag">Evento</div>
+          </div>
+          <h3 class="project-title">Participante do AWS re:invent</h3>
+          <p class="project-description">Edição 2021</p>
+          <div class="project-location"><span>Las Vegas / NV</span></div>
+        </div>
+
+        <!-- 2019 -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>01/12/2019 - 07/12/2019</span></div>
+            <div class="project-tag">Evento</div>
+          </div>
+          <h3 class="project-title">Participante do AWS re:invent</h3>
+          <p class="project-description">Edição 2019</p>
+          <div class="project-location">
+            <span>Las Vegas / NV</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>26/10/2019</span></div>
+            <div class="project-tag">Palestrante</div>
+          </div>
+          <h3 class="project-title">Mas enfim...o que é esse tal de DevOps?</h3>
+          <p class="project-description">GDG São João da Boa Vista</p>
+          <div class="project-location"><span>São João da Boa Vista / SP</span></div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>07/02/2019</span></div>
+            <div class="project-tag">Palestrante</div>
+          </div>
+          <h3 class="project-title">Ameaças dentro do mundo Coorporativo</h3>
+          <p class="project-description">HackerDay | UNIFEOB</p>
+          <div class="project-location"><span>São João da Boa Vista / SP</span></div>
+        </div>
+
+        <!-- 2016 -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>20/10/2016</span></div>
+            <div class="project-tag">Palestrante</div>
+          </div>
+          <h3 class="project-title">Painel .NET Campinas #01</h3>
+          <p class="project-description">Meetup .NET Campinas</p>
+          <div class="project-location"><span>Campinas / SP</span></div>
+        </div>
+
+        <!-- 2015 -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>24/10/2015</span></div>
+            <div class="project-tag">Palestrante</div>
+          </div>
+          <h3 class="project-title">Material Design</h3>
+          <p class="project-description">GDG Cabreúva</p>
+          <div class="project-location"><span>Cabreúva / SP</span></div>
+        </div>
+
+        <!-- 2014 -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-date"><i class="far fa-calendar-alt"></i><span>08/11/2014 - 15/11/2014</span></div>
+            <div class="project-tag">Evento</div>
+          </div>
+          <h3 class="project-title">Participante do AWS re:invent</h3>
+          <p class="project-description">Edição 2014</p>
+          <div class="project-location">
+            <span>Las Vegas / NV</span>
+          </div>
+        </div>
+      </div>
     </section>
-    
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contato!</h2>
-                    <p style='background-color:#EEE;opacity:0.5;font-size:20px;padding:14px 0'>
-                        <br />
-                        Você não tem mais desculpa de não conseguir entrar em contato comigo!<br />
-                        <br />
-                        <!-- <strong>Telefone / WhatsApp:</strong> +55 19 98832 6063<br /> -->
-                        <!-- <strong>Email / Google Hangout:</strong> felipe.kiko@gmail.com<br /> -->
-                        <strong>Email:</strong> felipe.kiko@gmail.com<br />
-                        <!-- <strong>Skype:</strong> felipe.kiko@hotmail.com<br /> -->
-                        <br />
-                        <strong>Twitter:</strong> <a href="https://twitter.com/felipekiko" target="_blank">https://twitter.com/felipekiko</a><br />
-                        <strong>Linkedin:</strong> <a href="https://www.linkedin.com/in/felipekiko" target="_blank">https://www.linkedin.com/in/felipekiko</a><br />
-                        <strong>Facebook:</strong> <a href="https://www.facebook.com/hiperkiko" target="_blank">https://www.facebook.com/hiperkiko</a><br />
-                        <strong>Github:</strong> <a href="https://github.com/felipekiko" target="_blank">https://github.com/felipekiko</a><br />
-                        <strong>Dev.to:</strong> <a href="https://dev.to/felipekiko" target="_blank">https://dev.to/felipekiko</a><br />
-                        <strong>Slideshare:</strong> <a href="https://pt2.slideshare.net/FelipeCampos41" target="_blank">https://pt2.slideshare.net/FelipeCampos41</a><br />
-                        <strong>AWS Builder Profile:</strong> <a href="https://builder.aws.com/community/@felipekiko" target="_blank">https://builder.aws.com/community/@felipekiko</a><br />
-                        <strong>Sessionize Profile:</strong> <a href=" https://sessionize.com/felipekiko" target="_blank"> https://sessionize.com/felipekiko</a><br />
-                        <strong>Perfil do TDC:</strong> <a href="https://thedevconf.com/palestrante/felipe-campos" target="_blank">https://thedevconf.com/palestrante/felipe-campos</a><br />
-                        <br />
-                    </p>
-                </div>
+
+    <!-- Timeline Section -->
+    <section class="section">
+      <!-- <div class="section-header">
+        <i class="fas fa-history text-primary"></i>
+        <h2 class="section-title">EXPERIÊNCIA<span class="title-underline"></span></h2>
+      </div> -->
+      <div class="timeline">
+        <!-- Timeline Item 1 -->
+        <!-- <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-title">Cloud Architect</h3>
+              <div class="timeline-period">2023 - Presente</div>
             </div>
-            <!--
-            <div class="row">
-                <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Seu nome *" id="name" required data-validation-required-message="Me fala quem é você!">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Seu email *" id="email" required data-validation-required-message="Preciso do seu email para retornar!">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Seu telefone *" id="phone" required data-validation-required-message="Me fala seu telefone? Juro que não te ligo de madrugada!">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <textarea class="form-control" placeholder="Sua mensagem *" id="message" required data-validation-required-message="Diga algo, por favor!!"></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Mandar mensagem!</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+            <div class="timeline-company">Empresa Atual</div>
+            <p class="timeline-description">Desenvolvimento e arquitetura de soluções em nuvem, otimização de custos e
+              implementação de melhores práticas de DevOps.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">AWS</span>
+              <span class="timeline-tag">Terraform</span>
+              <span class="timeline-tag">Kubernetes</span>
             </div>
-            -->
-        </div>
+          </div>
+        </div> -->
+
+        <!-- Timeline Item 2 -->
+        <!-- <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-title">DevOps Engineer</h3>
+              <div class="timeline-period">2021 - 2023</div>
+            </div>
+            <div class="timeline-company">Empresa Anterior</div>
+            <p class="timeline-description">Implementação de pipelines CI/CD, automação de infraestrutura e
+              gerenciamento de ambientes em nuvem.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Docker</span>
+              <span class="timeline-tag">Jenkins</span>
+              <span class="timeline-tag">AWS</span>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Timeline Item 3 -->
+        <!-- <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-title">Formação Acadêmica</h3>
+              <div class="timeline-period">2018 - 2021</div>
+            </div>
+            <div class="timeline-company">Universidade Exemplo</div>
+            <p class="timeline-description">Bacharelado em Ciência da Computação com foco em Arquitetura de Software e
+              Computação em Nuvem.</p>
+          </div>
+        </div> -->
+      </div>
     </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-text">© 2025 Felipe Kiko</p>
+    </div>
+  </footer>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; FelipeKiKo 2023</span>
-                </div>
-                <div class="col-md-4">
-                        <ul class="list-inline social-buttons">
-                            <li><a href="https://twitter.com/felipekiko"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="https://www.facebook.com/hiperkiko"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/felipekiko"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/agency.js"></script>
-
-
+  <script>
+    // Simple script for smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
