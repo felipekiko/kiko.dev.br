@@ -36,12 +36,16 @@ Professional portfolio website showcasing my work, experience, and skills.
 ### 🌐 Internationalization
 - [ ] Add English version of the website
 
-## 🛠️ Technologies Used
+### Others
+- [ ] Remove old version
+- [ ] Remove branch
+
+## Technologies Used
 - HTML5
 - CSS3
 - JavaScript
 
-## 📂 Project Structure
+## Project Structure
 ```
 .
 ├── css/           # Stylesheets
@@ -51,7 +55,7 @@ Professional portfolio website showcasing my work, experience, and skills.
 └── README.md      # This file
 ```
 
-## 📄 License
+## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 © 2025 Felipe Campos | [kiko.dev.br](https://kiko.dev.br)
