@@ -487,6 +487,73 @@ header {
   }
 }
 
+/* ===== Badges Section ===== */
+.badges-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 2rem;
+}
+
+.badge-link {
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--card-bg);
+  border: var(--card-border);
+  padding: 10px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-color: var(--yellow-accent);
+}
+
+.badge-img {
+  height: 100%;
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .badges-container {
+    gap: 15px;
+  }
+  
+  .badge-link {
+    height: 100px;
+    padding: 8px;
+  }
+  
+  .badge-img {
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .badges-container {
+    gap: 12px;
+  }
+  
+  .badge-link {
+    height: 80px;
+    padding: 6px;
+  }
+  
+  .badge-img {
+    max-width: 120px;
+  }
+}
+
 /* ===== Experience Timeline ===== */
 .experience-timeline {
   max-width: 800px;
