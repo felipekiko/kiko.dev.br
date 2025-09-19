@@ -690,6 +690,65 @@ header {
   font-weight: 500;
 }
 
+/* ===== Footer ===== */
+.footer {
+  background-color: var(--bg-darker);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 2.5rem 0;
+  margin-top: 3rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+.footer-text:hover {
+  color: var(--yellow-accent);
+}
+
+/* Add a subtle animation to the copyright symbol */
+.footer-text::before {
+  content: '©';
+  display: inline-block;
+  margin-right: 6px;
+  transition: transform 0.3s ease;
+}
+
+.footer-text:hover::before {
+  transform: rotate(360deg);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 0;
+  }
+  
+  .footer-content {
+    padding: 0 1.5rem;
+  }
+  
+  .footer-text {
+    font-size: 0.9rem;
+  }
+}
+
 /* ===== Responsive Styles ===== */
 @media (max-width: 768px) {
   .header-content {
