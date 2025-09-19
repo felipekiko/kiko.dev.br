@@ -364,23 +364,21 @@ header {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .experience-timeline::before {
-    left: 31px;
+    display: none; /* Hide the vertical line */
   }
   
   .experience-item,
   .experience-item:nth-child(even) {
     width: 100%;
-    padding-left: 60px;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
+    padding: 0 1rem; /* Add horizontal padding */
+    margin: 0 0 1.5rem 0;
     justify-content: flex-start;
+    position: relative;
   }
   
   .experience-item::after,
   .experience-item:nth-child(even)::after {
-    left: 20px;
-    right: auto;
+    display: none; /* Hide the dots */
   }
 }
 
