@@ -15,7 +15,6 @@ Professional portfolio website showcasing my work, experience, and skills.
 
 ### 📝 Content Updates
 - [ ] **Professional Experience**
-  - [ ] Add work history
   - [ ] Include academic background
   - [ ] Sync with LinkedIn links in my profile
   - [ ] Compare informations with older version
@@ -25,23 +24,19 @@ Professional portfolio website showcasing my work, experience, and skills.
   - [ ] Integrate presentations from Slide.com
   - [ ] Include articles from Dev.to/Medium
 
-### 🎨 UI/UX Improvements
-- [ ] **Footer**
-  - [ ] Add all social links
-  - [ ] Include contact information
-- [ ] **Header**
-  - [ ] Add all social links
-  - [ ] Create menu?
-
 ### 🌐 Internationalization
 - [ ] Add English version of the website
 
-## 🛠️ Technologies Used
+### Others
+- [ ] Remove old version
+- [ ] Remove branch
+
+## Technologies Used
 - HTML5
 - CSS3
 - JavaScript
 
-## 📂 Project Structure
+## Project Structure
 ```
 .
 ├── css/           # Stylesheets
@@ -51,7 +46,7 @@ Professional portfolio website showcasing my work, experience, and skills.
 └── README.md      # This file
 ```
 
-## 📄 License
+## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 © 2025 Felipe Campos | [kiko.dev.br](https://kiko.dev.br)
