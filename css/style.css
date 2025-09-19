@@ -692,10 +692,9 @@ header {
 
 /* ===== Footer ===== */
 .footer {
-  background-color: var(--bg-darker);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  padding: 2.5rem 0;
-  margin-top: 3rem;
+  background-color: var(--bg-light);
+  border-top: 1px solid var(--border-color);
+  padding: 3rem 0 2.5rem;
   text-align: center;
   transition: all 0.3s ease;
 }
@@ -707,45 +706,96 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1.5rem;
+}
+
+.footer-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-social-links .social-link {
+  width: 2.8rem;
+  height: 2.8rem;
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.footer-social-links .social-link:hover {
+  background-color: var(--yellow-accent);
+  color: var(--bg-darker);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.footer-contact {
+  margin: 0.5rem 0;
+}
+
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.contact-email:hover {
+  color: var(--yellow-accent);
+}
+
+.contact-email i {
+  font-size: 1.1em;
 }
 
 .footer-text {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--text-secondary);
   line-height: 1.6;
-  transition: color 0.3s ease;
+  opacity: 0.8;
 }
 
-.footer-text:hover {
-  color: var(--yellow-accent);
-}
-
-/* Add a subtle animation to the copyright symbol */
 .footer-text::before {
   content: '©';
   display: inline-block;
   margin-right: 6px;
-  transition: transform 0.3s ease;
-}
-
-.footer-text:hover::before {
-  transform: rotate(360deg);
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .footer {
-    padding: 2rem 0;
+    padding: 2.5rem 0 2rem;
   }
   
   .footer-content {
     padding: 0 1.5rem;
+    gap: 1.25rem;
+  }
+  
+  .footer-social-links {
+    gap: 0.75rem;
+  }
+  
+  .footer-social-links .social-link {
+    width: 2.6rem;
+    height: 2.6rem;
+    font-size: 1.1rem;
+  }
+  
+  .contact-email {
+    font-size: 0.95rem;
   }
   
   .footer-text {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 }
 
