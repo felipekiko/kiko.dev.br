@@ -25,11 +25,7 @@ Professional portfolio website showcasing my work, experience, and skills.
   - [ ] Include articles from Dev.to/Medium
 
 ### 🎨 UI/UX Improvements
-- [ ] **Footer**
-  - [ ] Add all social links
-  - [ ] Include contact information
 - [ ] **Header**
-  - [ ] Add all social links
   - [ ] Create menu?
 
 ### 🌐 Internationalization

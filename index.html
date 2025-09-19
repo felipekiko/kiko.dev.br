@@ -57,6 +57,23 @@
             <p>Cloud Architect, FinOps & Developer</p>
           </div>
         </div>
+        
+        <!-- Mobile Menu Toggle -->
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span class="menu-toggle-line"></span>
+          <span class="menu-toggle-line"></span>
+          <span class="menu-toggle-line"></span>
+        </button>
+        
+        <!-- Navigation Menu -->
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#about" class="nav-link">Eu!</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">O que fiz?</a></li>
+            <li class="nav-item"><a href="#experience" class="nav-link">Experiência</a></li>
+          </ul>
+        </nav>
+        
         <div class="social-links">
           <a href="https://linkedin.com/in/felipekiko" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
             class="social-link linkedin">
@@ -77,7 +94,7 @@
   <!-- Main Content -->
   <main class="container">
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="about" class="hero">
       <div class="avatar">
         <img src="img/profile/200.jpg" alt="Felipe Kiko" class="profile-photo">
       </div>
@@ -95,7 +112,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section class="section">
+    <section id="habilidades" class="section">
       <h2 class="section-title">Habilidades & Tecnologias</h2>
       <div class="skills-container">
         <span class="skill-badge"><i class="fab fa-aws"></i> AWS</span>
@@ -121,7 +138,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="section">
+    <section id="projects" class="section">
       <h2 class="section-title">O que tenho feito por aí</h2>
       <!-- BIG CARDS -->
       <div class="projects-grid">
@@ -931,7 +948,7 @@
     </section>
 
     <!-- Professional Experience Section -->
-    <section class="section">
+    <section id="experience" class="section">
       <div class="section-header">
         <h2 class="section-title">Experiência Profissional</h2>
       </div>
@@ -1173,7 +1190,7 @@
 
     </section>
   </main>
-
+  
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-social-links">
@@ -1209,14 +1226,74 @@
   </footer>
 
   <script>
-    // Simple script for smooth scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth'
+    // Mobile menu functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const body = document.body;
+      
+      // Toggle mobile menu
+      menuToggle.addEventListener('click', function() {
+        body.classList.toggle('menu-open');
+        
+        // Toggle aria-expanded for accessibility
+        const expanded = this.getAttribute('aria-expanded') === 'true' || false;
+        this.setAttribute('aria-expanded', !expanded);
+      });
+      
+      // Close menu when clicking on a nav link
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+          if (window.innerWidth <= 992) {
+            body.classList.remove('menu-open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+          }
+          
+          // Smooth scroll to section
+          const targetId = this.getAttribute('href');
+          if (targetId.startsWith('#')) {
+            e.preventDefault();
+            const target = document.querySelector(targetId);
+            if (target) {
+              target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          }
+        });
+      });
+      
+      // Close menu when clicking outside
+      document.addEventListener('click', function(e) {
+        if (!e.target.closest('.main-nav') && !e.target.closest('.menu-toggle')) {
+          body.classList.remove('menu-open');
+          menuToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+      
+      // Close menu on window resize if it becomes desktop view
+      let resizeTimer;
+      window.addEventListener('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+          if (window.innerWidth > 992) {
+            body.classList.remove('menu-open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+          }
+        }, 250);
+      });
+      
+      // Simple script for smooth scrolling for other anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        if (!anchor.classList.contains('nav-link')) {
+          anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+              target.scrollIntoView({
+                behavior: 'smooth'
+              });
+            }
           });
         }
       });

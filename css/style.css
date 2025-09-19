@@ -35,6 +35,12 @@ body {
   min-height: 100vh;
 }
 
+/* Garante que as seções tenham espaçamento adequado */
+.section {
+  scroll-margin-top: 100px; /* Altura do header + um pouco mais */
+  padding: 4rem 0;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -91,6 +97,137 @@ header {
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Menu */
+.main-nav {
+  margin-left: auto;
+  margin-right: 2rem;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--yellow-accent);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--yellow-accent);
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+  width: 100%;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-left: auto;
+  z-index: 1001;
+}
+
+.menu-toggle-line {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--text-primary);
+  margin: 5px 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Mobile Menu Styles */
+@media (max-width: 992px) {
+  .menu-toggle {
+    display: block;
+  }
+  
+  .main-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: var(--bg-darker);
+    padding: 5rem 2rem 2rem;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .nav-list {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .nav-link {
+    font-size: 1.1rem;
+    padding: 0.75rem 0;
+    display: block;
+  }
+  
+  /* When menu is open */
+  .menu-open .main-nav {
+    right: 0;
+  }
+  
+  .menu-open .menu-toggle-line:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  
+  .menu-open .menu-toggle-line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-open .menu-toggle-line:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+  
+  /* Adjust header content for mobile */
+  .header-content {
+    position: relative;
+  }
+  
+  .social-links {
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 993px) {
+  .main-nav {
+    display: block !important;
+  }
 }
 
 /* Mobile styles */
