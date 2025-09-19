@@ -24,10 +24,6 @@ Professional portfolio website showcasing my work, experience, and skills.
   - [ ] Integrate presentations from Slide.com
   - [ ] Include articles from Dev.to/Medium
 
-### 🎨 UI/UX Improvements
-- [ ] **Header**
-  - [ ] Create menu?
-
 ### 🌐 Internationalization
 - [ ] Add English version of the website
 
