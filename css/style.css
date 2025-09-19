@@ -224,8 +224,20 @@ header {
 }
 
 /* Desktop styles */
-@media (min-width: 993px) {
+@media (min-width: 768px) {
   .main-nav {
+    display: block !important;
+  }
+}
+
+/* Esconde o menu em telas menores que 768px */
+.d-none {
+  display: none !important;
+}
+
+/* Mostra em telas médias e grandes (≥768px) */
+@media (min-width: 768px) {
+  .d-md-block {
     display: block !important;
   }
 }
