@@ -344,7 +344,7 @@ header {
 /* ===== Hero Section ===== */
 .hero {
   text-align: center;
-  padding: 10px 0;
+  padding: 70px 0 10px;
   position: relative;
   overflow: hidden;
   margin-top: -20px; /* Compensa o padding do body */

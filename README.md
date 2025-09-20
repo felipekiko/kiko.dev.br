@@ -17,6 +17,9 @@ Professional portfolio website showcasing my work, experience, and skills.
 - [ ] **Professional Experience**
   - [ ] Sync with LinkedIn links in my profile
   - [ ] Compare informations with older version
+  - [ ] Add CV
+  - [ ] Add Slide.com presentations
+  - [ ] Add articles from Dev.to/Medium
 
 - [ ] **Portfolio Cards**
   - [ ] Review and add projects from LinkedIn
