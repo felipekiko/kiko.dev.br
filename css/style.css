@@ -344,7 +344,7 @@ header {
 /* ===== Hero Section ===== */
 .hero {
   text-align: center;
-  padding: 4rem 0;
+  padding: 10px 0;
   position: relative;
   overflow: hidden;
   margin-top: -20px; /* Compensa o padding do body */
@@ -511,13 +511,12 @@ header {
   display: inline-block;
   line-height: 0;
   margin: 0;
-  padding: 0 15px;
-  flex: 1;
+  padding: 2px;
   text-align: center;
 }
 
 .badge-img {
-  height: 80px;
+  height: 162px;
   width: auto;
   max-width: 100%;
   object-fit: contain;
