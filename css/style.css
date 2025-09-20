@@ -1164,6 +1164,12 @@ header {
     text-align: center;
   }
   
+  /* Center social icons on mobile */
+  .social-links {
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
   .hero h1 {
     font-size: 2rem;
   }
