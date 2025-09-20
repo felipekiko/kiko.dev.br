@@ -10,6 +10,8 @@
 - [ ] Review and add projects from LinkedIn
 - [ ] Compare informations with older version
 - [ ] Compare with theme #2
+- [ ] Migrate slideshare to github?
+- [ ] Sync informations: CV, Portifolio and Linkedin
 - [ ] Add English version of the website
 - [ ] Optimize JavaScript and CSS
 - [ ] Remove external CSS dependencies
