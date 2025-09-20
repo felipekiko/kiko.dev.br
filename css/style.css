@@ -313,7 +313,7 @@ header {
 
 .social-links {
   display: flex;
-  gap: 1rem;
+  gap: 6px;
 }
 
 .social-link {
@@ -339,6 +339,37 @@ header {
   color: #121212; /* Texto preto para melhor contraste */
   border-color: transparent;
   text-decoration: none;
+}
+
+/* CV link styles */
+.cv-link {
+  background-color: var(--yellow-accent);
+  color: #121212; /* Texto preto para melhor contraste */
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  padding: 0.2rem;
+}
+
+.cv-link:hover {
+  background-color: var(--primary-hover) !important; /* Amarelo mais claro no hover */
+  color: #121212 !important;
+}
+
+.cv-text {
+  font-size: 0.9rem;
+  display: block;
+}
+
+.cv-lang {
+  font-size: 0.7rem;
+  display: block;
+  margin-top: 2px;
+  font-weight: normal;
 }
 
 /* ===== Hero Section ===== */
