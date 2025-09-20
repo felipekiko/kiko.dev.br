@@ -6,6 +6,7 @@
 - [ ] Add presentations (slideshare)
 - [ ] Add articles (dev.to / medium)
 - [ ] Sync with LinkedIn links in my profile
+- [ ] Check technologies icons
 - [ ] Review and add projects from LinkedIn
 - [ ] Compare informations with older version
 - [ ] Compare with theme #2
