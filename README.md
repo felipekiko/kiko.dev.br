@@ -2,7 +2,6 @@
 
 ## To Do List
 
-- [ ] Add articles (dev.to / medium)
 - [ ] Sync with LinkedIn links in my profile
 - [ ] Check technologies icons
 - [ ] Review and add projects from LinkedIn
