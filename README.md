@@ -2,6 +2,7 @@
 
 ## To Do List
 
+- [ ] Migrate Slideshare to github
 - [ ] Sync informations: CV, Portifolio and Linkedin
 - [ ] Add English version of the website
 - [ ] Optimize JavaScript and CSS
