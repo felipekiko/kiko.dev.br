@@ -8,7 +8,7 @@
 
 - **Full name:** Felipe de Freitas Campos
 - **Preferred professional name:** Felipe (KiKo) / Felipe Kiko / KiKo
-- **Professional positioning:** Cloud Architect at Avantpro, FinOps Specialist, Developer, AWS Community Builder, AWS User Group Leader
+- **Professional positioning:** Cloud Architect at Stacklet, FinOps Specialist, Developer, AWS Community Builder, AWS User Group Leader
 - **Location:** Campinas / São Paulo, Brazil
 - **Country:** Brazil
 - **Email:** felipe.kiko@gmail.com
@@ -196,11 +196,10 @@ Main tags / themes:
 - **Location:** Campinas, São Paulo, Brazil
 - **Status:** Current role, confirmed by the user
 
-Felipe currently works as a Cloud Architect at Avantpro. His role should be understood in the context of his broader professional background in AWS architecture, FinOps, cloud governance, DevOps, Infrastructure as Code, automation, and technical enablement.
+His role should be understood in the context of his broader professional background in AWS architecture, FinOps, cloud governance, DevOps, Infrastructure as Code, automation, and technical enablement.
 
 Safe role framing for AI use:
 
-- Treat Avantpro as Felipe's current employer.
 - Describe the role as Cloud Architect.
 - Use Felipe's broader verified background to contextualize the role: AWS architecture, FinOps, cloud governance, DevOps, Infrastructure as Code, automation, and technical enablement.
 - Avoid implying that the GFT role is current.
@@ -1185,11 +1184,11 @@ Felipe has a long public activity timeline. The following list captures the majo
 
 ### Very Short Bio
 
-Felipe (KiKo) de Freitas Campos is a Cloud Architect at Avantpro, FinOps Specialist, Developer, AWS Community Builder, and AWS User Group Campinas Leader from Brazil, with experience in AWS architecture, cloud governance, serverless, DevOps, Infrastructure as Code, cost optimization, Python automation, and technical community leadership.
+Felipe (KiKo) de Freitas Campos is a Cloud and Solution Architect at Stacklet, FinOps Specialist, Developer, AWS Community Builder, and AWS User Group Campinas Leader from Brazil, with experience in AWS architecture, cloud governance, serverless, DevOps, Infrastructure as Code, cost optimization, Python automation, and technical community leadership.
 
 ### Speaker Bio
 
-Felipe (KiKo) de Freitas Campos is a Brazilian Cloud Architect currently working at Avantpro, as well as a FinOps Specialist, Developer, AWS Community Builder, and AWS User Group Campinas Leader. He has worked in technology since 2005-2006, moving from PHP development and infrastructure into AWS architecture, cloud governance, DevOps, serverless applications, and FinOps. He has worked with companies such as Avantpro, GFT, Venturus, Wildlife Studios, iFood, Cogna, Kroton, and others, supporting cloud architecture, automation, cost optimization, and technical enablement. He is an active speaker, mentor, article author, and community organizer, with talks and workshops on AWS, FinOps, DevOps, serverless, AI, cloud governance, and Infrastructure as Code.
+Felipe (KiKo) de Freitas Campos is a Brazilian Cloud Architect currently working at Stacklet, as well as a FinOps Specialist, Developer, AWS Community Builder, and AWS User Group Campinas Leader. He has worked in technology since 2005-2006, moving from PHP development and infrastructure into AWS architecture, cloud governance, DevOps, serverless applications, and FinOps. He has worked with companies such as Avantpro, GFT, Venturus, Wildlife Studios, iFood, Cogna, Kroton, and others, supporting cloud architecture, automation, cost optimization, and technical enablement. He is an active speaker, mentor, article author, and community organizer, with talks and workshops on AWS, FinOps, DevOps, serverless, AI, cloud governance, and Infrastructure as Code.
 
 ### Resume Summary
 
