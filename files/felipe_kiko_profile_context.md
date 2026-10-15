@@ -26,11 +26,11 @@
 
 ## 2. Short AI Summary
 
-Felipe (KiKo) de Freitas Campos is a Brazilian Cloud Architect currently working at Avantpro, as well as a FinOps Specialist, Developer, AWS Community Builder, and AWS User Group Campinas Leader based in Campinas, São Paulo. He has been involved with technology since 2005-2006, starting in service desk, infrastructure, and PHP development, and later expanding into web development, .NET/ASP.NET, Moodle/LMS architecture, cloud infrastructure, DevOps, AWS architecture, cloud governance, FinOps, automation, and AI-related initiatives.
+Felipe (KiKo) de Freitas Campos is a Brazilian Developer, Cloud and Solution Architect currently working at Stacklet, as well as a FinOps Specialist, Developer, AWS Community Builder, and AWS User Group Campinas Leader based in Campinas, São Paulo. He has been involved with technology since 2005-2006, starting in service desk, infrastructure, and PHP development, and later expanding into web development, .NET/ASP.NET, Moodle/LMS architecture, cloud infrastructure, DevOps, AWS architecture, cloud governance, FinOps, automation, and AI-related initiatives.
 
 His strongest professional areas are AWS cloud architecture, FinOps, DevOps, Infrastructure as Code, serverless development, Python automation, cloud governance / CCoE, cost optimization, technical mentoring, public speaking, and community leadership.
 
-He currently works at Avantpro and has worked with companies including GFT, Venturus, Wildlife Studios, iFood, Cogna Educação, VC Intelligence / VCI Digital Group, Kroton / Anhanguera Educacional, Indústrias Fox, Criar Sistemas / Mídias Virtuais, Nitromidia, IBM / Systemplan, RCT Retail, Lombardi Advocacia, TIVIT, Casas Bahia, and Colégio Santo Américo.
+He currently works at Stacklet and has worked with companies including Avantpro, GFT, Venturus, Wildlife Studios, iFood, Cogna Educação, VC Intelligence / VCI Digital Group, Kroton / Anhanguera Educacional, Indústrias Fox, Criar Sistemas / Mídias Virtuais, Nitromidia, IBM / Systemplan, RCT Retail, Lombardi Advocacia, TIVIT, Casas Bahia, and Colégio Santo Américo.
 
 Felipe is motivated by curiosity, challenges, community, technology, Pokémon, and coffee. He enjoys architecture, automation, teaching, mentoring, speaking at events, organizing communities, and exploring how AI can improve development, cloud, FinOps, and innovation workflows.
 
@@ -178,9 +178,21 @@ His professional profile combines:
 
 ## 5. Professional Experience
 
+### Stacklet - Solutions Architect (Customer Success)
+
+- **Period:** September 2026 - Present
+- **Location:** Remote / Brazil
+- **Team:** Customer Success
+- **Status:** Current role
+
+Works as a Solutions Architect within the Customer Success team, helping customers implement and enhance cloud governance strategies focused on FinOps, security, and compliance across AWS, Azure, and GCP environments. Analyzes, develops, and troubleshoots cloud automation policies using Cloud Custodian and the Stacklet platform. Collaborates with customers and internal engineering teams to investigate technical issues, improve governance policies, and support effective platform adoption.
+Main tags / themes:
+
+- Solutions Architecture, Customer Success, Cloud Governance, FinOps, Cloud Security, Compliance, AWS, Azure, GCP, Multi-Cloud, Cloud Custodian, Cloud Automation, Open Source, Troubleshooting.
+
 ### Avantpro - Cloud Architect
 
-- **Period:** April 2026 - Present
+- **Period:** April 2026 - September 2026
 - **Location:** Campinas, São Paulo, Brazil
 - **Status:** Current role, confirmed by the user
 
@@ -1219,13 +1231,13 @@ Avoid:
 ## 15. Compact Prompt Block for AI Agents
 
 ```text
-You are assisting Felipe (KiKo) de Freitas Campos, a Brazilian Cloud Architect currently working at Avantpro, FinOps Specialist, Developer, AWS Community Builder, and AWS User Group Campinas Leader based in Campinas/São Paulo, Brazil.
+You are assisting Felipe (KiKo) de Freitas Campos, a Brazilian Cloud Architect currently working at Stacklet, FinOps Specialist, Developer, AWS Community Builder, and AWS User Group Campinas Leader based in Campinas/São Paulo, Brazil.
 
 Felipe has worked in technology since 2005-2006, starting with service desk, infrastructure, and PHP development, then expanding into web development, ASP.NET/.NET, Moodle/LMS platforms, cloud infrastructure, DevOps, AWS architecture, cloud governance, FinOps, automation, and AI-related initiatives.
 
 His core strengths include AWS cloud architecture, FinOps, cloud cost optimization, cloud governance / CCoE, DevOps, Infrastructure as Code, Terraform, CloudFormation, Cloud Custodian, CloudQuery, Python automation, serverless applications, DynamoDB, SQS, SNS, Linux, CI/CD, dashboards, cost reports, mentoring, public speaking, and community organization.
 
-He currently works at Avantpro and has worked with GFT, Venturus, Wildlife Studios, iFood, Cogna Educação, VC Intelligence / VCI Digital Group, Kroton / Anhanguera Educacional, Indústrias Fox, Criar Sistemas / Mídias Virtuais, Nitromidia, IBM / Systemplan, RCT Retail, Lombardi Advocacia, TIVIT, Casas Bahia, and Colégio Santo Américo.
+He currently works at Stacklet and has worked with Avantpro, GFT, Venturus, Wildlife Studios, iFood, Cogna Educação, VC Intelligence / VCI Digital Group, Kroton / Anhanguera Educacional, Indústrias Fox, Criar Sistemas / Mídias Virtuais, Nitromidia, IBM / Systemplan, RCT Retail, Lombardi Advocacia, TIVIT, Casas Bahia, and Colégio Santo Américo.
 
 He holds or has held AWS and FinOps certifications including AWS Certified Solutions Architect - Associate, AWS Certified Developer - Associate, AWS Certified AI Practitioner, AWS Certified Cloud Practitioner, FinOps Certified Practitioner, FinOps Certified Engineer, and Introduction to FOCUS.
 
